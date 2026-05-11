@@ -1,6 +1,6 @@
-import sqlite3
 import pickle
 import json
+import csv
 import streamlit as st
 
 st.set_page_config(page_title="Deep Athlete", page_icon="⚡", layout="wide")
@@ -61,35 +61,35 @@ html, body, [data-testid="stApp"], [data-testid="stAppViewContainer"], [data-tes
 </style>
 """, unsafe_allow_html=True)
 
+# ── Load models ──
 @st.cache_resource
 def load_models():
     with open("model.pkl","rb") as f:
         d = pickle.load(f)
     return d["male"], d["female"], d["feature_names"]
 
-def load_summary():
-    conn = sqlite3.connect("athletes_v2.db")
-    rows = conn.execute("""
-        SELECT r.athlete_id, a.name, a.age, a.gender, a.lifestyle,
-               a.vo2max, a.recovery_rate,
-               r.acwr, r.risk_zone, r.sleep_avg, r.stress_avg, r.hrv_drop, r.date
-        FROM risk_scores r JOIN athletes a ON a.athlete_id=r.athlete_id
-        INNER JOIN (SELECT athlete_id,MAX(date) md FROM risk_scores GROUP BY athlete_id) l
-            ON r.athlete_id=l.athlete_id AND r.date=l.md
-        ORDER BY r.acwr DESC
-    """).fetchall()
-    conn.close()
-    return rows
-
+# ── Load summary CSV ──
 @st.cache_data
-def load_history(aid):
-    conn = sqlite3.connect("athletes_v2.db")
-    rows = conn.execute("""
-        SELECT r.date, r.acwr, d.sleep_hours, d.stress, d.injury
-        FROM risk_scores r JOIN daily_data d ON d.athlete_id=r.athlete_id AND d.date=r.date
-        WHERE r.athlete_id=? ORDER BY r.date
-    """, (aid,)).fetchall()
-    conn.close()
+def load_summary():
+    rows = []
+    with open("summary.csv", newline="") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            rows.append((
+                row["athlete_id"],
+                row["name"],
+                int(row["age"]) if row["age"] else 0,
+                row["gender"],
+                row["lifestyle"],
+                float(row["vo2max"]) if row["vo2max"] else 0,
+                float(row["recovery_rate"]) if row["recovery_rate"] else 0,
+                float(row["acwr"]) if row["acwr"] else 0,
+                row["risk_zone"],
+                float(row["sleep_avg"]) if row["sleep_avg"] else 0,
+                float(row["stress_avg"]) if row["stress_avg"] else 0,
+                float(row["hrv_drop"]) if row["hrv_drop"] else 0,
+                row["date"],
+            ))
     return rows
 
 male_model, female_model, feat_names = load_models()
@@ -113,7 +113,7 @@ st.markdown(f"""
 </div>
 """, unsafe_allow_html=True)
 
-tab1, tab2, tab3 = st.tabs(["⚡  TEAM DASHBOARD", "📈  ATHLETE HISTORY", "🔍  PREDICT A PLAYER"])
+tab1, tab2 = st.tabs(["⚡  TEAM DASHBOARD", "🔍  PREDICT A PLAYER"])
 
 # ══════════════════════════════════════════
 # TAB 1
@@ -245,60 +245,9 @@ with tab1:
             st.caption(f"🔴 {s['red']} / {s['n']} athletes")
 
 # ══════════════════════════════════════════
-# TAB 2
+# TAB 2 — Predict
 # ══════════════════════════════════════════
 with tab2:
-    st.markdown('<div class="sh">Athlete Season History</div>', unsafe_allow_html=True)
-    st.caption("ACWR trend across the full 2024 season · Red crosses = injury days")
-
-    gender_tab  = st.radio("Select Gender Group", ["👨 Male Athletes","👩 Female Athletes"], horizontal=True)
-    is_male_tab = gender_tab == "👨 Male Athletes"
-    gender_data = [r for r in data if r[3] and r[3].lower()==("male" if is_male_tab else "female")]
-    ids=[r[0] for r in gender_data]; names_list=[r[1] for r in gender_data]
-    st.caption(f"{'👨' if is_male_tab else '👩'} {len(ids)} athletes in this group")
-
-    sel_idx = st.selectbox("Select Athlete", range(len(ids)), format_func=lambda i: names_list[i])
-    sel_id=ids[sel_idx]; hist=load_history(sel_id)
-
-    if hist:
-        dates=[r[0] for r in hist]; acwrs=[r[1] for r in hist]
-        sleeps=[r[2] for r in hist]; stresses=[r[3] for r in hist]; injuries=[r[4] for r in hist]
-        inj_d=[dates[i] for i,v in enumerate(injuries) if v==1]
-        sc1,sc2,sc3,sc4 = st.columns(4)
-        sc1.metric("Injury Days",sum(injuries))
-        sc2.metric("Avg ACWR",f"{sum(acwrs)/len(acwrs):.3f}")
-        sc3.metric("Avg Sleep",f"{sum(s for s in sleeps if s)/max(sum(1 for s in sleeps if s),1):.1f}h")
-        sc4.metric("Avg Stress",f"{sum(s for s in stresses if s)/max(sum(1 for s in stresses if s),1):.1f}")
-        if inj_d:
-            st.markdown(f"""<div style="background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.22);
-                border-radius:6px;padding:0.6rem 1rem;font-size:0.78rem;color:#fca5a5;margin:0.5rem 0">
-                ⚠️ Injury days: {', '.join(inj_d[:7])}{'...' if len(inj_d)>7 else ''}
-            </div>""", unsafe_allow_html=True)
-        dj=json.dumps(dates); aj=json.dumps(acwrs); ij=json.dumps(injuries)
-        st.components.v1.html(f"""
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-        <div style="background:#0c1118;border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:1.2rem">
-          <canvas id="ch" height="85"></canvas>
-        </div>
-        <script>
-        const d={dj},a={aj},inj={ij};
-        const step=2,d2=d.filter((_,i)=>i%step==0),a2=a.filter((_,i)=>i%step==0);
-        const ip=inj.map((v,i)=>v===1?a[i]:null).filter((_,i)=>i%step==0);
-        new Chart(document.getElementById('ch'),{{type:'line',data:{{labels:d2,datasets:[
-            {{label:'ACWR',data:a2,borderColor:'#00ff50',backgroundColor:'rgba(0,255,80,0.05)',fill:true,tension:0.4,pointRadius:0,borderWidth:2}},
-            {{label:'Danger (1.5)',data:d2.map(()=>1.5),borderColor:'rgba(239,68,68,0.4)',borderDash:[6,4],pointRadius:0,borderWidth:1.5,fill:false}},
-            {{label:'Caution (1.3)',data:d2.map(()=>1.3),borderColor:'rgba(245,158,11,0.3)',borderDash:[4,4],pointRadius:0,borderWidth:1,fill:false}},
-            {{label:'Injury',data:ip,backgroundColor:'#ef4444',pointRadius:5,pointStyle:'crossRot',showLine:false,borderColor:'transparent'}}
-        ]}},options:{{plugins:{{legend:{{labels:{{color:'#9ca3af',font:{{size:11}}}}}}}},
-            scales:{{x:{{ticks:{{color:'#4b5563',maxTicksLimit:10,font:{{size:10}}}},grid:{{color:'rgba(255,255,255,0.04)'}}}},
-                     y:{{min:0,max:2.5,ticks:{{color:'#4b5563',font:{{size:10}}}},grid:{{color:'rgba(255,255,255,0.04)'}}}}}}
-        }}}});
-        </script>""", height=320)
-
-# ══════════════════════════════════════════
-# TAB 3
-# ══════════════════════════════════════════
-with tab3:
     st.markdown('<div class="sh">Predict Injury Risk</div>', unsafe_allow_html=True)
     st.caption("Gender-specific model selected automatically")
 
@@ -317,28 +266,27 @@ with tab3:
     with c1:
         name         = st.text_input("Player Name", placeholder="e.g. Rahul Sharma")
         age          = st.slider("Age", 16, 40, 22)
-        acwr_i       = st.slider("ACWR", 0.0, 2.5, 1.0, step=0.01, help="Sweet spot: 0.8–1.3. Above 1.5 = danger zone")
+        acwr_i       = st.slider("ACWR", 0.0, 2.5, 1.0, step=0.01, help="Sweet spot: 0.8–1.3")
         acute_load   = st.slider("Acute Load (7-day TSS)", 0, 1000, 300)
         chronic_load = st.slider("Chronic Load (28-day avg×7)", 0, 1000, 300)
-        hrv_drop     = st.slider("HRV Drop", -20.0, 20.0, 0.0, step=0.5, help="Negative = HRV improved. Positive = HRV dropped = fatigued")
+        hrv_drop     = st.slider("HRV Drop", -20.0, 20.0, 0.0, step=0.5)
         sleep_avg    = st.slider("Avg Sleep (7 days)", 4.0, 12.0, 7.5, step=0.1)
         stress_avg   = st.slider("Avg Stress (7 days)", 0.0, 100.0, 25.0, step=0.5)
     with c2:
         resting_hr   = st.slider("Resting Heart Rate", 35, 90, 55)
         hrv          = st.slider("Today's HRV", 20, 120, 65)
         body_bat_am  = st.slider("Body Battery Morning", 0, 100, 70,
-                                  help="⭐ Most important for female athletes" if not is_male else "Body battery on waking. Higher = better recovered")
+                                  help="⭐ Most important for female athletes" if not is_male else "Body battery on waking")
         body_bat_pm  = st.slider("Body Battery Evening", 0, 100, 40)
         vo2max       = st.slider("VO2 Max", 25.0, 80.0, 50.0, step=0.5)
         recovery     = st.slider("Recovery Rate", 0.0, 1.0, 0.6, step=0.01,
-                                  help="⚠️ Higher recovery rate may increase predicted risk. Fast-recovering athletes tend to train more aggressively, creating a data correlation with injury. This reflects training behaviour, not recovery quality alone.")
+                                  help="⚠️ Higher recovery rate may increase predicted risk — fast-recovering athletes tend to train more aggressively in the data.")
         hrv_baseline = st.slider("HRV Baseline", 20, 120, 65)
         weekly_hrs   = st.slider("Weekly Training Hours", 1.0, 30.0, 10.0, step=0.5)
 
     if not is_male:
-        st.info("💡 **Female model insight:** Body Battery Morning is the strongest predictor for female athletes — reflects overnight recovery quality which is more sensitive to hormonal changes.")
-
-    st.caption("⚠️ **Model note:** Higher Recovery Rate may slightly increase predicted risk — fast-recovering athletes tend to train harder in the data, creating a correlation with injury. This reflects training behaviour, not recovery quality alone.")
+        st.info("💡 **Female model insight:** Body Battery Morning is the strongest predictor for female athletes.")
+    st.caption("⚠️ **Model note:** Higher Recovery Rate may slightly increase predicted risk — this reflects training behaviour correlation, not recovery quality alone.")
 
     st.write("")
     if st.button("⚡  PREDICT INJURY RISK", use_container_width=True):
@@ -350,7 +298,6 @@ with tab3:
         prob     = float(selected_model.predict_proba(feats)[0][1])
         prob_pct = round(prob*100, 1)
 
-        # ── Problems and improvements ──
         problems=[]; improvements=[]
 
         if stress_avg > 60:
@@ -399,37 +346,31 @@ with tab3:
             problems.append("🟡 Recovery rate below optimal")
             improvements.append("Reduce training frequency — allow 48hrs between hard sessions")
 
-        # ── Fallback if no manual rules triggered ──
         if not problems:
             risk_scores_f = {
-                "Stress":        stress_avg / 100,
-                "Sleep":         max(0, (8 - sleep_avg) / 4),
-                "ACWR":          max(0, (acwr_i - 0.8) / 0.7),
-                "HRV Drop":      max(0, hrv_drop / 20),
-                "Body Battery":  max(0, (100 - body_bat_am) / 100),
-                "Resting HR":    max(0, (resting_hr - 55) / 35),
-                "Acute Load":    max(0, (acute_load - 200) / 800),
+                "Stress":       stress_avg/100,
+                "Sleep":        max(0,(8-sleep_avg)/4),
+                "ACWR":         max(0,(acwr_i-0.8)/0.7),
+                "HRV Drop":     max(0,hrv_drop/20),
+                "Body Battery": max(0,(100-body_bat_am)/100),
+                "Resting HR":   max(0,(resting_hr-55)/35),
+                "Acute Load":   max(0,(acute_load-200)/800),
             }
             improve_map = {
-                "Stress":       "Reduce mental and physical stress load this week",
-                "Sleep":        "Increase sleep by 30–60 mins — even small gains help recovery",
-                "ACWR":         "Avoid increasing training intensity for the next 5 days",
-                "HRV Drop":     "Prioritise recovery — light session or full rest today",
-                "Body Battery": "Focus on sleep quality and reduce evening screen time",
-                "Resting HR":   "Monitor daily — elevated HR can signal early fatigue",
-                "Acute Load":   "Hold training load steady — do not add sessions this week",
+                "Stress":"Reduce mental and physical stress load this week",
+                "Sleep":"Increase sleep by 30–60 mins — even small gains help recovery",
+                "ACWR":"Avoid increasing training intensity for the next 5 days",
+                "HRV Drop":"Prioritise recovery — light session or full rest today",
+                "Body Battery":"Focus on sleep quality and reduce evening screen time",
+                "Resting HR":"Monitor daily — elevated HR can signal early fatigue",
+                "Acute Load":"Hold training load steady — do not add sessions this week",
             }
             top3 = sorted(risk_scores_f.items(), key=lambda x: x[1], reverse=True)[:3]
-            invert_labels = {"Sleep"}
             for fname, fscore in top3:
-                if fname in invert_labels:
-                    level = "critically low" if fscore > 0.6 else "below optimal"
-                else:
-                    level = "moderately elevated" if fscore > 0.3 else "slightly above optimal"
+                level = "critically low" if fname=="Sleep" and fscore>0.6 else "moderately elevated" if fscore>0.3 else "slightly above optimal"
                 problems.append(f"🟡 {fname} is {level} — contributing to combined risk")
-                improvements.append(improve_map.get(fname, "Monitor this metric closely"))
+                improvements.append(improve_map.get(fname,"Monitor this metric closely"))
 
-        # ── Zone ──
         if prob_pct >= 60:
             zone,label,bc = "RED","HIGH RISK","#ef4444"
             advice = "🚨 Rest this athlete immediately. Do not increase training load this week. Schedule physio review."
@@ -441,11 +382,9 @@ with tab3:
             advice = "✅ Athlete is well recovered. Safe to train at full intensity today."
 
         factors = {
-            "Stress":      stress_avg/100,
-            "ACWR":        max(0,(acwr_i-0.8)/0.7),
-            "HRV Drop":    max(0,hrv_drop/20),
-            "Low Sleep":   max(0,(8.0-sleep_avg)/4.0),
-            "Low Battery": max(0,(100-body_bat_am)/100),
+            "Stress":stress_avg/100,"ACWR":max(0,(acwr_i-0.8)/0.7),
+            "HRV Drop":max(0,hrv_drop/20),"Low Sleep":max(0,(8.0-sleep_avg)/4.0),
+            "Low Battery":max(0,(100-body_bat_am)/100),
         }
         ranked = sorted(factors.items(), key=lambda x: x[1], reverse=True)
         pills  = "".join(
@@ -453,7 +392,6 @@ with tab3:
             f'{n}: {"▲ HIGH" if s>0.66 else "● MED" if s>0.33 else "▼ LOW"}</span>'
             for n,s in ranked
         )
-
         problems_html = "".join(
             f'<div style="font-size:0.8rem;color:#fca5a5;margin-bottom:0.5rem">{p}</div>'
             for p in problems
