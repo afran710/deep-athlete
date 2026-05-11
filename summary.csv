@@ -1,0 +1,1001 @@
+athlete_id,name,age,gender,lifestyle,vo2max,recovery_rate,acwr,risk_zone,sleep_avg,stress_avg,hrv_drop,date
+da82b9ca-b8d6-4164-9e8a-9d2f14ec2886,Riya Sharma,33,female,Highly Disciplined Athlete,70.0,1.18,1.832,RED,7.96,20.71,-1.68,2024-12-31
+418ca590-ce8d-41ce-8593-9400faff382a,Kai Brown,34,male,Under-Recovered Athlete,70.8,0.87,1.825,RED,5.17,47.77,-4.19,2024-12-31
+a9bfa230-519f-4edd-8252-4d67ef58aabe,Kai Kumar,27,male,Balanced Competitor,74.5,1.23,1.778,RED,7.68,23.79,5.88,2024-12-31
+6b8297b5-26e0-4a5f-b468-971576f25c98,Adrian Sharma,33,male,Highly Disciplined Athlete,75.0,1.3,1.743,RED,8.79,16.11,-3.72,2024-12-31
+4e8330e7-5c7a-4cbd-a12c-ffd29c2df408,Penelope Sharma,34,female,Highly Disciplined Athlete,70.0,1.28,1.727,RED,8.27,15.21,2.56,2024-12-31
+d206b3df-2fbc-42ad-b2e8-144eae9c687c,Felix Flores,36,male,Health-Conscious Athlete,70.2,1.19,1.727,RED,8.28,22.41,-1.76,2024-12-31
+30eb0172-2cfe-480d-802c-f33f73716e49,Marco Clark,43,male,Highly Disciplined Athlete,66.0,1.22,1.689,RED,9.06,19.64,0.17,2024-12-31
+5fac71f1-141a-4dca-89eb-2172f6e5c215,Samuel Lee,27,male,Balanced Competitor,75.0,0.99,1.686,RED,7.06,25.29,2.74,2024-12-31
+56f504f8-e372-4ee9-b15d-a7379642791a,Isaiah Kim,28,male,Highly Disciplined Athlete,75.0,1.27,1.679,RED,7.91,17.9,-2.56,2024-12-31
+442aaf2a-4651-4768-a748-53ca5366fb86,Kiran Iyer,35,male,Highly Disciplined Athlete,67.7,1.17,1.668,RED,8.23,19.09,-5.61,2024-12-31
+75f33eea-3b36-4478-baf1-d41032ac0654,Riley Patel,37,female,Highly Disciplined Athlete,70.0,1.3,1.661,RED,8.94,23.76,-15.16,2024-12-31
+897ad1da-8466-4979-8b0b-ce65e7af2ccb,Lukas Brown,33,male,Highly Disciplined Athlete,75.0,1.3,1.656,RED,9.16,17.57,2.83,2024-12-31
+c9bfcfa2-4777-41eb-bc59-162c1b0cc4df,Lucas Thompson,33,male,Balanced Competitor,75.0,1.05,1.652,RED,6.37,30.14,-0.32,2024-12-31
+88d9d5c3-7aa0-4838-ae8c-ac7a0e650ea9,Nathan Garcia,34,male,Highly Disciplined Athlete,67.8,1.28,1.65,RED,8.88,23.2,0.79,2024-12-31
+239f9a59-2bd0-471e-95fc-6f8590888760,Ethan Thompson,36,male,Highly Disciplined Athlete,72.0,1.12,1.645,RED,8.35,16.79,-2.18,2024-12-31
+c3e3e420-6214-4090-b512-74533175e451,Eleanor Brown,39,female,Highly Disciplined Athlete,70.0,1.16,1.641,RED,8.12,13.94,-5.48,2024-12-31
+ed44d7b9-8cff-4d39-9d3f-051a6209bfcf,Joshua Nair,33,male,Highly Disciplined Athlete,73.9,1.3,1.636,RED,8.57,12.84,-8.95,2024-12-31
+361d7f99-d7af-4b2f-b814-c891d4480a2f,Daniel Flores,24,male,Balanced Competitor,75.0,1.22,1.634,RED,7.66,22.44,-13.38,2024-12-31
+b6c1f12c-39da-488a-8eab-2d55c04da340,Fatima Sharma,32,female,Balanced Competitor,70.0,0.93,1.628,RED,7.01,23.8,-8.59,2024-12-31
+55bbc69e-84f5-44f9-82ac-63ce904a4899,Vikram White,31,male,Highly Disciplined Athlete,75.0,1.3,1.622,RED,7.91,15.06,-2.09,2024-12-31
+82c5c32f-96a0-4d46-8ec9-5696d98aa85c,Felix Patel,31,male,Highly Disciplined Athlete,75.0,1.23,1.617,RED,7.53,19.29,0.51,2024-12-31
+2ac544c0-0d32-423e-a585-c9d4d435c979,Sophia Taylor,35,female,Highly Disciplined Athlete,70.0,1.1,1.605,RED,8.42,15.84,-5.55,2024-12-31
+f37886de-031d-4d40-86ab-30ded8282442,Connor Allen,37,male,Highly Disciplined Athlete,72.8,1.3,1.601,RED,8.22,10.61,-5.35,2024-12-31
+176f24d0-28c0-4eee-a1e1-23c8a75cc9f1,Maya Smith,27,female,Under-Recovered Athlete,62.0,0.61,1.595,RED,5.73,41.46,-10.86,2024-12-31
+97edad40-801f-42c8-98fc-d0fce938c24f,Sarah Davis,35,female,Highly Disciplined Athlete,68.9,1.09,1.592,RED,7.68,18.97,14.54,2024-12-31
+3220492b-4a4c-468e-b6dd-ea765ad1d9ae,Isaiah Rivera,36,male,Highly Disciplined Athlete,75.0,1.3,1.591,RED,9.07,18.3,-7.96,2024-12-31
+379508c3-4790-4941-9499-f89ad9a99d3a,Tariq Chen,33,male,Sleep-Deprived Workaholic,75.0,0.85,1.581,RED,4.93,40.0,8.79,2024-12-31
+22fcb0f0-fc73-407a-a7cb-b048c95c8096,Divya Cruz,26,female,Balanced Competitor,70.0,1.04,1.576,RED,6.87,27.94,1.8,2024-12-31
+c83037ad-32ff-4de8-83e1-1432a852d327,Isabella Walker,28,female,Highly Disciplined Athlete,70.0,1.26,1.576,RED,9.08,18.81,1.0,2024-12-31
+0731ae60-1d87-4ab1-a23b-bce85455ee02,Sara Clark,37,female,Under-Recovered Athlete,70.0,0.94,1.574,RED,5.97,36.5,6.69,2024-12-31
+d07b2cb2-ed1e-4c7b-a58e-1dddebd90adf,Olivia Chen,34,female,Highly Disciplined Athlete,70.0,1.3,1.572,RED,8.27,16.87,0.72,2024-12-31
+8f0594e2-cc47-4857-8dea-7bbdc89e034f,Priya Davis,30,female,Balanced Competitor,70.0,1.2,1.569,RED,6.98,26.94,-6.14,2024-12-31
+69adf462-a7c9-4911-92a1-74bb28df2daa,Joshua Menon,28,male,Health-Conscious Athlete,75.0,1.19,1.564,RED,7.66,22.49,11.03,2024-12-31
+6b3d1e1e-9be9-439d-ac6c-d8c6ed6e7b46,Sofia Cruz,35,female,Health-Conscious Athlete,67.5,1.14,1.564,RED,7.85,22.59,-0.86,2024-12-31
+aa02c690-7ed4-4a7c-a235-8fd92ecb05c6,Amelia Sharma,30,female,Highly Disciplined Athlete,70.0,1.13,1.559,RED,7.74,19.71,16.97,2024-12-31
+a8f0aa44-1144-4eb6-b5ec-0deb2bf93721,Aisha Harris,39,female,Under-Recovered Athlete,66.5,0.84,1.555,RED,7.22,33.26,-10.3,2024-12-31
+7e45bfa3-c5c3-41f0-9fff-50bc2fce50ec,Divya White,39,female,Balanced Competitor,70.0,1.06,1.554,RED,7.73,26.44,2.09,2024-12-31
+84a17245-a797-452a-afea-4574e141a1fd,Pooja Walker,36,female,Health-Conscious Athlete,64.3,1.06,1.552,RED,8.32,23.87,-0.71,2024-12-31
+2d9391c5-3ca1-45da-b967-cd1724269ef3,Dev Martin,20,male,Balanced Competitor,65.5,1.11,1.546,RED,7.37,24.1,23.51,2024-12-31
+52f54e88-9a56-4af6-9ca3-4c7bd57fe927,Sophia Shah,29,female,Sleep-Deprived Workaholic,64.3,0.75,1.541,RED,5.18,42.64,11.71,2024-12-31
+5da68525-1a7f-4fc2-b0d4-a18116ee3a64,Charlotte Taylor,30,female,Under-Recovered Athlete,70.0,0.82,1.539,RED,6.07,41.13,-9.17,2024-12-31
+da6762e1-10e8-437e-b296-bb5455631714,Ruby Santos,36,female,Balanced Competitor,70.0,0.98,1.538,RED,8.0,24.49,12.75,2024-12-31
+7debefd8-fe61-4ede-97e2-dd85488efc18,Noah Gupta,33,male,Balanced Competitor,75.0,0.97,1.534,RED,7.15,32.97,-6.37,2024-12-31
+91e55d07-0d68-4853-86a7-1b231e57f473,Mihail Iyer,33,male,Highly Disciplined Athlete,75.0,1.29,1.534,RED,7.8,15.49,-8.24,2024-12-31
+86253337-09c2-47eb-9200-6d7676627d22,Kiran Park,26,male,Health-Conscious Athlete,72.9,1.06,1.529,RED,7.57,15.41,-16.08,2024-12-31
+3574269d-76af-41f7-a66f-a7e94300c304,Carlos Young,28,male,Highly Disciplined Athlete,75.0,1.28,1.527,RED,8.76,9.31,-7.05,2024-12-31
+43579663-24f4-4ac3-9913-84941e44375b,Leila Allen,32,female,Highly Disciplined Athlete,70.0,1.3,1.527,RED,8.69,13.69,-2.02,2024-12-31
+84199174-b0e3-421e-8a56-d9835ae6e345,Noah Rivera,37,male,Highly Disciplined Athlete,75.0,1.3,1.525,RED,7.81,16.47,-3.37,2024-12-31
+d5cc0ad7-5c2a-4b2e-ab86-c241b5c0a1e4,Mia Wilson,36,female,Under-Recovered Athlete,70.0,1.03,1.518,RED,6.63,28.77,1.12,2024-12-31
+058ffc8b-688f-4b2d-a360-ff0cafaf6441,Charlotte King,39,female,Balanced Competitor,70.0,1.02,1.515,RED,6.83,27.39,9.95,2024-12-31
+b6188650-b69e-4fed-8aa1-a247d17c355b,Ananya Davis,33,female,Balanced Competitor,57.5,0.91,1.515,RED,7.43,25.83,2.33,2024-12-31
+da4f2d0f-001b-4719-84de-1ea1a786e08e,Matthew Santos,30,male,Highly Disciplined Athlete,75.0,1.23,1.514,RED,7.86,19.14,-0.97,2024-12-31
+ef020943-9abe-4982-ac37-e73e5fb64ada,Nora Cruz,27,female,Balanced Competitor,70.0,1.19,1.514,RED,7.18,25.29,-4.43,2024-12-31
+8bff4d72-f601-48c2-a067-98a908242a30,James Martin,44,male,Highly Disciplined Athlete,75.0,1.29,1.512,RED,8.03,15.84,-0.18,2024-12-31
+596c95d1-2bc5-4af9-8f07-19508a673c4a,Yusuf Menon,31,male,Highly Disciplined Athlete,75.0,1.29,1.511,RED,9.06,18.2,-3.82,2024-12-31
+8bce69e9-20e8-44c6-98c6-5db545b5e07d,Luna Reddy,29,female,Sleep-Deprived Workaholic,70.0,0.77,1.51,RED,5.88,40.66,-10.89,2024-12-31
+22b15e69-d224-4eb5-a537-340ea122ea35,Aaliyah Reddy,26,female,Health-Conscious Athlete,70.0,1.3,1.509,RED,8.24,21.5,8.51,2024-12-31
+e2edad15-33b8-4b10-83ab-8dc3e6857bbd,Noah Moore,40,male,Sleep-Deprived Workaholic,60.6,0.68,1.508,RED,6.62,40.79,-6.25,2024-12-31
+9982a435-3e5a-47df-abd8-711d759198ec,Nisha Johnson,39,female,Balanced Competitor,61.6,0.84,1.506,RED,7.3,26.24,1.85,2024-12-31
+2ed01ead-aef3-4b51-85ac-21f4d996787b,Caleb Miller,37,male,Highly Disciplined Athlete,75.0,1.3,1.504,RED,8.97,21.5,-3.61,2024-12-31
+6bca7847-12d0-42a1-b6d4-8be42fa6f1ab,Lucas Reddy,36,male,Sleep-Deprived Workaholic,65.4,0.64,1.504,RED,5.13,41.13,2.49,2024-12-31
+04706685-51f0-4197-a41e-8c27ad6ae479,Lucas Cruz,34,male,Highly Disciplined Athlete,74.9,1.25,1.503,RED,7.8,16.93,4.93,2024-12-31
+cab7c310-9c58-4bcc-9b23-6e5c824b9372,Sanjay Walker,28,male,Highly Disciplined Athlete,75.0,1.14,1.503,RED,7.7,20.8,15.06,2024-12-31
+c8f8c5f5-78a4-467d-9e78-800bcc24d5d1,Isabelle Harris,31,female,Highly Disciplined Athlete,70.0,1.29,1.5,YELLOW,7.91,14.44,-7.52,2024-12-31
+6bff3753-cfeb-4527-b6f0-6fb7be9689ea,Finn Rodriguez,19,male,Balanced Competitor,71.2,1.01,1.499,YELLOW,6.83,26.7,-1.88,2024-12-31
+12234c64-47d1-4275-bf70-839457816b17,Daniel Robinson,24,male,Highly Disciplined Athlete,75.0,1.2,1.496,YELLOW,8.37,17.81,-5.88,2024-12-31
+3e8740c9-c3e3-4b5e-94ee-ad8c7c2a9d72,Penelope Clark,42,female,Highly Disciplined Athlete,70.0,1.21,1.495,YELLOW,8.4,18.79,-2.75,2024-12-31
+8359b031-1c12-42ce-9f06-3974cad0745c,Divya Reddy,34,female,Health-Conscious Athlete,70.0,1.18,1.494,YELLOW,7.73,22.94,-12.83,2024-12-31
+e63b55a2-66dd-4c9f-b74d-e9be1a71877b,Charlotte Rodriguez,39,female,Balanced Competitor,65.4,1.02,1.49,YELLOW,6.71,22.49,-4.28,2024-12-31
+5c3debf8-3030-44cf-9e7d-9a24efddf14e,David King,25,male,Highly Disciplined Athlete,74.9,1.09,1.486,YELLOW,7.81,13.7,-7.63,2024-12-31
+b5f33d24-dba6-40f9-8c5d-eeb9099af75e,Aisha Cruz,32,female,Under-Recovered Athlete,70.0,0.74,1.484,YELLOW,4.99,41.44,-6.9,2024-12-31
+77176c9d-e2e0-4bbd-8360-08fcfec0fdf7,Hannah Torres,39,female,Highly Disciplined Athlete,70.0,1.3,1.482,YELLOW,8.66,19.83,-5.69,2024-12-31
+79b16915-9b4b-421e-ba97-3e53918b1dcc,Felix Allen,25,male,Highly Disciplined Athlete,75.0,1.11,1.481,YELLOW,7.75,22.26,-0.73,2024-12-31
+a1a3f458-2eab-46d1-b9b5-acb6fc6c4694,Marco Smith,39,male,Highly Disciplined Athlete,66.7,1.11,1.478,YELLOW,7.99,22.09,-4.05,2024-12-31
+be2efe44-ac02-4b67-8900-32a02c5c19cf,Cole Iyer,28,male,Highly Disciplined Athlete,75.0,1.24,1.478,YELLOW,8.08,10.79,-4.29,2024-12-31
+02f599e4-de54-41e7-b56c-18261bd5e546,Sneha Thomas,26,female,Highly Disciplined Athlete,66.4,1.16,1.477,YELLOW,8.22,18.5,-5.67,2024-12-31
+5d5c499b-71ec-418d-8565-3bab58e4e074,Alex Nguyen,36,male,Highly Disciplined Athlete,70.3,1.25,1.477,YELLOW,8.76,18.89,-1.89,2024-12-31
+c045ab2f-f70c-4cca-b860-0aafeb42d315,Sanjay Lee,25,male,Highly Disciplined Athlete,69.9,1.22,1.477,YELLOW,7.6,14.43,-13.94,2024-12-31
+0fc59a3f-327b-4643-a0c3-9c91e989f499,Riya Kumar,39,female,Sleep-Deprived Workaholic,68.3,0.73,1.476,YELLOW,4.84,38.2,0.28,2024-12-31
+1a21ccc8-67e4-4c99-ac69-32f396f1ffd0,Camila Harris,22,female,Health-Conscious Athlete,70.0,1.21,1.476,YELLOW,7.97,16.79,2.19,2024-12-31
+ea4c7dd9-5312-483f-bc1f-d21c3b69ad62,Arjun Moore,28,male,Under-Recovered Athlete,73.8,0.97,1.476,YELLOW,6.08,40.4,2.88,2024-12-31
+30f53113-be12-4390-9662-e8161a61bb9b,Emma Davis,34,female,Balanced Competitor,70.0,1.04,1.474,YELLOW,8.0,23.73,-8.12,2024-12-31
+ab280e14-3d83-4b97-9b7a-323800cce535,Alex Davis,29,male,Sleep-Deprived Workaholic,75.0,0.75,1.473,YELLOW,5.01,39.53,-9.05,2024-12-31
+917a7a0a-363b-4782-a5a9-494f3f9236e9,Chloe Jones,40,female,Highly Disciplined Athlete,70.0,1.3,1.471,YELLOW,8.63,16.89,-5.78,2024-12-31
+8e4049cd-1a43-4374-9cfa-c37f9a5d3dcb,Owen Reyes,41,male,Highly Disciplined Athlete,75.0,1.3,1.469,YELLOW,8.89,16.3,-2.55,2024-12-31
+bcdf5a84-670d-4f8a-a7bd-ff998064f38d,Finn Kumar,31,male,Highly Disciplined Athlete,75.0,1.3,1.469,YELLOW,7.64,22.0,-6.64,2024-12-31
+95cb9ddd-14b5-4017-8ee3-e340ddd67704,Mohammed Clark,38,male,Under-Recovered Athlete,75.0,1.02,1.468,YELLOW,6.19,34.81,-11.81,2024-12-31
+18ee22a9-730e-40ae-9ed5-fdab92dc1651,Amira Reddy,44,female,Highly Disciplined Athlete,70.0,1.3,1.466,YELLOW,9.3,15.94,-1.82,2024-12-31
+5a561991-5468-4aaf-a66f-baca44f5a4cb,Ryan Green,28,male,Sleep-Deprived Workaholic,61.3,0.77,1.465,YELLOW,6.48,38.11,6.22,2024-12-31
+e324de17-6fe8-428a-9d45-08367a7c85c7,Samuel Wilson,36,male,Highly Disciplined Athlete,72.8,1.3,1.463,YELLOW,8.56,13.27,0.06,2024-12-31
+2a02611c-3c2a-484e-a9e9-8cfd1d8668c6,Olivia Garcia,33,female,Balanced Competitor,70.0,1.02,1.46,YELLOW,7.03,26.1,11.85,2024-12-31
+3440853d-d5ef-46bd-a7c8-95465008a3b5,Leila Sharma,25,female,Sleep-Deprived Workaholic,70.0,0.9,1.459,YELLOW,6.47,40.7,-0.94,2024-12-31
+90da4922-b0ab-4b79-88a2-dadfe4c63e65,Maya Rodriguez,23,female,Sleep-Deprived Workaholic,52.5,0.65,1.458,YELLOW,5.04,41.17,1.73,2024-12-31
+11ab5a9c-94ef-43a9-b41b-b5e7f688fb51,Leon Thomas,30,male,Under-Recovered Athlete,59.7,0.63,1.457,YELLOW,5.0,40.6,8.08,2024-12-31
+f6102b8b-8d8d-44e9-95f4-0aa83077827b,David Kim,38,male,Health-Conscious Athlete,60.5,1.04,1.457,YELLOW,7.99,18.0,-3.04,2024-12-31
+0b9f0682-8040-46a7-ab34-b47699370321,Jaxon Garcia,39,male,Health-Conscious Athlete,72.0,1.24,1.455,YELLOW,7.32,25.84,-1.24,2024-12-31
+5cba5306-3b86-48f8-b407-181ba16da118,Kai Green,29,male,Health-Conscious Athlete,75.0,1.21,1.455,YELLOW,8.4,32.1,-1.26,2024-12-31
+97f4afd9-d154-4fc9-b2e3-13728ea110ba,Amira Young,36,female,Balanced Competitor,70.0,1.14,1.454,YELLOW,7.09,31.33,3.76,2024-12-31
+953ed333-606c-486c-86f8-63676915ec1a,Felix Robinson,37,male,Highly Disciplined Athlete,72.8,1.24,1.453,YELLOW,8.46,18.17,0.87,2024-12-31
+0203f375-d6cc-43a8-82fc-25bec28a2d87,Lily Davis,35,female,Sleep-Deprived Workaholic,60.4,0.62,1.451,YELLOW,5.67,42.27,1.13,2024-12-31
+b64c232e-d2e1-4b4b-a62b-6b2298409a8f,Hannah Scott,42,female,Balanced Competitor,70.0,1.13,1.449,YELLOW,7.87,21.73,5.45,2024-12-31
+34a6b205-8f53-49e3-b5c7-4c33ca07f823,Emily Martinez,23,female,Highly Disciplined Athlete,70.0,1.23,1.448,YELLOW,8.81,17.64,-0.36,2024-12-31
+430a79e8-94e9-4d70-b71b-77cfdae59c5e,Zane Shah,23,male,Balanced Competitor,68.9,1.14,1.447,YELLOW,7.69,20.9,-4.72,2024-12-31
+a6318122-267d-4c9e-827b-d21177c2bdf8,Harper Lee,27,female,Under-Recovered Athlete,70.0,0.9,1.447,YELLOW,5.95,36.91,3.89,2024-12-31
+e593a09e-dd44-4849-a82c-120ef974834a,Isabella Jackson,32,female,Balanced Competitor,68.1,1.09,1.447,YELLOW,7.11,31.3,0.0,2024-12-31
+59236906-1aaa-4ed2-af34-de156a61c413,Ruby Thomas,37,female,Health-Conscious Athlete,70.0,1.24,1.446,YELLOW,8.22,11.29,-5.17,2024-12-31
+201078b2-c654-40b0-a5f5-d7a744b4eaaf,Nisha Cruz,31,female,Highly Disciplined Athlete,70.0,1.21,1.445,YELLOW,7.59,13.83,3.68,2024-12-31
+2705af8f-fd49-4d7f-b4d5-671bb041bbba,Yusuf Menon,38,male,Highly Disciplined Athlete,72.2,1.3,1.443,YELLOW,8.54,16.43,-6.81,2024-12-31
+2b4f611c-dab6-4bc0-a04e-5d7e5fc183dc,Violet Gupta,36,female,Balanced Competitor,70.0,1.06,1.443,YELLOW,6.75,27.09,1.68,2024-12-31
+acb2760d-ee88-4753-9935-271c91381b91,Joshua Miller,36,male,Highly Disciplined Athlete,75.0,1.3,1.443,YELLOW,8.76,21.07,-3.21,2024-12-31
+c17c81d0-88c1-4fa8-babc-e716095b95c6,Lily Rodriguez,28,female,Balanced Competitor,70.0,0.99,1.443,YELLOW,6.83,22.51,4.18,2024-12-31
+f5e6ffcd-97b7-4bbc-a8f4-3add880f382a,Diego Nguyen,37,male,Balanced Competitor,70.1,1.13,1.442,YELLOW,7.42,33.58,-1.38,2024-12-31
+8766deb3-89c7-4996-9e86-71028a334572,Ananya Rivera,34,female,Highly Disciplined Athlete,70.0,1.22,1.44,YELLOW,7.99,17.13,-6.64,2024-12-31
+f05bf45c-3185-4e87-a3b4-62f84dc73371,Connor Garcia,36,male,Under-Recovered Athlete,75.0,0.79,1.439,YELLOW,5.04,35.71,-2.28,2024-12-31
+a44074c5-0b56-45f6-b5b1-03ae0276c928,Marco Rodriguez,41,male,Highly Disciplined Athlete,72.8,1.27,1.437,YELLOW,7.71,18.94,2.36,2024-12-31
+cf504a23-3dd7-4fcf-a73f-1a5b116c3490,Diego Lewis,39,male,Weekend Socializer,64.5,0.81,1.436,YELLOW,6.19,33.6,1.59,2024-12-31
+52bd04ea-1a65-418a-8343-3dc549370917,Owen Anderson,33,male,Under-Recovered Athlete,75.0,0.82,1.433,YELLOW,5.17,36.41,-2.24,2024-12-31
+4146f99e-ada6-452a-b507-2cdac130a6ca,Harper Park,36,female,Balanced Competitor,70.0,1.11,1.431,YELLOW,6.7,20.29,-12.88,2024-12-31
+1b175c6b-b415-409e-9b1e-620afd961eab,Eli Menon,42,male,Health-Conscious Athlete,63.0,1.11,1.43,YELLOW,8.03,17.73,-5.08,2024-12-31
+ace8bf1e-35a2-441d-bca1-8783879bd2c8,Amira Rodriguez,41,female,Sleep-Deprived Workaholic,54.2,0.68,1.43,YELLOW,4.92,38.4,-5.14,2024-12-31
+0d4ed54e-d618-4b5c-b905-fdae69d81d18,Riley Park,25,female,Health-Conscious Athlete,63.4,1.1,1.428,YELLOW,7.68,21.47,4.06,2024-12-31
+451decd6-86df-4a86-bb29-2b6b81e3acde,James Green,27,male,Highly Disciplined Athlete,75.0,1.18,1.428,YELLOW,7.82,14.8,-10.8,2024-12-31
+6d359897-3b53-429f-b57e-5786755fb3ad,Marco Thompson,44,male,Highly Disciplined Athlete,72.2,1.3,1.427,YELLOW,8.0,14.77,-3.87,2024-12-31
+bf060313-f5b0-4478-a73d-854a7a8b6893,Tyler Nair,35,male,Highly Disciplined Athlete,74.5,1.16,1.427,YELLOW,7.66,17.64,1.83,2024-12-31
+06d9875d-962a-4601-a6da-663156c435a3,Fatima Cruz,35,female,Under-Recovered Athlete,57.1,0.9,1.425,YELLOW,7.12,29.11,2.8,2024-12-31
+0bb2e751-b8a4-431f-818e-89146a170faa,Cameron Jones,34,male,Highly Disciplined Athlete,75.0,1.28,1.425,YELLOW,8.65,16.36,4.04,2024-12-31
+2b502393-fbe5-4cd6-b2c9-6445124206df,Diego Jones,37,male,Health-Conscious Athlete,75.0,1.14,1.424,YELLOW,7.98,21.1,8.34,2024-12-31
+d3bc47c4-7f6e-458b-b8fb-63b3541aafdb,Lukas Williams,25,male,Highly Disciplined Athlete,70.9,1.3,1.423,YELLOW,8.59,16.36,-0.5,2024-12-31
+a5ec2e4a-5199-495e-9f25-b330bdea6a3c,Lukas Moore,36,male,Balanced Competitor,74.2,1.16,1.422,YELLOW,7.65,20.37,2.75,2024-12-31
+d3a61284-937d-49f4-a441-85bf537cd9c7,Marcus Reddy,41,male,Highly Disciplined Athlete,64.6,1.1,1.421,YELLOW,7.93,20.11,2.71,2024-12-31
+953344cd-28ba-42dc-aefd-f5f0b07d29f5,Layla Jones,28,female,Sleep-Deprived Workaholic,58.0,0.65,1.417,YELLOW,5.24,43.07,0.72,2024-12-31
+a0af882c-2c71-4ec2-a3a4-8b65ce2eea9e,Dev Nair,36,male,Sleep-Deprived Workaholic,65.2,0.73,1.417,YELLOW,5.73,35.51,-9.97,2024-12-31
+93cd5374-b3a3-44b0-8150-3d38cea0f46e,Kiran Taylor,39,male,Weekend Socializer,61.8,0.71,1.416,YELLOW,6.2,37.9,-0.16,2024-12-31
+22233006-57be-49f4-9bb3-bc3797abbbe0,Cameron Rivera,38,male,Weekend Socializer,63.8,0.74,1.412,YELLOW,7.06,37.56,0.74,2024-12-31
+45245d68-3d6c-4a11-8d83-96822b034e3a,Mohammed Young,35,male,Highly Disciplined Athlete,75.0,1.16,1.409,YELLOW,7.57,18.31,2.38,2024-12-31
+522782a4-018a-42f9-bfb4-929daed5d874,Charlotte Jackson,38,female,Balanced Competitor,70.0,1.06,1.409,YELLOW,7.57,29.1,-2.83,2024-12-31
+38791ed6-13b3-427c-98dd-d9d6de957826,Yasmin Lee,36,female,Sleep-Deprived Workaholic,55.3,0.74,1.407,YELLOW,5.48,43.3,2.04,2024-12-31
+23991095-4a0b-415a-9139-3b984baccb64,Harper Williams,32,female,Balanced Competitor,70.0,1.05,1.406,YELLOW,7.42,22.63,4.72,2024-12-31
+9fa84c3a-0e84-41c5-9f78-e73cdc247b72,Priya Flores,33,female,Health-Conscious Athlete,70.0,1.23,1.402,YELLOW,8.51,19.1,-0.2,2024-12-31
+5138d0ac-721c-4f7b-a10a-a6ec81c59b1d,Anil Reddy,29,male,Weekend Socializer,63.2,0.75,1.4,YELLOW,6.83,37.26,-0.73,2024-12-31
+786674df-3335-4ff2-8738-4e8e0d07eea9,Diego Moore,32,male,Highly Disciplined Athlete,75.0,1.15,1.4,YELLOW,7.61,15.13,10.67,2024-12-31
+eb4b4ed8-ea57-4373-a7dc-354feb7d9af0,Nadia Smith,31,female,Highly Disciplined Athlete,70.0,1.19,1.4,YELLOW,8.42,11.33,-2.25,2024-12-31
+fdaeb635-8c47-48f4-beb2-3a4419e2250f,Stefan Park,29,male,Highly Disciplined Athlete,66.2,1.17,1.399,YELLOW,8.22,18.16,16.1,2024-12-31
+8bb83317-910d-47f3-9d7f-cb2165bfbcf0,Mihail White,32,male,Weekend Socializer,73.3,1.06,1.397,YELLOW,7.17,32.84,20.92,2024-12-31
+a85e7271-9194-42ca-86ad-38604b8db587,Eli White,43,male,Highly Disciplined Athlete,65.5,1.26,1.397,YELLOW,7.8,17.26,-1.23,2024-12-31
+a9dc5fe7-4636-489c-b7fc-263235c14ebf,Adrian Clark,31,male,Weekend Socializer,74.5,1.03,1.396,YELLOW,7.17,30.19,15.99,2024-12-31
+07961340-2c9a-4531-8e7f-0450c8734347,Andre Cruz,20,male,Balanced Competitor,73.1,1.14,1.395,YELLOW,7.57,22.44,-3.05,2024-12-31
+0fc0c1fa-f63f-4818-8b34-8dd18c0b1385,Ryan White,31,male,Highly Disciplined Athlete,75.0,1.28,1.394,YELLOW,8.92,19.91,8.07,2024-12-31
+938d2644-dd80-428f-bbb9-a878e9363230,Aiden Walker,45,male,Highly Disciplined Athlete,64.4,1.03,1.393,YELLOW,7.89,18.4,-0.59,2024-12-31
+f04d6342-8e8a-4902-ab45-636233055f32,Hunter Santos,29,male,Sleep-Deprived Workaholic,75.0,0.75,1.392,YELLOW,5.07,40.01,3.07,2024-12-31
+488fcd07-696d-422a-9e60-a31854e0965a,Scarlett Kumar,32,female,Sleep-Deprived Workaholic,70.0,0.89,1.391,YELLOW,6.26,39.67,-1.78,2024-12-31
+57d202ab-af41-48df-ad1a-db62361dc5c0,Luna Green,33,female,Sleep-Deprived Workaholic,70.0,0.65,1.39,YELLOW,4.97,43.01,-1.36,2024-12-31
+b938b576-a169-4f62-abb1-0aedc1bfeca5,Chloe Lee,32,female,Highly Disciplined Athlete,70.0,1.3,1.388,YELLOW,8.83,17.57,-5.22,2024-12-31
+561f7398-6028-42c7-8d31-5f86cc4accc7,Isabelle Jackson,39,female,Balanced Competitor,59.6,0.96,1.387,YELLOW,7.17,27.17,1.76,2024-12-31
+94ff19ac-fbb4-425d-9a2c-3ef4d6072fb3,Felix White,29,male,Highly Disciplined Athlete,72.3,1.23,1.386,YELLOW,8.91,13.3,-11.63,2024-12-31
+6f53c22b-5ceb-46c8-80b3-0ebcf7b84178,Tariq Garcia,24,male,Balanced Competitor,75.0,1.13,1.384,YELLOW,7.82,19.56,1.45,2024-12-31
+b25dc58b-0ec3-438a-93e0-67afb569804d,Amira Davis,28,female,Under-Recovered Athlete,63.7,0.91,1.384,YELLOW,6.58,32.93,12.7,2024-12-31
+2bf45db9-b58e-498d-bcdd-aada362955f6,Nathan Lee,28,male,Health-Conscious Athlete,70.2,1.2,1.382,YELLOW,8.69,24.41,-5.93,2024-12-31
+db47b882-59e9-4b87-9421-5616ad0eebf8,Zoe Brown,23,female,Highly Disciplined Athlete,69.5,1.18,1.381,YELLOW,8.28,11.56,0.25,2024-12-31
+dba986a1-c657-4cda-acfb-4959dfad7597,Mason Lewis,42,male,Health-Conscious Athlete,75.0,1.27,1.381,YELLOW,8.14,20.74,-8.61,2024-12-31
+32e824fa-32a5-43c3-905a-ead43932655a,Hunter Park,38,male,Weekend Socializer,75.0,0.9,1.38,YELLOW,6.7,36.59,0.42,2024-12-31
+6360549f-b81d-42e4-b636-973513b8c50f,Isaiah Reyes,40,male,Highly Disciplined Athlete,61.6,0.98,1.38,YELLOW,7.66,18.04,1.4,2024-12-31
+f13c9237-78bc-4960-9da2-c7b8ba6953ee,Chloe Davis,39,female,Weekend Socializer,70.0,0.91,1.379,YELLOW,6.9,58.32,-0.86,2024-12-31
+b4954624-e69e-4bd6-977b-a6f807a835b0,Amira Smith,33,female,Balanced Competitor,70.0,1.08,1.374,YELLOW,7.45,22.7,-6.26,2024-12-31
+979635c2-8a4a-4ac5-84a2-06c5c663745e,Alice Singh,35,female,Balanced Competitor,64.4,0.97,1.373,YELLOW,6.73,30.14,0.82,2024-12-31
+afd9eb6f-6835-43e9-8301-8580c4bd9782,Meera Shah,40,female,Highly Disciplined Athlete,70.0,1.28,1.373,YELLOW,8.72,14.83,1.54,2024-12-31
+f9b71287-24da-4012-a92c-fa50bc9622a9,Aisha King,37,female,Highly Disciplined Athlete,70.0,1.3,1.373,YELLOW,8.33,16.04,-9.44,2024-12-31
+fae9d750-becc-4ba6-a223-7a3f2f646430,Samuel Iyer,25,male,Balanced Competitor,72.9,1.03,1.371,YELLOW,6.67,25.79,2.35,2024-12-31
+347f2102-79d6-4c62-844c-e9aecb713a18,Eli Lewis,40,male,Balanced Competitor,60.8,1.02,1.37,YELLOW,8.2,24.96,-9.32,2024-12-31
+35a440fd-34c1-4962-92d5-7e0be6a91bd0,Maria Patel,39,female,Sleep-Deprived Workaholic,54.1,0.54,1.369,YELLOW,5.18,43.41,-4.95,2024-12-31
+e53540f5-33b3-4677-8eb9-4f0249a464c6,Liam Brown,37,male,Balanced Competitor,60.5,0.88,1.369,YELLOW,6.9,28.83,22.46,2024-12-31
+0f356542-4df2-42c3-be9d-6cb7991ecc09,Nathan Iyer,35,male,Health-Conscious Athlete,75.0,1.23,1.367,YELLOW,8.73,14.91,0.06,2024-12-31
+d449c2ee-04ad-4885-8cd6-b626768ac666,Victoria Patel,31,female,Sleep-Deprived Workaholic,70.0,0.98,1.366,YELLOW,5.83,37.34,2.36,2024-12-31
+2266777a-1fdc-4670-8876-c8a832eb868f,Jordan Reddy,34,male,Balanced Competitor,67.4,0.91,1.365,YELLOW,7.29,30.29,-2.66,2024-12-31
+ab360a21-31ac-4327-a27a-3893fcf006b0,Oliver Lewis,22,male,Sleep-Deprived Workaholic,67.6,0.89,1.364,YELLOW,5.91,40.39,5.26,2024-12-31
+17b7416a-9b34-462e-937b-649fbc38be40,Andre Davis,30,male,Sleep-Deprived Workaholic,75.0,0.84,1.363,YELLOW,4.93,34.04,0.52,2024-12-31
+98e71297-065c-4fd6-9720-6bb23efe658b,Emily Patel,48,female,Balanced Competitor,54.4,0.75,1.363,YELLOW,6.93,26.81,-0.88,2024-12-31
+b1a46dc1-aaf3-47a9-bfb8-0585a0ed8878,Sanjay Shah,43,male,Balanced Competitor,75.0,1.03,1.363,YELLOW,7.73,24.26,-5.51,2024-12-31
+32276c03-896a-4b90-b75a-efdae504010b,Oliver Martinez,27,male,Highly Disciplined Athlete,63.9,1.09,1.362,YELLOW,8.11,17.64,7.51,2024-12-31
+697b0a34-38ba-4fdb-8a71-be0cb9a8aa35,Finn Scott,35,male,Sleep-Deprived Workaholic,59.7,0.76,1.362,YELLOW,5.56,44.99,1.47,2024-12-31
+78d18101-2651-4c04-902a-dd2a43643769,Arjun Johnson,31,male,Sleep-Deprived Workaholic,68.6,0.68,1.361,YELLOW,5.03,43.03,-5.21,2024-12-31
+f45b25fa-3392-4bff-9917-8718c91f7188,Stefan Sharma,26,male,Highly Disciplined Athlete,75.0,1.3,1.361,YELLOW,7.94,17.31,-2.0,2024-12-31
+20e435ab-9def-4793-9e4a-3d6aa6c71159,Marcus Iyer,37,male,Highly Disciplined Athlete,64.2,1.1,1.359,YELLOW,7.85,16.36,3.38,2024-12-31
+52e09dd0-bbe0-4866-86b5-e148b491604f,Elijah Reddy,22,male,Under-Recovered Athlete,75.0,1.0,1.358,YELLOW,5.68,30.99,-10.5,2024-12-31
+565a6804-b870-45ad-a45f-12d6a31570a4,Oliver Reddy,35,male,Highly Disciplined Athlete,75.0,1.26,1.356,YELLOW,8.25,10.57,8.35,2024-12-31
+c6542261-7123-44e5-ab07-ea114719bad9,Finn Clark,33,male,Sleep-Deprived Workaholic,66.0,0.71,1.355,YELLOW,4.75,39.99,1.21,2024-12-31
+372b36c8-e3ed-4636-b911-5098f7e8cf1d,Aiden Sharma,31,male,Highly Disciplined Athlete,71.1,1.28,1.354,YELLOW,8.68,14.47,-8.34,2024-12-31
+796afa83-8f4e-4d94-8f7c-d91666556c12,Andre Rodriguez,23,male,Balanced Competitor,75.0,1.08,1.353,YELLOW,6.45,27.26,-3.91,2024-12-31
+8242c0a0-5f1b-47f8-a2b2-2d983878cc73,Ethan Lee,30,male,Balanced Competitor,70.7,1.19,1.352,YELLOW,7.12,26.1,17.22,2024-12-31
+d4ae749e-b41f-477f-a1cc-b9b911b97286,Sofia Flores,34,female,Highly Disciplined Athlete,64.7,1.22,1.351,YELLOW,9.15,19.56,-5.08,2024-12-31
+9f429c31-524f-45c4-b68e-ce1ebd0daed0,Kiran Reddy,32,male,Weekend Socializer,61.1,0.73,1.35,YELLOW,6.09,40.56,0.64,2024-12-31
+5569b0af-2c71-4aec-8262-d934317a7884,Carlos Martin,38,male,Sleep-Deprived Workaholic,59.6,0.72,1.349,YELLOW,6.13,39.17,1.16,2024-12-31
+7d4ce927-d067-4fd8-80ff-c3a5529ed382,Jasmine Robinson,33,female,Balanced Competitor,64.5,1.08,1.349,YELLOW,7.65,27.76,5.05,2024-12-31
+874ab756-6636-45a0-bf8f-eb339277301c,James Reyes,26,male,Highly Disciplined Athlete,75.0,1.2,1.349,YELLOW,8.56,15.86,2.8,2024-12-31
+1361885d-c439-4eac-a7c7-012a29361eec,Liam Garcia,33,male,Highly Disciplined Athlete,67.2,1.3,1.347,YELLOW,7.94,14.7,1.99,2024-12-31
+7494c110-39ce-4b37-83fb-166210e18843,Lukas Scott,31,male,Highly Disciplined Athlete,69.4,1.23,1.345,YELLOW,7.56,16.74,-10.18,2024-12-31
+ac438bd4-9e2a-40ff-926f-7221944a419f,Chris Thomas,37,male,Under-Recovered Athlete,63.7,0.68,1.345,YELLOW,5.44,39.87,-8.65,2024-12-31
+0fa07fd3-927e-4f53-9bf5-f0cb13236398,Eli Anderson,36,male,Balanced Competitor,62.3,0.91,1.343,YELLOW,7.78,26.23,0.31,2024-12-31
+efeeae0b-5b51-474e-babc-51b6249e2313,Noah Reyes,28,male,Highly Disciplined Athlete,75.0,1.3,1.343,YELLOW,7.65,18.11,-6.92,2024-12-31
+711ad7a2-a70a-446d-be26-6f3e37cdaa94,Emily Santos,32,female,Balanced Competitor,62.9,1.0,1.342,YELLOW,7.05,29.33,-6.82,2024-12-31
+77e2c13f-1c1f-40da-9b76-fbdba2fa98c3,Kai Wilson,32,male,Under-Recovered Athlete,75.0,0.91,1.342,YELLOW,5.34,43.33,14.27,2024-12-31
+be9e4210-0eec-490d-a36a-ed3a0632f68f,Lukas Flores,26,male,Highly Disciplined Athlete,75.0,1.3,1.342,YELLOW,8.86,19.37,10.83,2024-12-31
+e2ca3db2-f647-4ba2-b54c-c7fbd66a7d5f,Felix Rivera,26,male,Balanced Competitor,75.0,1.01,1.342,YELLOW,6.81,26.06,-0.67,2024-12-31
+7eaa772d-025f-4515-a862-be4721d1b406,Lukas Anderson,28,male,Weekend Socializer,75.0,0.92,1.341,YELLOW,6.25,31.49,1.47,2024-12-31
+25555f3a-ba8c-4f2d-884b-98a471faac17,Anil Moore,41,male,Balanced Competitor,62.3,1.06,1.34,YELLOW,7.87,20.96,1.09,2024-12-31
+3a3fed8f-88b9-4ca8-913c-1ab277c3ace3,Carlos Taylor,38,male,Balanced Competitor,74.2,1.0,1.34,YELLOW,7.31,27.94,2.73,2024-12-31
+8ad44bf7-4080-49f4-bc99-06fd073e1aa7,Hunter Gupta,35,male,Weekend Socializer,64.6,0.96,1.34,YELLOW,6.47,34.87,2.41,2024-12-31
+aff7ce4b-9699-4545-ba59-c56ce8437535,Anna Patel,33,female,Highly Disciplined Athlete,70.0,1.3,1.34,YELLOW,8.21,17.69,-3.71,2024-12-31
+2d3d1193-50db-4a4d-81d7-6e19c10129ea,Maya Nguyen,37,female,Balanced Competitor,59.4,0.91,1.339,YELLOW,7.13,22.5,-1.05,2024-12-31
+7900af24-8443-49f4-a34c-69df4a537a03,Samuel Reyes,35,male,Health-Conscious Athlete,75.0,1.24,1.339,YELLOW,8.33,23.74,11.63,2024-12-31
+9db7526d-5e58-4498-ab49-c51c61b620dd,Owen King,29,male,Highly Disciplined Athlete,75.0,1.18,1.339,YELLOW,7.97,10.84,2.04,2024-12-31
+0385648c-f694-42bb-ad99-bdb9af43fdc2,Hunter Smith,26,male,Highly Disciplined Athlete,75.0,1.23,1.338,YELLOW,7.66,20.31,0.0,2024-12-31
+5a914a17-6d18-4e82-b9b1-a21d008eb434,Samuel Jackson,33,male,Sleep-Deprived Workaholic,75.0,0.92,1.338,YELLOW,6.59,37.47,0.44,2024-12-31
+4f2a6c65-cc1f-4b54-ac8b-8087c113d3e6,Ryan Smith,26,male,Highly Disciplined Athlete,75.0,1.3,1.337,YELLOW,8.23,14.51,-6.26,2024-12-31
+314d6302-1660-4ec3-baa5-f89ab81f0ac6,Diego King,32,male,Highly Disciplined Athlete,69.4,1.3,1.336,YELLOW,8.71,18.31,11.44,2024-12-31
+69367c06-f0a5-48be-a2bd-d153ce815210,Alice Rodriguez,34,female,Weekend Socializer,68.3,0.87,1.336,YELLOW,6.39,37.77,0.69,2024-12-31
+a2294ead-25df-4921-b5d4-d3e92ca14a88,Yasmin Moore,29,female,Balanced Competitor,70.0,1.1,1.335,YELLOW,7.2,27.46,-1.05,2024-12-31
+d059488a-a9c4-42e9-89bf-04c9a4c4498e,Arjun Patel,38,male,Health-Conscious Athlete,75.0,1.07,1.332,YELLOW,7.41,22.54,-0.51,2024-12-31
+d095773b-a302-4191-afd2-e78db715f1e7,Daniel Shah,31,male,Weekend Socializer,67.3,0.8,1.331,YELLOW,6.4,38.43,1.34,2024-12-31
+e468d01c-0a7c-4eef-ac04-83401c4e68ba,Chloe Robinson,30,female,Sleep-Deprived Workaholic,62.4,0.62,1.331,YELLOW,4.92,40.43,0.4,2024-12-31
+76aa7ddc-dad1-411f-9241-b461c314dd86,Sara Green,33,female,Highly Disciplined Athlete,70.0,1.14,1.329,YELLOW,8.56,10.86,3.16,2024-12-31
+e9305644-8716-42e0-a249-947676def8ce,Finn Wilson,29,male,Weekend Socializer,62.8,0.88,1.328,YELLOW,6.68,40.1,2.32,2024-12-31
+2a1f5e17-03de-478e-b645-20d5ac3a38bb,Sara Allen,30,female,Sleep-Deprived Workaholic,60.2,0.76,1.326,YELLOW,6.39,42.06,2.92,2024-12-31
+6aeaf46b-b758-4949-b1ce-71d38b40d2cd,Lucas King,32,male,Balanced Competitor,75.0,1.14,1.321,YELLOW,7.53,22.13,4.11,2024-12-31
+f53cb453-ac0d-482a-92f9-2674d168975a,Sarah Nguyen,39,female,Highly Disciplined Athlete,70.0,1.24,1.321,YELLOW,8.6,16.13,-3.37,2024-12-31
+2ac33d5b-1c57-44ff-a35c-f4a8a024bcd6,Mason Singh,24,male,Weekend Socializer,75.0,1.02,1.318,YELLOW,6.72,35.63,1.89,2024-12-31
+20cf352f-1cf7-4dbc-a3f5-3dafec0fac8e,Andre Sharma,40,male,Balanced Competitor,63.5,0.89,1.317,YELLOW,7.3,27.71,0.07,2024-12-31
+fa360bdf-e431-467b-a85c-a221f06c4fcf,Nisha Santos,32,female,Balanced Competitor,70.0,1.06,1.317,YELLOW,7.52,27.7,-1.77,2024-12-31
+7de9f8dd-c831-49bc-b03f-6448b4139419,Stella Santos,28,female,Weekend Socializer,70.0,0.78,1.316,YELLOW,6.0,47.16,0.0,2024-12-31
+89e93976-661f-41cf-a339-cc872e55620d,Yasmin Jones,30,female,Balanced Competitor,63.8,1.16,1.316,YELLOW,7.86,22.51,6.34,2024-12-31
+78e9b367-97b3-473c-af2a-051f17c593fa,Amira Williams,36,female,Highly Disciplined Athlete,58.1,1.05,1.315,YELLOW,8.43,18.49,8.41,2024-12-31
+582f5137-f0b4-41dc-9995-7f3b7569eb84,Diego Young,28,male,Weekend Socializer,60.2,0.86,1.312,YELLOW,6.88,38.47,-1.92,2024-12-31
+802a7837-1a02-4aa5-befd-6a381adb480f,Kiran Taylor,36,male,Health-Conscious Athlete,73.6,1.23,1.312,YELLOW,8.02,20.2,6.15,2024-12-31
+b8970ffe-6661-4ed1-a6a2-437d19049852,Mohammed Cruz,30,male,Balanced Competitor,75.0,0.94,1.312,YELLOW,6.64,25.67,8.46,2024-12-31
+dbf96079-be3d-4c78-842a-c388bfa62240,Ethan Lewis,32,male,Balanced Competitor,71.7,1.17,1.31,YELLOW,7.33,25.34,-1.08,2024-12-31
+26876b8a-d911-4596-a883-d7473361c562,Anil Reyes,30,male,Highly Disciplined Athlete,75.0,1.3,1.307,YELLOW,8.63,15.99,-1.65,2024-12-31
+c74aa97a-5f5a-4fa9-9b60-eec538db309d,Anil Flores,37,male,Under-Recovered Athlete,73.3,0.68,1.307,YELLOW,5.12,43.11,-0.59,2024-12-31
+d5f5699e-67f2-4807-bc73-6aaed192a37a,Stella Park,33,female,Sleep-Deprived Workaholic,64.9,0.55,1.307,YELLOW,5.51,41.56,0.86,2024-12-31
+de637237-292c-40fb-943d-b16e99adbc04,Isabella Nguyen,31,female,Highly Disciplined Athlete,65.4,1.21,1.307,YELLOW,8.73,18.27,-5.56,2024-12-31
+36110b18-9a0d-4d17-b354-e0fc23468e51,Mohammed Gupta,29,male,Balanced Competitor,75.0,1.22,1.306,YELLOW,8.0,22.27,-8.28,2024-12-31
+74361e15-e555-4d82-839d-16169b0e173c,Ryan Brown,31,male,Under-Recovered Athlete,61.5,0.78,1.306,YELLOW,6.79,31.67,3.25,2024-12-31
+5d101697-2bdf-4847-964a-6ca60f4e3e24,Mihail Martin,33,male,Weekend Socializer,65.0,0.88,1.305,YELLOW,6.66,32.97,-3.85,2024-12-31
+c4a40899-e880-416b-a8a3-dc43dd98a472,Ethan Patel,42,male,Under-Recovered Athlete,75.0,0.87,1.305,YELLOW,5.35,45.03,-4.98,2024-12-31
+ce8a64dc-13bc-4d56-8746-d4e7a04b2178,Cameron Menon,27,male,Highly Disciplined Athlete,72.6,1.21,1.305,YELLOW,7.73,10.89,0.72,2024-12-31
+f8688705-bd5c-4135-9d8f-d0a341f1395c,Stella Santos,28,female,Highly Disciplined Athlete,70.0,1.28,1.304,YELLOW,7.49,18.49,1.27,2024-12-31
+126e7283-4802-4eab-979d-050c43d8aca7,Natalie Reddy,27,female,Balanced Competitor,70.0,0.99,1.303,YELLOW,7.34,27.34,6.77,2024-12-31
+613a433d-039e-46b7-9215-aae1d5a1446d,Priya Scott,33,female,Highly Disciplined Athlete,70.0,1.3,1.303,YELLOW,8.42,17.56,-0.05,2024-12-31
+7b552102-1373-4905-8e0e-2a77d9d73c17,Finn Jones,34,male,Balanced Competitor,75.0,0.99,1.303,YELLOW,7.13,30.09,9.45,2024-12-31
+97e4520e-b0d1-4e8b-bd77-150cf6ad7edd,Liam Brown,45,male,Balanced Competitor,75.0,0.97,1.302,YELLOW,6.67,25.39,-2.58,2024-12-31
+95fe00f5-3a71-45cb-968d-bfd0928a04a7,Sara Martin,39,female,Highly Disciplined Athlete,56.8,1.15,1.301,YELLOW,8.46,14.64,2.35,2024-12-31
+b5c47966-e2d4-467d-af75-003d7cdbdf8f,Joshua Reyes,34,male,Health-Conscious Athlete,75.0,1.13,1.3,GREEN,7.53,22.04,1.71,2024-12-31
+f53fa07a-06e2-41e8-a331-e076c5727fd2,Leila Shah,25,female,Highly Disciplined Athlete,70.0,1.3,1.3,GREEN,9.16,16.39,-1.34,2024-12-31
+fe18fa31-9c89-4112-a82e-fbbdc1477220,Chris Chen,39,male,Sleep-Deprived Workaholic,53.5,0.63,1.3,GREEN,6.02,44.59,1.12,2024-12-31
+1ca90c3f-bb89-4c15-81eb-b26c56f1e03d,Adrian Park,29,male,Balanced Competitor,75.0,1.16,1.299,GREEN,7.67,19.19,-3.45,2024-12-31
+0fd03328-956e-4bed-ae08-5a2a0c84177c,Lily Martin,32,female,Weekend Socializer,67.7,0.91,1.297,GREEN,7.53,31.94,-4.25,2024-12-31
+9be731b0-00de-4702-98c4-54b6ec3b3227,Cole Torres,36,male,Weekend Socializer,74.5,0.82,1.296,GREEN,6.0,37.49,0.94,2024-12-31
+cb390496-a248-481d-87f0-41bf27880630,Chloe Reyes,34,female,Highly Disciplined Athlete,69.5,1.26,1.296,GREEN,8.71,17.0,6.97,2024-12-31
+f2d777b2-3f53-4835-acbc-e6b979f1bf30,Zane Jackson,33,male,Highly Disciplined Athlete,75.0,1.23,1.296,GREEN,8.06,16.41,15.48,2024-12-31
+1e67c4cf-ff2d-4547-a014-70f308e04b6d,Rohan Williams,28,male,Highly Disciplined Athlete,75.0,1.3,1.295,GREEN,8.62,20.77,8.56,2024-12-31
+8747a75b-5544-4dbf-a3a7-e0f49ca971fc,Owen Miller,30,male,Balanced Competitor,75.0,1.05,1.294,GREEN,8.01,24.63,11.04,2024-12-31
+d5956993-b315-46ff-bf41-01f597d6d3c9,Aiden King,32,male,Highly Disciplined Athlete,73.1,1.25,1.294,GREEN,8.15,18.41,-0.44,2024-12-31
+f1633e1a-9979-4aa1-8273-5a5c0e1387cd,David Lee,31,male,Balanced Competitor,73.8,1.14,1.294,GREEN,6.88,25.5,-1.23,2024-12-31
+45f7eef5-f757-4153-9dec-40beb5469199,Joshua Shah,33,male,Highly Disciplined Athlete,70.9,1.11,1.292,GREEN,7.41,18.87,0.22,2024-12-31
+737fe652-b210-4c41-86c0-8804abf8319e,Eli Reddy,25,male,Balanced Competitor,75.0,1.02,1.291,GREEN,7.59,22.7,8.05,2024-12-31
+971c0289-9324-435e-b56a-a6dbd8dc0cb2,Anton Park,31,male,Highly Disciplined Athlete,75.0,1.2,1.29,GREEN,7.68,18.63,-9.09,2024-12-31
+a65447b2-86b7-4c44-a15e-b1c486082f88,Sophia Nguyen,30,female,Under-Recovered Athlete,68.1,0.84,1.29,GREEN,6.62,32.51,3.85,2024-12-31
+33a2d687-225b-452a-a4bd-59c655887869,Lakshmi Clark,34,female,Health-Conscious Athlete,65.3,0.98,1.289,GREEN,7.57,15.73,10.95,2024-12-31
+5d58917f-3cb8-4c59-b295-4279b090f192,Priya Martin,23,female,Highly Disciplined Athlete,70.0,1.3,1.289,GREEN,8.51,15.27,-0.16,2024-12-31
+4933bcfa-edcf-4183-9ff6-1832c794c6f5,Sarah Rivera,22,female,Highly Disciplined Athlete,70.0,1.24,1.288,GREEN,8.28,19.47,15.02,2024-12-31
+85f754d5-f652-47e5-852f-39baa7053ff9,Marcus Rodriguez,25,male,Health-Conscious Athlete,72.1,1.24,1.288,GREEN,7.36,19.87,0.67,2024-12-31
+da64a9bf-f8bd-4b8d-87ae-c87df0c01faf,Felix Jackson,29,male,Weekend Socializer,75.0,1.01,1.288,GREEN,7.48,30.86,5.18,2024-12-31
+fd6a7c6c-c45d-4ba7-b027-4de148421f9c,Nisha Menon,49,female,Balanced Competitor,59.2,0.86,1.288,GREEN,7.31,25.37,6.9,2024-12-31
+ab26cf6e-8268-4af3-96cb-a602860af49c,Sarah Iyer,34,female,Highly Disciplined Athlete,70.0,1.27,1.287,GREEN,8.0,22.01,7.96,2024-12-31
+06f33c24-1fcf-439b-b5f8-65358ad41459,Yusuf Martinez,30,male,Weekend Socializer,63.5,0.87,1.286,GREEN,7.51,35.63,2.77,2024-12-31
+764c1631-c0c1-4d6e-948b-50b6f424f887,Ananya Scott,27,female,Sleep-Deprived Workaholic,70.0,0.83,1.286,GREEN,6.48,37.23,-2.2,2024-12-31
+07515186-f416-4c7f-b28a-49bc97ae0946,Hunter Williams,35,male,Under-Recovered Athlete,75.0,0.93,1.285,GREEN,5.98,36.43,0.27,2024-12-31
+9bf71a06-2b98-4261-b1a7-17b6a0c58a85,Owen Davis,39,male,Weekend Socializer,51.5,0.65,1.285,GREEN,6.44,36.67,1.99,2024-12-31
+4d057e80-ac78-4cd0-bb72-97d510a2b547,Caleb Patel,35,male,Balanced Competitor,75.0,1.01,1.284,GREEN,6.9,24.69,-0.09,2024-12-31
+a1725b9c-bc59-44ed-937f-dc8997117276,Daniel Reyes,30,male,Under-Recovered Athlete,75.0,0.82,1.284,GREEN,5.5,35.09,-7.23,2024-12-31
+0e332325-87f1-473d-943d-5b3077aa6df3,David Singh,25,male,Highly Disciplined Athlete,69.5,1.3,1.283,GREEN,8.46,15.8,13.68,2024-12-31
+23f66ced-b812-45c2-963c-747674a83e84,Rahul Smith,25,male,Balanced Competitor,73.5,1.23,1.283,GREEN,7.29,28.9,-2.59,2024-12-31
+317580f3-3171-4ac5-a64d-42e1549c7a37,Nina Walker,35,female,Highly Disciplined Athlete,70.0,1.3,1.283,GREEN,8.97,20.74,6.61,2024-12-31
+91196f60-6384-4f00-a62f-a2abe9f2b8ea,Kai Williams,37,male,Highly Disciplined Athlete,71.7,1.3,1.283,GREEN,8.05,15.47,-1.47,2024-12-31
+b5b309e9-8f9e-4338-8201-862af4201a74,Blake Chen,30,male,Health-Conscious Athlete,75.0,1.3,1.283,GREEN,8.14,21.26,9.56,2024-12-31
+bacf0e58-9ca5-4bb9-b6d1-754ad4c162d0,Sara Moore,44,female,Sleep-Deprived Workaholic,50.0,0.61,1.283,GREEN,4.99,41.03,0.26,2024-12-31
+8a6e8620-f7f7-4f27-83ff-eb7cdddd6aaa,Yasmin Moore,37,female,Highly Disciplined Athlete,70.0,1.3,1.282,GREEN,9.37,16.87,10.99,2024-12-31
+2bc88cf4-690d-4674-acd6-3f0d0f27a993,Hannah King,34,female,Health-Conscious Athlete,70.0,1.22,1.281,GREEN,8.04,22.41,-3.96,2024-12-31
+592a8762-e618-4fa0-afcd-b938730ec790,Carlos Nguyen,31,male,Balanced Competitor,72.8,1.06,1.281,GREEN,7.07,23.9,10.82,2024-12-31
+8368cfcc-b081-49d6-bf51-bfbc5aba0723,Isaiah Lee,35,male,Weekend Socializer,75.0,0.95,1.281,GREEN,6.5,38.74,5.72,2024-12-31
+fab6ebc9-b307-4720-9285-89f2051d3422,Stefan Patel,35,male,Weekend Socializer,65.8,0.78,1.281,GREEN,5.81,40.89,0.17,2024-12-31
+1f2929ee-1836-4d9d-9b8f-5a3a615a66e4,Ryan Patel,27,male,Health-Conscious Athlete,75.0,1.26,1.278,GREEN,8.08,20.76,1.6,2024-12-31
+98726114-f1c9-45e6-8b6c-e5fc177becf2,Leon Taylor,43,male,Balanced Competitor,67.6,0.99,1.277,GREEN,7.21,24.43,1.92,2024-12-31
+d7f742ae-3a2f-473d-8f6d-ad9b09fe10ac,Pooja Patel,34,female,Balanced Competitor,70.0,1.02,1.277,GREEN,7.72,22.83,-0.87,2024-12-31
+1fd10d25-4007-45fc-936b-5e132697e22d,Noah Harris,27,male,Health-Conscious Athlete,75.0,1.3,1.273,GREEN,8.17,18.49,15.02,2024-12-31
+3dd53468-7978-455a-a230-ca0c77e6441c,Maya Shah,28,female,Sleep-Deprived Workaholic,57.1,0.62,1.273,GREEN,5.16,38.79,-2.98,2024-12-31
+493cfcfc-79ef-460f-8560-54ccbcdb585b,Diego Brown,25,male,Highly Disciplined Athlete,75.0,1.3,1.273,GREEN,9.07,16.09,5.21,2024-12-31
+7612e8fe-e96a-491f-8253-a7be171c2bdb,Eli Shah,42,male,Balanced Competitor,64.3,0.98,1.273,GREEN,7.16,26.26,0.6,2024-12-31
+97c3eaf1-c95f-4f40-9683-615df3d5902d,Lukas Johnson,38,male,Sleep-Deprived Workaholic,58.4,0.61,1.273,GREEN,6.19,43.26,1.75,2024-12-31
+203c1c7a-a200-4a53-8b88-cbcb2ac12516,Chloe Clark,24,female,Balanced Competitor,68.2,1.02,1.272,GREEN,7.98,22.53,-1.12,2024-12-31
+e0b697e9-2556-48c0-9a36-f2bd22be7e75,Samuel Patel,26,male,Balanced Competitor,75.0,1.1,1.272,GREEN,6.87,29.62,0.31,2024-12-31
+c657efd9-3406-4e61-bda8-77b46def2db4,Evelyn Jackson,29,female,Balanced Competitor,64.9,1.08,1.27,GREEN,7.53,26.99,1.92,2024-12-31
+26e5b467-f51f-4ce5-aa71-c3b9e0c37295,Elena Miller,40,female,Balanced Competitor,70.0,0.86,1.269,GREEN,6.85,26.56,-3.31,2024-12-31
+90d966bc-0c56-447e-9d8e-9f355166e7d8,Eleanor Davis,31,female,Under-Recovered Athlete,70.0,0.89,1.269,GREEN,5.91,39.23,3.88,2024-12-31
+2f66b403-ac9d-43fb-887f-b6a7dd938c01,Lukas Lewis,36,male,Balanced Competitor,75.0,1.13,1.268,GREEN,7.34,25.71,-0.93,2024-12-31
+6dd69772-35f6-4924-9588-98a8f0668e9b,Stefan Nguyen,28,male,Highly Disciplined Athlete,75.0,1.22,1.268,GREEN,8.36,14.56,7.04,2024-12-31
+c34a7721-5786-40b9-bb03-fefa01072f74,Marcus Martin,32,male,Highly Disciplined Athlete,72.0,1.18,1.268,GREEN,8.55,10.47,9.31,2024-12-31
+a62ce451-a312-4ac3-aeb6-a757b56bcad3,Marcus Miller,37,male,Health-Conscious Athlete,75.0,1.19,1.267,GREEN,7.95,14.39,2.29,2024-12-31
+910ba000-0ea3-4770-acb9-bce6844ffff1,Vikram Thompson,38,male,Sleep-Deprived Workaholic,75.0,0.77,1.266,GREEN,5.1,41.84,-3.52,2024-12-31
+97ca9327-abf8-44b8-8275-c558ddd34cad,Isaiah Flores,33,male,Sleep-Deprived Workaholic,75.0,0.87,1.266,GREEN,5.97,37.77,3.4,2024-12-31
+f1ba3d42-c1da-4a0b-b225-a73170e30907,Liam Cruz,28,male,Highly Disciplined Athlete,75.0,1.24,1.266,GREEN,8.25,26.76,0.75,2024-12-31
+82311763-66ad-4803-858d-74610ea9c3b7,Samuel King,39,male,Highly Disciplined Athlete,63.3,1.04,1.265,GREEN,7.31,31.87,18.43,2024-12-31
+84e7aff1-e667-4a1a-8d44-ea7bf8c65080,Andre Menon,33,male,Sleep-Deprived Workaholic,62.7,0.78,1.265,GREEN,6.05,34.93,-11.36,2024-12-31
+f89e4b9c-1e38-4bda-8a40-62ff081200b0,Mohammed Sharma,38,male,Under-Recovered Athlete,55.0,0.66,1.265,GREEN,6.22,39.99,8.8,2024-12-31
+1dc25baf-de7c-4fdc-8e15-2a8ef0288b20,Mohammed Kim,36,male,Weekend Socializer,71.9,0.7,1.264,GREEN,6.05,44.56,-3.14,2024-12-31
+504dd53d-94e5-424d-9ed2-7ea7cc8b375f,Clara Martin,25,female,Balanced Competitor,61.4,1.11,1.264,GREEN,7.75,22.16,-3.07,2024-12-31
+58472bee-73da-4633-a539-52d234659542,Anil Smith,32,male,Health-Conscious Athlete,75.0,1.12,1.264,GREEN,7.13,23.54,1.28,2024-12-31
+5f627f3d-b27b-48f0-9089-b4bc1238e1ec,Sophia Thompson,40,female,Highly Disciplined Athlete,70.0,1.14,1.264,GREEN,7.55,21.21,9.94,2024-12-31
+b1f8663d-379e-46c1-8405-a8a150601f84,Alex Nair,23,male,Health-Conscious Athlete,75.0,1.14,1.264,GREEN,7.84,18.69,1.3,2024-12-31
+20a8169f-c90e-40f9-884d-3be8417ca3eb,Tariq Flores,39,male,Balanced Competitor,70.0,1.02,1.263,GREEN,6.66,28.6,11.48,2024-12-31
+c163135a-3df7-4a0a-b4b2-1b38db207e05,Lily Anderson,33,female,Health-Conscious Athlete,64.2,1.08,1.263,GREEN,6.75,23.69,-0.14,2024-12-31
+c2f1388c-fb72-4fbe-a9e0-ee057f3f5579,Noah Rodriguez,36,male,Health-Conscious Athlete,65.0,1.12,1.263,GREEN,6.98,21.81,-1.35,2024-12-31
+0f7bed64-4c10-49cb-9aa5-e4140cafa6b1,Harper Walker,27,female,Highly Disciplined Athlete,70.0,1.15,1.262,GREEN,8.81,16.84,3.09,2024-12-31
+ff72c2ea-4970-48da-854e-aee2a5d34dee,Leon Miller,27,male,Balanced Competitor,75.0,1.2,1.262,GREEN,7.7,26.33,3.29,2024-12-31
+26bb0c60-d6e2-4709-9b12-2bf7d62b641e,Rahul Park,29,male,Under-Recovered Athlete,75.0,0.78,1.261,GREEN,5.18,37.61,1.63,2024-12-31
+306e7cda-082b-416b-8ded-7d62b47f267c,Jasmine Miller,39,female,Highly Disciplined Athlete,70.0,1.3,1.261,GREEN,8.66,19.77,-4.31,2024-12-31
+5caf2f63-5a50-4351-99e1-b4cb441bd062,Hunter Young,18,male,Weekend Socializer,69.3,0.93,1.26,GREEN,7.23,29.17,-2.16,2024-12-31
+a7159bae-1fb7-457c-9c97-0a6ad6713f9b,Mihail Martin,45,male,Highly Disciplined Athlete,75.0,1.3,1.258,GREEN,9.09,21.56,7.17,2024-12-31
+aaaa8508-3cc6-4dae-8220-14da8aa1a1c0,Mia Rodriguez,29,female,Highly Disciplined Athlete,70.0,1.3,1.258,GREEN,8.95,21.73,13.18,2024-12-31
+ad5d5039-cc18-4fbc-a969-4eb9aac5c3af,Kai Park,45,male,Highly Disciplined Athlete,70.8,1.26,1.258,GREEN,8.84,16.2,14.27,2024-12-31
+9fb8920f-95f5-4cbf-bb16-3e8cc3debe05,Felix Allen,33,male,Health-Conscious Athlete,75.0,1.01,1.257,GREEN,6.98,19.64,-3.85,2024-12-31
+3fd416e3-2639-4d41-87c0-44606c0bbd54,Lukas Green,44,male,Balanced Competitor,75.0,1.14,1.256,GREEN,7.92,20.03,-2.39,2024-12-31
+b2fb40b9-52a4-4533-9990-518e06ebe1ee,Amelia Martin,36,female,Under-Recovered Athlete,67.3,0.91,1.256,GREEN,6.32,32.76,11.57,2024-12-31
+74dfc8fe-9c30-4b02-bd69-3079704a6a12,Ava King,32,female,Balanced Competitor,62.6,0.99,1.255,GREEN,7.46,27.61,9.42,2024-12-31
+934c27fb-8d41-4ef6-ac44-b87be0a79a8c,Anton Chen,41,male,Highly Disciplined Athlete,66.2,1.05,1.255,GREEN,7.81,16.16,2.29,2024-12-31
+c64675d3-6773-4680-90c1-0603c12a61f2,Mason Brown,34,male,Highly Disciplined Athlete,75.0,1.3,1.254,GREEN,9.07,17.83,1.54,2024-12-31
+289a7959-0764-4bd9-a92d-b448eaa240be,Kiran Nguyen,33,male,Balanced Competitor,75.0,1.13,1.253,GREEN,7.4,26.0,3.17,2024-12-31
+fca5f03a-b1f0-4cf7-8465-934787e5d9d3,Mohammed Patel,34,male,Under-Recovered Athlete,60.3,0.71,1.253,GREEN,6.39,40.24,1.37,2024-12-31
+a0ac86d0-0fb9-4033-af2d-44261319de2c,Felix Miller,24,male,Health-Conscious Athlete,75.0,1.3,1.252,GREEN,7.73,18.33,16.53,2024-12-31
+dce7e4bd-5367-448d-a0c1-f057f6fed0b2,Finn Singh,35,male,Balanced Competitor,66.3,1.04,1.252,GREEN,7.57,29.14,6.56,2024-12-31
+a66b5710-cbf0-4f93-b833-9788113f9ea2,Diego Green,32,male,Sleep-Deprived Workaholic,60.6,0.82,1.251,GREEN,5.95,53.11,2.74,2024-12-31
+b4819f01-1859-4f47-91f1-83ef88c77fe6,Sofia Davis,34,female,Health-Conscious Athlete,70.0,1.1,1.25,GREEN,7.29,25.33,11.23,2024-12-31
+cee6539f-bda6-42d5-99b2-7549ed04a927,Fatima Garcia,35,female,Highly Disciplined Athlete,70.0,1.3,1.248,GREEN,8.8,15.64,0.53,2024-12-31
+f30bb252-468a-406f-b7c3-d60db61cbb7e,Sarah Nguyen,34,female,Health-Conscious Athlete,70.0,1.2,1.248,GREEN,8.45,19.74,6.39,2024-12-31
+04018b0c-100a-41cf-a651-48fa535ed947,Kiran Walker,32,male,Health-Conscious Athlete,75.0,1.3,1.247,GREEN,8.46,15.36,12.37,2024-12-31
+2ed01f06-4810-41c3-a126-b8a74fb74c81,Isabelle Wilson,38,female,Balanced Competitor,70.0,1.14,1.247,GREEN,7.05,22.84,-3.34,2024-12-31
+544dfff6-17cf-41dc-a663-d6ead8197c73,Aiden Menon,30,male,Balanced Competitor,67.5,0.96,1.247,GREEN,7.82,24.21,4.07,2024-12-31
+5ed28b76-e024-451f-a3bd-08e3d5713ae3,Connor Harris,29,male,Weekend Socializer,69.4,0.89,1.247,GREEN,5.86,34.79,-0.58,2024-12-31
+99eb199c-6e33-4303-abee-ca0f1c359c57,Chris Patel,27,male,Weekend Socializer,61.7,0.93,1.247,GREEN,7.75,35.77,18.48,2024-12-31
+e70d2cc5-0431-4973-bd84-14a3a5e54cdc,Liam Flores,37,male,Highly Disciplined Athlete,75.0,1.09,1.247,GREEN,8.24,13.94,1.76,2024-12-31
+afe4bf3d-0227-4325-9c56-57343bdc5752,Blake Rivera,36,male,Health-Conscious Athlete,73.2,1.08,1.246,GREEN,7.63,22.24,4.24,2024-12-31
+ea1289ad-5fbc-4be5-bc63-ed15c2050257,Elena Reyes,21,female,Balanced Competitor,61.9,0.95,1.246,GREEN,6.88,26.8,-4.2,2024-12-31
+4c8a25fd-b161-44dc-a88e-6600b1fdb612,Nathan Miller,39,male,Highly Disciplined Athlete,71.8,1.19,1.245,GREEN,7.87,14.33,-2.89,2024-12-31
+7a7bb1dc-1d80-4064-aa7a-cfdb680ceb14,Aiden Wilson,33,male,Balanced Competitor,70.9,1.14,1.245,GREEN,8.11,25.21,8.72,2024-12-31
+043e6d68-db32-4744-8bb1-4b79da28f973,David Brown,34,male,Highly Disciplined Athlete,71.6,1.07,1.244,GREEN,7.69,18.16,1.05,2024-12-31
+5b63eb6a-947a-4c82-aa8a-0255b1547125,Adrian Harris,24,male,Balanced Competitor,67.6,1.11,1.244,GREEN,7.34,20.89,-1.28,2024-12-31
+96df4b61-d326-46ae-b350-453a00ddf7b0,Jordan Flores,34,male,Balanced Competitor,75.0,1.02,1.244,GREEN,7.51,22.96,-0.34,2024-12-31
+07f71d6f-3c98-4ea1-90fe-9115e13017f8,Priya Santos,39,female,Under-Recovered Athlete,54.5,0.57,1.243,GREEN,5.88,40.89,2.16,2024-12-31
+46fc5941-80de-4ec5-b793-8f2172c01427,Isabella Park,30,female,Under-Recovered Athlete,59.6,0.88,1.242,GREEN,6.96,32.49,5.9,2024-12-31
+156a2a5f-0789-42c2-beca-1e7c9dcb1ed8,Emily Williams,39,female,Balanced Competitor,61.3,1.03,1.24,GREEN,7.38,27.97,-4.94,2024-12-31
+859f315c-ae58-40df-bc14-db86c45374f4,Sanjay Thomas,35,male,Highly Disciplined Athlete,75.0,1.3,1.24,GREEN,7.74,20.33,8.03,2024-12-31
+c05f1485-3d09-499d-b07f-504cad4436a0,Charlotte Jones,39,female,Under-Recovered Athlete,65.5,0.82,1.24,GREEN,5.46,37.49,0.31,2024-12-31
+caf7b97d-bdf2-49ae-855c-3ef7e82e3998,Yasmin Chen,33,female,Under-Recovered Athlete,70.0,0.73,1.239,GREEN,5.08,33.43,0.61,2024-12-31
+d731228a-c1a2-4fed-ae47-e578033b0d73,Aaliyah Park,39,female,Highly Disciplined Athlete,70.0,1.3,1.239,GREEN,8.94,18.34,6.31,2024-12-31
+2009810c-4bcd-4950-855d-58362a3728aa,Grace Allen,33,female,Under-Recovered Athlete,65.8,0.71,1.237,GREEN,5.46,43.7,0.1,2024-12-31
+6fa1954e-176d-40d5-9c04-6973c363751f,Elena Williams,37,female,Highly Disciplined Athlete,70.0,1.3,1.237,GREEN,8.6,19.03,0.95,2024-12-31
+c226cccf-3433-419c-a760-8f3f59107308,Blake Moore,28,male,Under-Recovered Athlete,59.3,0.89,1.237,GREEN,5.7,34.73,2.36,2024-12-31
+841b8321-cd2a-42c5-9fde-82bc799dc0aa,Leila Allen,23,female,Balanced Competitor,68.1,0.9,1.236,GREEN,6.66,28.1,-8.67,2024-12-31
+ced55523-c0f0-409c-ae2a-fb94fb30d757,Carlos Nguyen,32,male,Balanced Competitor,75.0,1.12,1.235,GREEN,7.07,25.51,0.21,2024-12-31
+d45aca3a-2493-4416-aeb3-be950a954796,Elena Chen,31,female,Weekend Socializer,70.0,0.97,1.234,GREEN,7.1,28.83,-5.54,2024-12-31
+ec2f7500-697f-47a4-b9e0-7deedda851fe,Blake Garcia,36,male,Under-Recovered Athlete,69.8,0.83,1.234,GREEN,5.89,37.29,1.95,2024-12-31
+2ab8a866-bfc7-4b30-a38d-673aea33be26,Lakshmi Thomas,30,female,Highly Disciplined Athlete,70.0,1.3,1.232,GREEN,8.43,21.9,10.95,2024-12-31
+ebe9c637-af63-40b3-aea2-6c599d5d39a7,Stefan Allen,23,male,Under-Recovered Athlete,75.0,0.88,1.231,GREEN,5.37,38.9,0.98,2024-12-31
+310b504a-ff95-46a9-b506-d409b18e2314,Elijah Santos,31,male,Health-Conscious Athlete,72.9,1.17,1.23,GREEN,7.7,26.97,0.29,2024-12-31
+55d0304b-f089-4acc-8d68-d2b836d84a51,Stella Reddy,36,female,Under-Recovered Athlete,69.7,0.96,1.23,GREEN,7.09,34.83,-2.66,2024-12-31
+1619217d-581c-474a-bdbd-6d8cdecb52fc,Daniel Lee,26,male,Weekend Socializer,74.6,0.97,1.229,GREEN,6.89,35.49,0.69,2024-12-31
+5079ba3d-ff09-427c-82b3-fa4a5da0a9f2,Riley Scott,21,female,Weekend Socializer,70.0,0.98,1.227,GREEN,6.8,29.37,3.17,2024-12-31
+53c8dff0-678a-4676-9d96-f9efd41e510b,Jordan King,35,male,Weekend Socializer,66.4,0.97,1.227,GREEN,7.26,33.06,-2.39,2024-12-31
+1d049226-3a5b-4adb-bb45-67349154c020,James Green,36,male,Sleep-Deprived Workaholic,66.0,0.75,1.225,GREEN,5.06,45.66,15.65,2024-12-31
+2bc18784-5cfd-4467-a0f1-d4efec4e183f,Zane Torres,33,male,Balanced Competitor,73.7,1.11,1.225,GREEN,7.69,19.83,-0.12,2024-12-31
+85ad2634-4d2d-4d7c-a9d9-9629f00969da,Rohan Moore,37,male,Balanced Competitor,56.5,0.88,1.225,GREEN,6.95,29.16,9.95,2024-12-31
+29fdee36-2bf1-4d5d-b852-6d974141dd3f,Finn Jackson,41,male,Under-Recovered Athlete,61.6,0.72,1.224,GREEN,6.42,41.76,8.55,2024-12-31
+8df282ab-b967-4f54-971f-43034b93ab6e,Ethan Reyes,21,male,Balanced Competitor,71.8,1.09,1.224,GREEN,7.17,21.19,3.6,2024-12-31
+1674f6b6-315e-4cff-9ac9-361d9c0ba84f,Nathan Thomas,25,male,Highly Disciplined Athlete,69.4,1.28,1.223,GREEN,9.19,17.89,12.81,2024-12-31
+3ed74686-c576-4141-8ffe-355d9823d0ec,Chris Rodriguez,44,male,Sleep-Deprived Workaholic,65.4,0.92,1.223,GREEN,5.85,35.77,10.42,2024-12-31
+97c7fe92-e1a8-4a38-8013-c0c1e045d03b,Nora Davis,25,female,Weekend Socializer,53.8,0.72,1.223,GREEN,7.25,38.64,-1.03,2024-12-31
+abe8d121-840a-4e1b-accc-658b3195de67,Adrian Torres,29,male,Balanced Competitor,63.2,1.0,1.222,GREEN,7.92,25.8,-5.24,2024-12-31
+b16d8bc4-3385-4133-8a57-c57ab473aab9,Olivia Gupta,38,female,Sleep-Deprived Workaholic,63.7,0.58,1.222,GREEN,4.94,43.07,-4.08,2024-12-31
+c514067a-dd2a-429b-85b7-fab04326c248,Kai Park,30,male,Balanced Competitor,75.0,1.12,1.222,GREEN,7.05,23.66,-0.71,2024-12-31
+ebe9576e-113e-4573-85f0-c0de541b073c,Aiden Johnson,30,male,Weekend Socializer,74.3,0.99,1.221,GREEN,6.27,31.64,-0.29,2024-12-31
+88242db4-2520-4646-b04d-f82c70324391,Isabella Thomas,29,female,Highly Disciplined Athlete,70.0,1.27,1.22,GREEN,7.58,21.0,1.78,2024-12-31
+8fb0d68f-9158-44bf-9f68-9a8247233033,Ryan Martin,35,male,Highly Disciplined Athlete,75.0,1.28,1.22,GREEN,7.61,14.77,7.12,2024-12-31
+900c6ba4-01af-48e1-b635-020bc10aacb9,Hassan Patel,27,male,Sleep-Deprived Workaholic,73.9,0.94,1.22,GREEN,6.09,36.1,14.99,2024-12-31
+ca33e314-c55b-4a42-8e99-7a90e4e8b6bd,Yasmin Sharma,36,female,Health-Conscious Athlete,70.0,1.28,1.22,GREEN,7.99,20.91,-1.1,2024-12-31
+34bf87bf-cef5-4a67-a274-f02775240246,Alex Rivera,22,male,Weekend Socializer,73.3,1.12,1.219,GREEN,7.21,30.49,14.82,2024-12-31
+6c05c685-1b81-4da4-b2da-5cd7083b657e,Elena Wilson,32,female,Sleep-Deprived Workaholic,63.5,0.79,1.219,GREEN,5.72,41.81,-0.55,2024-12-31
+930279b0-e10b-470e-b28d-8557bc956d6c,Chloe Lee,27,female,Balanced Competitor,70.0,0.91,1.219,GREEN,6.73,32.46,3.35,2024-12-31
+d6c33cf5-ea22-409d-96af-568ea97c376b,Connor Kim,32,male,Weekend Socializer,62.7,0.8,1.219,GREEN,6.01,52.95,-0.63,2024-12-31
+f7087ad6-88d8-4e7c-9587-cf74567f83ae,Hannah Wilson,42,female,Balanced Competitor,57.7,0.86,1.219,GREEN,6.9,29.64,-3.1,2024-12-31
+20bcd7aa-0c63-4071-b066-3abb1d5d7666,Mia Flores,28,female,Highly Disciplined Athlete,69.0,1.26,1.218,GREEN,8.49,14.06,7.28,2024-12-31
+23ba113d-c7a8-4dc4-bc0d-0f6143bf0a9c,Marco Sharma,33,male,Highly Disciplined Athlete,75.0,1.18,1.217,GREEN,7.47,19.03,-0.03,2024-12-31
+3087a1c3-97df-4018-9e51-a4f7797686b6,Natalie Jackson,33,female,Balanced Competitor,70.0,1.15,1.217,GREEN,7.62,21.07,0.48,2024-12-31
+d225261a-5424-402e-b84a-a975c2c8503c,Sanjay Park,23,male,Sleep-Deprived Workaholic,60.4,0.68,1.217,GREEN,6.38,43.74,3.13,2024-12-31
+5b41a280-5d5e-4874-86fe-0837d29e8058,Hassan Wilson,36,male,Weekend Socializer,71.9,0.88,1.216,GREEN,7.26,34.46,5.66,2024-12-31
+ba5d93fa-d427-458a-86fd-e2bef64da1ca,Omar Green,30,male,Highly Disciplined Athlete,71.3,1.21,1.216,GREEN,7.91,17.76,10.38,2024-12-31
+017a235e-276e-4ab1-93a5-099779a10e7c,Lily Taylor,35,female,Sleep-Deprived Workaholic,68.0,0.87,1.215,GREEN,5.03,38.94,2.54,2024-12-31
+2be10b69-dda9-4728-9ff6-bd6900157840,Harper Williams,30,female,Weekend Socializer,70.0,0.9,1.215,GREEN,6.92,30.09,2.71,2024-12-31
+426ba321-acb7-44f8-b052-774470a08dcd,Isabella Williams,31,female,Health-Conscious Athlete,59.7,1.04,1.215,GREEN,7.88,20.96,8.11,2024-12-31
+c7dbebfd-a5d8-4867-a400-5e3d04001131,Oliver Davis,33,male,Sleep-Deprived Workaholic,54.7,0.77,1.215,GREEN,5.75,41.93,-5.98,2024-12-31
+a0540846-7262-4c78-be8f-7a77355e4545,Evelyn Thomas,31,female,Weekend Socializer,51.1,0.74,1.214,GREEN,7.17,30.74,2.18,2024-12-31
+a0b0dbd0-fbb2-4ec9-be84-62fd22c659af,Luna Patel,41,female,Balanced Competitor,59.2,0.97,1.214,GREEN,7.89,27.04,-2.6,2024-12-31
+c06a3f95-89b3-4cf6-b7d3-58bdd6fcfa6f,Carlos Anderson,24,male,Weekend Socializer,72.1,1.05,1.214,GREEN,6.49,30.97,2.0,2024-12-31
+3b2d49d8-7e18-4aa1-9876-8acf330462d2,Evelyn Cruz,25,female,Weekend Socializer,69.0,0.89,1.213,GREEN,6.4,44.0,18.82,2024-12-31
+61787cdf-3566-4619-9572-deae49a0d56d,Mihail Scott,28,male,Highly Disciplined Athlete,75.0,1.15,1.213,GREEN,8.04,16.46,-3.31,2024-12-31
+0a25a55b-81df-4283-847a-23dad58de176,Rohan Brown,36,male,Health-Conscious Athlete,67.2,1.17,1.212,GREEN,8.18,12.51,4.16,2024-12-31
+32c3b329-cbaa-4902-ab94-3c200cfdd60a,Nina Lee,28,female,Highly Disciplined Athlete,70.0,1.3,1.212,GREEN,8.81,31.34,10.22,2024-12-31
+073921d2-f180-41f1-b6b6-8a9392056f71,Hunter Scott,30,male,Highly Disciplined Athlete,66.7,1.29,1.211,GREEN,8.87,10.84,16.9,2024-12-31
+49ad4474-ea1f-45ac-979a-a1f8ac90e314,Chloe Cruz,39,female,Sleep-Deprived Workaholic,63.5,0.68,1.21,GREEN,4.95,38.24,-2.41,2024-12-31
+e7545da3-145e-4624-9eea-7cddbe93aaa9,Emily Kim,43,female,Weekend Socializer,70.0,0.93,1.21,GREEN,6.23,31.7,1.4,2024-12-31
+df5019d9-207e-4728-b8d5-05d500982028,Violet Green,35,female,Highly Disciplined Athlete,68.7,1.19,1.208,GREEN,7.54,17.51,2.02,2024-12-31
+5a9a8a74-d8fa-4074-b703-38233fdf73f5,Daniel Taylor,28,male,Highly Disciplined Athlete,75.0,1.3,1.207,GREEN,8.57,25.59,2.96,2024-12-31
+e335dcdc-8dfa-4aef-bb72-c1adce3c37ca,Camila Allen,26,female,Balanced Competitor,59.5,1.05,1.207,GREEN,7.77,24.87,4.27,2024-12-31
+13f1009c-419a-4c01-8a63-d03b769cde38,Leon Park,42,male,Highly Disciplined Athlete,75.0,1.3,1.206,GREEN,7.78,20.81,6.44,2024-12-31
+39152bcd-6574-4503-8757-138770c53a9e,Anton Nair,37,male,Sleep-Deprived Workaholic,75.0,0.89,1.206,GREEN,5.08,32.47,12.4,2024-12-31
+7f3d93a2-4b25-418e-8d2b-f1bf6b38fc6c,Ryan Walker,32,male,Highly Disciplined Athlete,75.0,1.27,1.205,GREEN,7.74,12.89,-0.2,2024-12-31
+8220ba2d-77a4-47d0-9430-86b776b4a967,Hunter Reyes,34,male,Highly Disciplined Athlete,68.7,1.15,1.204,GREEN,8.26,18.21,3.5,2024-12-31
+c98d576a-4575-4dc7-9ac6-9d43a8d73ec7,Olivia Shah,38,female,Under-Recovered Athlete,63.2,0.78,1.204,GREEN,5.81,39.89,-5.3,2024-12-31
+cb79f519-7bae-43e1-a019-f8655d53dce0,Sara Shah,38,female,Health-Conscious Athlete,70.0,1.13,1.204,GREEN,7.19,25.79,-0.29,2024-12-31
+42cc5812-31f7-4044-bd05-d45e76f58c64,Kai Nair,42,male,Highly Disciplined Athlete,66.4,1.19,1.203,GREEN,8.52,20.51,0.43,2024-12-31
+71edc917-1a99-4178-8226-c0f4973ac4b2,Ruby Johnson,25,female,Weekend Socializer,70.0,0.89,1.203,GREEN,7.6,36.03,-1.34,2024-12-31
+7f03785b-039d-4507-a3a9-a8d34426e1b6,Anil Patel,33,male,Highly Disciplined Athlete,69.7,1.25,1.202,GREEN,8.53,15.91,8.37,2024-12-31
+86da6353-e5b2-4b2d-adac-357f5c29d5bc,Tariq Menon,35,male,Sleep-Deprived Workaholic,74.6,0.69,1.201,GREEN,5.07,40.89,10.61,2024-12-31
+0f90a93d-4245-4d9d-9a79-a4b850c51473,Mason Nguyen,31,male,Sleep-Deprived Workaholic,58.5,0.65,1.2,GREEN,5.38,42.3,-0.36,2024-12-31
+978a62b6-67d4-4ed9-8f51-e8cf2827cfd3,Aaliyah Singh,26,female,Sleep-Deprived Workaholic,70.0,0.96,1.2,GREEN,6.11,39.16,-0.63,2024-12-31
+35119f98-89b6-4fd2-8994-090cdb8c503b,Anil Williams,26,male,Sleep-Deprived Workaholic,69.2,0.89,1.199,GREEN,6.02,40.11,16.1,2024-12-31
+5b71edf8-46cf-437f-a91f-c1a1bbd085af,Dev Singh,35,male,Highly Disciplined Athlete,64.8,1.19,1.199,GREEN,8.31,14.41,4.66,2024-12-31
+8b95f2b6-3991-42a2-9463-5f3ce0d34209,Mia Jackson,42,female,Highly Disciplined Athlete,70.0,1.3,1.199,GREEN,8.54,13.74,4.74,2024-12-31
+a51e74ca-6c55-4a19-aee0-3e84bc7df05e,Elena Jackson,39,female,Health-Conscious Athlete,70.0,1.12,1.199,GREEN,7.43,22.49,3.84,2024-12-31
+b80475f4-6f1c-45cd-9fed-ab90105be0ba,Matthew Chen,45,male,Weekend Socializer,70.5,0.99,1.199,GREEN,6.89,32.87,7.07,2024-12-31
+ccfce5f1-037f-4dde-a7a3-031e2eb56d89,Hassan Anderson,34,male,Balanced Competitor,75.0,1.22,1.199,GREEN,8.11,20.11,2.65,2024-12-31
+eaa263d0-5c32-43a8-8ebb-057d8976a610,Zoe Gupta,32,female,Sleep-Deprived Workaholic,70.0,0.68,1.199,GREEN,4.92,45.03,5.08,2024-12-31
+15e09ffe-f5fb-4864-bdd5-93a82de24f6e,Leon Kumar,22,male,Balanced Competitor,75.0,1.06,1.198,GREEN,7.71,19.9,3.93,2024-12-31
+fa032935-4253-4cb8-bab2-1dfc669c017e,Tariq Sharma,28,male,Sleep-Deprived Workaholic,67.2,0.88,1.198,GREEN,6.41,39.5,1.55,2024-12-31
+593017b6-1fe9-4266-be20-2efbd8c6da15,Riley Jones,32,female,Balanced Competitor,70.0,0.99,1.197,GREEN,7.38,25.37,0.1,2024-12-31
+89449285-edd0-4a32-aa16-cb39ac564a1f,David Robinson,22,male,Highly Disciplined Athlete,75.0,1.21,1.197,GREEN,8.05,18.66,11.52,2024-12-31
+c9491a08-618f-4164-8b06-9b51160d5198,Sanjay Johnson,27,male,Balanced Competitor,69.0,1.17,1.197,GREEN,7.08,23.33,-1.1,2024-12-31
+6a3f0772-26e7-4f53-8461-5a8bc315b3e6,Elijah Torres,30,male,Balanced Competitor,75.0,1.09,1.196,GREEN,7.49,23.6,5.27,2024-12-31
+6bff3f6b-6c3d-4bed-8649-4455e3fdb9ec,Connor Rodriguez,27,male,Balanced Competitor,75.0,1.15,1.196,GREEN,6.97,23.43,18.82,2024-12-31
+12116020-8f85-4a9a-bb61-d85ebc0deb13,Jasmine Harris,40,female,Weekend Socializer,53.5,0.73,1.195,GREEN,6.19,36.43,-0.44,2024-12-31
+29afd3d3-4c77-4bfd-84b2-1ab7e0fe54fa,Evelyn Moore,34,female,Health-Conscious Athlete,70.0,1.17,1.194,GREEN,7.36,26.43,1.8,2024-12-31
+3ba58b6e-7d10-4894-a302-b29d191407d5,Andrew Allen,30,male,Under-Recovered Athlete,73.3,0.81,1.194,GREEN,6.83,36.64,2.86,2024-12-31
+437fbb3a-e25c-42ba-99d9-ef0dc0f8b7d0,Connor Davis,35,male,Sleep-Deprived Workaholic,63.8,0.75,1.194,GREEN,6.28,41.43,-0.92,2024-12-31
+e126774a-0b68-4330-b43e-16d251301add,Stefan Nguyen,32,male,Sleep-Deprived Workaholic,73.7,0.77,1.194,GREEN,5.82,42.17,2.3,2024-12-31
+50faefbb-3881-4230-b898-bf4dd6ad145b,Marco Green,27,male,Sleep-Deprived Workaholic,75.0,0.82,1.193,GREEN,5.6,39.63,3.48,2024-12-31
+08d4890a-82ed-433b-9cf2-f5ce28b40833,David Wilson,31,male,Under-Recovered Athlete,75.0,1.03,1.191,GREEN,6.86,39.27,4.58,2024-12-31
+ceefd667-bcd6-45d4-b1dc-105433fcf801,Andre Moore,37,male,Highly Disciplined Athlete,75.0,1.3,1.191,GREEN,8.56,26.85,-3.18,2024-12-31
+0728cd54-e69a-42ab-a90d-20b80db0b1bd,Cole Thomas,36,male,Balanced Competitor,59.8,0.92,1.19,GREEN,7.14,23.04,-0.33,2024-12-31
+cda0787e-e527-4164-8115-1faf508ad642,Aria King,39,female,Under-Recovered Athlete,59.7,0.89,1.19,GREEN,5.83,39.99,10.2,2024-12-31
+ed0f00bc-a6fe-4f5a-9185-85d85f1d73a5,Ryan Allen,45,male,Health-Conscious Athlete,75.0,1.14,1.19,GREEN,7.43,22.99,-7.96,2024-12-31
+b31d748a-3aeb-48ea-9ffd-9f9320de2f2e,Connor Martinez,29,male,Sleep-Deprived Workaholic,75.0,0.84,1.188,GREEN,6.41,36.76,3.54,2024-12-31
+fa831199-4ff1-49d8-9e8f-32ae4154f474,Nadia Santos,43,female,Under-Recovered Athlete,70.0,0.87,1.188,GREEN,6.84,34.86,3.97,2024-12-31
+52e05e6c-501a-4955-9a2e-fa08cd5bc911,Ruby Patel,34,female,Highly Disciplined Athlete,70.0,1.3,1.187,GREEN,9.15,15.69,3.99,2024-12-31
+fcbc8a2a-890a-48be-928b-1c5831c20dbf,Omar Jackson,31,male,Highly Disciplined Athlete,75.0,1.22,1.187,GREEN,7.79,21.63,9.55,2024-12-31
+6fa666db-5e88-4923-8f2c-9c6789a30891,Anil Rivera,33,male,Balanced Competitor,75.0,1.23,1.186,GREEN,7.04,28.86,11.68,2024-12-31
+72e850c9-598a-4ee0-9859-0ea1059aecce,Adrian Reddy,38,male,Under-Recovered Athlete,65.5,0.71,1.185,GREEN,5.78,38.59,1.6,2024-12-31
+2473afd0-5c62-4194-8604-edfd211ef716,Rahul Rivera,42,male,Highly Disciplined Athlete,63.5,1.18,1.184,GREEN,8.61,19.7,9.29,2024-12-31
+daadd7d4-fccb-48a4-9752-6363bdcde153,Owen Jones,47,male,Balanced Competitor,71.6,1.0,1.184,GREEN,7.18,26.54,-0.95,2024-12-31
+14df9df8-58db-40af-a286-951a5c6ab57c,Isabelle Taylor,44,female,Highly Disciplined Athlete,70.0,1.26,1.182,GREEN,8.96,18.61,-1.91,2024-12-31
+3edac94a-77d8-473e-9d26-c4db7383083a,Vikram Smith,37,male,Weekend Socializer,58.7,0.73,1.18,GREEN,6.06,35.4,5.19,2024-12-31
+7aa48551-66f1-42b9-ad29-a7f9018a02b4,Ruby Lee,28,female,Health-Conscious Athlete,70.0,1.14,1.18,GREEN,8.24,19.67,-0.76,2024-12-31
+219dba81-47e3-455a-b47f-7a04a4399d9d,Logan Cruz,36,male,Balanced Competitor,68.5,1.0,1.179,GREEN,7.1,19.81,-3.35,2024-12-31
+71649b63-8c43-4ee5-8c52-08084d51a311,Evelyn Lee,30,female,Balanced Competitor,59.0,0.96,1.178,GREEN,6.73,26.49,-0.27,2024-12-31
+87463a9d-0d22-4d59-a6c2-f3006552c197,Aria White,31,female,Highly Disciplined Athlete,70.0,1.3,1.178,GREEN,9.1,15.24,8.17,2024-12-31
+c1789bf1-8d0f-4061-8e60-155499046cc6,Hassan Torres,30,male,Highly Disciplined Athlete,75.0,1.3,1.178,GREEN,8.25,30.94,16.99,2024-12-31
+f8c67d09-01ec-4e1d-941b-64085b7eccd1,Yasmin Green,26,female,Balanced Competitor,70.0,1.09,1.178,GREEN,7.02,35.52,-4.37,2024-12-31
+991b775a-8cff-4839-b370-25ec163d9400,Emma Sharma,31,female,Balanced Competitor,70.0,0.93,1.176,GREEN,7.0,23.33,3.45,2024-12-31
+daeff677-72cc-4464-8f35-960e07f8ae88,Eli Williams,37,male,Health-Conscious Athlete,65.2,1.09,1.176,GREEN,8.65,19.79,4.12,2024-12-31
+fa3adb74-6875-49ac-a379-2db10eb653c6,Lucas Park,29,male,Balanced Competitor,75.0,1.21,1.176,GREEN,7.64,22.56,3.53,2024-12-31
+9eb0b8f7-119e-4338-b64b-92bbdf0f835b,Marcus Walker,34,male,Weekend Socializer,62.8,0.95,1.175,GREEN,6.95,31.01,-4.0,2024-12-31
+40a6aae1-16db-4503-b43f-3b96b82a6ba4,Mia Nair,35,female,Sleep-Deprived Workaholic,69.1,0.8,1.173,GREEN,5.18,42.54,8.76,2024-12-31
+4e4c67db-2ddd-4bfe-9e46-e225b7248b49,Nathan Davis,30,male,Balanced Competitor,75.0,1.08,1.173,GREEN,8.27,27.53,9.65,2024-12-31
+7dbd130e-d23a-4b6f-a137-1fa115ca79fb,Aiden Flores,40,male,Under-Recovered Athlete,68.6,0.76,1.173,GREEN,5.55,36.76,11.57,2024-12-31
+a80cd449-52e7-4a0a-9142-3ffd878d103f,Sanjay Nair,39,male,Balanced Competitor,75.0,1.2,1.173,GREEN,8.0,22.54,14.11,2024-12-31
+a5ce3663-b2f2-41f2-825d-f04beabb52b4,Yasmin Smith,33,female,Sleep-Deprived Workaholic,66.1,0.85,1.172,GREEN,6.08,37.97,6.96,2024-12-31
+a89031c8-9b21-4fb6-bca4-ea28d321ddee,Hunter Chen,34,male,Weekend Socializer,72.0,0.87,1.172,GREEN,7.19,41.31,-2.96,2024-12-31
+e098b1fc-1ac7-4567-93f1-3908facd9f9e,Lakshmi Smith,36,female,Highly Disciplined Athlete,70.0,1.2,1.171,GREEN,8.78,17.64,10.86,2024-12-31
+77a3b522-138b-4e4e-93bd-38835cc6838f,Cameron Shah,44,male,Highly Disciplined Athlete,66.4,1.18,1.17,GREEN,8.35,28.21,1.74,2024-12-31
+7bafbb25-efd8-4540-91bf-e4002359b4fe,Aria Kim,38,female,Weekend Socializer,56.3,0.7,1.17,GREEN,6.14,34.86,-0.59,2024-12-31
+b84dfda8-3429-4b73-8d97-e41f6dfbd92e,Blake King,34,male,Health-Conscious Athlete,75.0,1.2,1.17,GREEN,7.82,18.79,4.95,2024-12-31
+ccbd78fa-fe3a-4019-8731-adc81980c0e2,Layla Rivera,27,female,Health-Conscious Athlete,70.0,1.29,1.17,GREEN,7.73,20.19,16.06,2024-12-31
+ffaec987-adb8-487b-a9e0-9ea1fa6ba582,Ryan Jones,40,male,Balanced Competitor,75.0,0.93,1.17,GREEN,6.41,29.3,-0.76,2024-12-31
+0e3eafe6-c7b9-4821-81b7-fbcd0bdd61ac,Chloe Cruz,39,female,Highly Disciplined Athlete,70.0,1.25,1.169,GREEN,7.91,18.64,-5.66,2024-12-31
+47ace018-9073-4c97-a051-97889045c23b,Marco Santos,26,male,Highly Disciplined Athlete,75.0,1.17,1.169,GREEN,8.27,10.97,-3.07,2024-12-31
+d03bd2cf-67de-4da3-957c-2bd8f068b73a,Victoria Davis,36,female,Weekend Socializer,68.0,0.91,1.169,GREEN,7.29,34.3,3.85,2024-12-31
+523a68a9-4b1d-4ab4-b485-87d0ce59edcb,Andrew White,44,male,Under-Recovered Athlete,75.0,0.87,1.168,GREEN,6.54,32.53,0.75,2024-12-31
+73f239f3-e557-48fa-a33d-8e761ed1aad8,Nathan Miller,28,male,Weekend Socializer,70.3,0.8,1.168,GREEN,6.42,36.93,9.87,2024-12-31
+ed5b506e-f743-42df-91ad-8aaf7a8803d8,Olivia Menon,35,female,Health-Conscious Athlete,67.8,1.1,1.168,GREEN,7.36,27.79,0.08,2024-12-31
+2c82c60e-ca34-4307-95cf-9f80530f45ee,Elena Jones,42,female,Balanced Competitor,65.6,1.02,1.167,GREEN,6.52,23.89,-0.87,2024-12-31
+fcc74a25-ce3a-4202-9371-622acdca8413,Tyler Martinez,25,male,Highly Disciplined Athlete,75.0,1.23,1.167,GREEN,7.47,17.14,8.4,2024-12-31
+6bce6357-446c-4f5b-8993-5b0440037442,Isabelle Green,27,female,Highly Disciplined Athlete,67.7,1.3,1.166,GREEN,8.93,11.3,7.53,2024-12-31
+d571946b-a800-4f39-b90b-d1948ea0c5b6,James Walker,18,male,Weekend Socializer,71.9,0.97,1.166,GREEN,7.42,33.91,4.49,2024-12-31
+4e9af26b-0820-4919-876e-5063a34c5fb5,Lukas Kim,22,male,Weekend Socializer,68.4,0.97,1.165,GREEN,7.17,30.3,2.25,2024-12-31
+50ccdd76-0304-4979-ac62-bb6a2a6154b0,Arjun Chen,23,male,Health-Conscious Athlete,75.0,1.23,1.165,GREEN,8.05,18.89,-3.85,2024-12-31
+5978d1fd-eb3c-4eed-92ba-f98bf5d2643d,Jasmine Patel,32,female,Highly Disciplined Athlete,61.2,1.22,1.165,GREEN,8.25,14.56,-1.64,2024-12-31
+88a681ca-f554-4285-9d3e-08b658f2a10c,Omar Park,23,male,Health-Conscious Athlete,75.0,1.09,1.165,GREEN,7.04,23.94,8.04,2024-12-31
+45a953c4-507f-4be1-acad-24b66b67f634,Meera Shah,44,female,Under-Recovered Athlete,70.0,0.84,1.164,GREEN,5.49,36.24,3.7,2024-12-31
+77cb4c45-ae18-4008-ba54-99cf871f5547,Leon Cruz,33,male,Sleep-Deprived Workaholic,71.0,0.76,1.164,GREEN,5.31,42.27,-3.47,2024-12-31
+90ff0fcf-8891-4f34-bad3-cd9e58cce4c1,Alice Shah,26,female,Highly Disciplined Athlete,70.0,1.27,1.163,GREEN,8.33,13.83,3.12,2024-12-31
+b8179db2-a7c6-4556-b46c-342b33f8189c,Mason Park,24,male,Balanced Competitor,75.0,1.26,1.163,GREEN,7.88,21.1,9.85,2024-12-31
+d7382431-7ec4-4086-868e-6814df3c4e6d,Sara Martinez,30,female,Highly Disciplined Athlete,65.3,1.13,1.163,GREEN,7.93,23.85,-0.49,2024-12-31
+006e66d8-101c-41f0-b541-44ee43f81058,Chris Nguyen,34,male,Balanced Competitor,74.6,1.21,1.162,GREEN,7.97,17.79,3.84,2024-12-31
+247e360e-5769-45ac-a0fb-a4160164f210,Samuel Walker,22,male,Health-Conscious Athlete,62.0,0.98,1.162,GREEN,7.51,21.4,1.28,2024-12-31
+733a57be-90da-4863-a958-19f8ba8d5db9,Alex Miller,34,male,Health-Conscious Athlete,64.9,1.02,1.162,GREEN,7.92,21.41,-5.76,2024-12-31
+8184bc03-621b-4f0e-9764-629e0673846c,Dev Davis,20,male,Balanced Competitor,75.0,1.16,1.162,GREEN,7.44,38.84,-15.47,2024-12-31
+747d1979-41e8-43e2-9b60-c7c01f84f87b,Chloe Lee,31,female,Balanced Competitor,63.5,1.0,1.161,GREEN,7.59,25.04,0.14,2024-12-31
+c79e79c3-7bb4-4f83-85cc-b6ebe7ec8da1,Connor Santos,28,male,Highly Disciplined Athlete,69.8,1.15,1.161,GREEN,8.14,17.83,-0.62,2024-12-31
+8179875c-c580-431f-bfc4-bdb243c86260,Dev Miller,40,male,Highly Disciplined Athlete,61.7,1.27,1.16,GREEN,8.45,15.03,-3.1,2024-12-31
+2cd9424d-3dc5-4f3f-bb33-80b6aa27c61a,Anna Jones,34,female,Weekend Socializer,63.8,0.92,1.159,GREEN,6.26,37.24,-0.06,2024-12-31
+e9f5c3b8-63c3-4840-bf57-e48b41a0833f,Sofia Thomas,38,female,Sleep-Deprived Workaholic,70.0,0.86,1.159,GREEN,6.09,39.61,-2.14,2024-12-31
+078c4684-e9c9-48e0-a10c-06c612c7b77b,Marcus Davis,27,male,Highly Disciplined Athlete,71.9,1.29,1.158,GREEN,8.85,15.57,22.73,2024-12-31
+6a7ba0c7-4c41-4d89-9169-14a2a65c4a45,Stefan Patel,32,male,Balanced Competitor,75.0,0.99,1.158,GREEN,7.48,27.27,1.44,2024-12-31
+0f5ce9d6-c9df-4af6-aefb-4563cbc56ddb,Meera Martin,29,female,Sleep-Deprived Workaholic,70.0,0.84,1.157,GREEN,5.53,40.49,-4.28,2024-12-31
+a3f824c1-0dcf-4317-827d-e1721a906026,Mason Cruz,33,male,Balanced Competitor,65.4,1.02,1.157,GREEN,7.43,27.27,-5.08,2024-12-31
+d2e9f960-c915-4b5a-ad05-d0f9dc7e5479,Fatima Martinez,36,female,Health-Conscious Athlete,61.0,1.04,1.157,GREEN,7.64,23.81,-0.6,2024-12-31
+d9294dc9-a6ff-4bcf-b42f-9b568aa9d918,Noah Park,31,male,Weekend Socializer,68.0,0.91,1.156,GREEN,6.97,33.87,3.5,2024-12-31
+0da78208-eaa3-46dd-b935-baf97e1d3986,Carlos Kim,18,male,Highly Disciplined Athlete,72.3,1.3,1.155,GREEN,8.25,21.3,-0.36,2024-12-31
+436bd492-0b10-495b-bb3f-f28739478c66,Anna Walker,24,female,Highly Disciplined Athlete,70.0,1.24,1.155,GREEN,8.16,21.06,9.71,2024-12-31
+6902ad3a-9bbf-4939-b136-a0a857355c48,Harper Cruz,29,female,Sleep-Deprived Workaholic,58.2,0.71,1.155,GREEN,5.58,42.94,2.13,2024-12-31
+c1a49e3a-8e46-4d75-b0e6-e541b5e32a1c,Riley Cruz,31,female,Under-Recovered Athlete,63.9,0.72,1.155,GREEN,5.01,36.09,5.6,2024-12-31
+127fe77b-c803-4727-8171-11c0a2ab8367,Riya Shah,34,female,Health-Conscious Athlete,67.3,1.14,1.154,GREEN,7.97,20.27,8.33,2024-12-31
+3757f638-ffec-4f65-a1b9-d65b245af504,Divya Menon,36,female,Highly Disciplined Athlete,69.4,1.3,1.154,GREEN,8.93,37.5,-4.27,2024-12-31
+8dc1f23f-25ff-4e54-bcc7-0b25049296d2,Leon Walker,33,male,Highly Disciplined Athlete,75.0,1.28,1.154,GREEN,8.0,15.63,10.97,2024-12-31
+9f948514-d160-4e58-a631-5ac04d9bd203,Adrian Lee,29,male,Highly Disciplined Athlete,75.0,1.26,1.153,GREEN,7.25,15.53,-8.12,2024-12-31
+5a0473d2-cfe6-4a87-aae1-155735154069,Tariq Garcia,31,male,Balanced Competitor,75.0,1.16,1.152,GREEN,7.28,27.87,-3.31,2024-12-31
+c75596fb-8ee7-4939-b482-9b1b27d666e4,Connor Lee,25,male,Sleep-Deprived Workaholic,75.0,0.91,1.151,GREEN,5.38,43.1,0.62,2024-12-31
+10633dbd-3132-4aba-bce3-f9dbbfaad864,Alex Davis,41,male,Balanced Competitor,70.0,1.2,1.15,GREEN,7.89,24.64,-2.26,2024-12-31
+434e1b7b-914d-40c4-a494-b724bea2c89a,Nora Kim,30,female,Highly Disciplined Athlete,70.0,1.2,1.15,GREEN,7.84,17.76,1.16,2024-12-31
+45334329-7260-4b36-b3fc-1db2bcb8cd57,Andre Jones,30,male,Weekend Socializer,68.7,0.95,1.15,GREEN,7.01,35.33,-0.05,2024-12-31
+455394ce-75c8-4c0c-b1be-e9c6ca954776,Aiden Nguyen,31,male,Balanced Competitor,67.5,0.96,1.149,GREEN,7.69,25.4,-3.84,2024-12-31
+ef3dd199-0433-47e5-8542-d4c8355ad712,Dev Kim,30,male,Balanced Competitor,69.5,1.05,1.149,GREEN,6.92,23.84,-1.25,2024-12-31
+1d4c460c-934a-442e-939a-09b9c0d1040a,Kiran Kumar,35,male,Highly Disciplined Athlete,75.0,1.2,1.148,GREEN,8.22,18.49,5.33,2024-12-31
+6d883dea-a770-4da5-9a95-5c28cf37c911,Eli Park,33,male,Highly Disciplined Athlete,73.3,1.29,1.148,GREEN,8.94,15.13,3.78,2024-12-31
+fb685ea0-20f6-4310-9768-db084e3cff1a,Aaliyah Williams,36,female,Health-Conscious Athlete,70.0,1.18,1.147,GREEN,7.51,21.64,-2.58,2024-12-31
+5e7ab947-a905-4dcb-9c77-6fc8de85fe13,Jaxon Gupta,20,male,Health-Conscious Athlete,74.1,1.26,1.146,GREEN,8.38,11.84,1.38,2024-12-31
+1e6598cd-4416-4ee7-bbf7-176e22e1f06a,Maya Allen,31,female,Highly Disciplined Athlete,60.0,1.18,1.145,GREEN,8.96,18.9,1.33,2024-12-31
+23fbe2f1-de72-4e15-a07c-89d11133fa07,Sofia Reddy,42,female,Weekend Socializer,68.5,0.92,1.145,GREEN,6.61,36.64,2.88,2024-12-31
+3eb6d88d-d869-4d07-829d-5e9a2c39162f,Nora Davis,33,female,Sleep-Deprived Workaholic,70.0,0.73,1.145,GREEN,5.13,42.0,7.75,2024-12-31
+4d96242f-30e3-4f7c-a1cb-67486d08d2f4,Mihail Jackson,37,male,Health-Conscious Athlete,67.5,1.17,1.145,GREEN,8.54,21.11,0.36,2024-12-31
+ff8eee87-ca7d-4554-ae61-15c02cb11138,Andre Miller,46,male,Health-Conscious Athlete,75.0,1.25,1.145,GREEN,8.19,19.77,6.87,2024-12-31
+615577e7-9d72-4773-a759-b15487d421d2,James Shah,39,male,Highly Disciplined Athlete,75.0,1.29,1.144,GREEN,7.81,12.51,1.66,2024-12-31
+c634985b-d473-4f10-bee4-b0e1253c6652,Adrian Reddy,27,male,Balanced Competitor,75.0,1.24,1.144,GREEN,6.68,25.07,4.33,2024-12-31
+cf5db5d1-c49b-46e0-a521-4de1c311f661,Arjun Davis,38,male,Balanced Competitor,75.0,1.05,1.144,GREEN,6.68,27.03,1.92,2024-12-31
+df07c2b8-6481-4308-bd58-5964ce34aadc,Liam Young,32,male,Highly Disciplined Athlete,71.9,1.28,1.144,GREEN,8.58,22.2,0.87,2024-12-31
+e318dd45-98c2-4c5d-97f8-01d59fa38a01,Cameron Robinson,36,male,Weekend Socializer,71.1,0.91,1.144,GREEN,6.19,31.84,-1.05,2024-12-31
+eb3e3412-7c4f-41ed-adeb-7d2c3c50fd3d,Ananya Nair,32,female,Sleep-Deprived Workaholic,70.0,0.9,1.144,GREEN,6.23,33.77,9.51,2024-12-31
+f897783a-fe62-4917-8e72-131f1129bab6,Caleb Thomas,30,male,Balanced Competitor,75.0,1.0,1.144,GREEN,7.27,28.01,7.62,2024-12-31
+56106de1-a96f-4924-83c3-c618c52c7e00,Cole Torres,34,male,Balanced Competitor,61.9,1.01,1.143,GREEN,7.23,23.53,8.86,2024-12-31
+5f54c8df-ce9a-4fcc-b975-e766421702fb,Arjun Johnson,34,male,Sleep-Deprived Workaholic,57.3,0.67,1.143,GREEN,6.01,40.77,0.98,2024-12-31
+0a815716-4f66-47ba-8710-88b88cf7b7b2,Ryan Park,18,male,Weekend Socializer,65.2,0.91,1.142,GREEN,5.84,35.0,0.69,2024-12-31
+a098d5bb-891d-4b9e-9f6b-7d2e9f7e6f16,Carlos Miller,37,male,Weekend Socializer,75.0,1.02,1.142,GREEN,6.71,35.8,-1.87,2024-12-31
+de922087-2e77-4185-b546-9fae3ec78a8b,Caleb Smith,37,male,Balanced Competitor,75.0,1.13,1.142,GREEN,7.06,20.8,1.66,2024-12-31
+43176f31-d533-4a27-8bf5-291ebb1508eb,Nadia Patel,28,female,Balanced Competitor,70.0,1.16,1.141,GREEN,7.19,27.94,12.21,2024-12-31
+68a83297-a591-4cc6-a7c3-d1a87403c3a3,Mohammed Williams,22,male,Under-Recovered Athlete,75.0,0.96,1.141,GREEN,6.57,33.89,0.22,2024-12-31
+86d527c7-3fbc-4ea3-9bc2-876dcf7c3abe,Leila Chen,30,female,Under-Recovered Athlete,70.0,0.88,1.141,GREEN,6.49,34.9,5.43,2024-12-31
+f1d48145-fac1-453a-baf0-f46756e26062,Caleb Sharma,18,male,Highly Disciplined Athlete,73.7,1.14,1.141,GREEN,7.97,22.06,-5.99,2024-12-31
+da7aa090-ca31-406a-91e4-bdeda0cdc84b,Eli Reddy,32,male,Health-Conscious Athlete,56.3,0.91,1.139,GREEN,7.56,13.91,-0.93,2024-12-31
+252e91f7-5841-4e55-aa5c-54884742300a,Logan Robinson,38,male,Highly Disciplined Athlete,75.0,1.3,1.138,GREEN,8.83,14.57,6.26,2024-12-31
+3f714033-f976-4ebe-94d7-4a6d7a298596,Maya Lee,42,female,Balanced Competitor,68.9,0.97,1.138,GREEN,7.78,25.76,4.05,2024-12-31
+62d056c1-7693-4294-a58d-e8a2e3f0c1ad,Eleanor Cruz,35,female,Health-Conscious Athlete,67.7,1.14,1.138,GREEN,7.77,18.9,1.25,2024-12-31
+eeb3bdfe-7db0-4182-acff-9b2655cb4436,Sofia Jackson,39,female,Highly Disciplined Athlete,70.0,1.29,1.138,GREEN,8.89,16.39,8.09,2024-12-31
+786659bd-2920-4dd8-abcf-bc456dbdd550,Mihail Williams,23,male,Health-Conscious Athlete,67.8,1.05,1.137,GREEN,7.27,20.5,8.86,2024-12-31
+7bd74e62-9367-4843-b411-17f9c91a790a,Alex Shah,39,male,Balanced Competitor,74.5,1.17,1.137,GREEN,7.3,24.51,4.52,2024-12-31
+406c5e44-537d-4472-90d1-056c7539f155,Aria Allen,33,female,Health-Conscious Athlete,70.0,1.22,1.136,GREEN,7.72,19.19,0.87,2024-12-31
+00859e90-a48f-4d31-91c4-866de7cac256,Fatima Chen,31,female,Highly Disciplined Athlete,70.0,1.19,1.135,GREEN,7.82,17.27,-3.6,2024-12-31
+15119c98-f3ec-485b-8427-0694724d3813,Nisha Moore,32,female,Balanced Competitor,70.0,1.13,1.135,GREEN,7.02,23.46,14.33,2024-12-31
+17331550-e1ef-43fc-bc1d-febd63ab8450,Anton White,29,male,Sleep-Deprived Workaholic,75.0,0.84,1.135,GREEN,5.52,37.47,10.52,2024-12-31
+89b0484c-f1a9-4c11-b805-7934a6bc922b,Riya Clark,36,female,Weekend Socializer,68.8,1.03,1.135,GREEN,7.37,43.63,0.38,2024-12-31
+4181ea1e-a520-485f-9107-048fa2c40f59,Hassan Allen,39,male,Under-Recovered Athlete,75.0,0.93,1.134,GREEN,7.02,33.43,9.1,2024-12-31
+442287a6-4547-4e56-ab1f-94c643f9fc97,Chloe Jackson,31,female,Balanced Competitor,70.0,0.96,1.134,GREEN,6.91,29.73,16.4,2024-12-31
+ec795df0-3337-4250-8b9c-8db7083612ee,Nora Rodriguez,22,female,Under-Recovered Athlete,70.0,0.91,1.134,GREEN,5.29,35.97,19.96,2024-12-31
+220b83c5-09d4-4d29-97c9-65e035febbc8,Evelyn Jackson,20,female,Health-Conscious Athlete,70.0,1.25,1.133,GREEN,7.63,21.5,-10.06,2024-12-31
+e360d126-9b72-457e-96ac-71f8831d3088,Dev Young,33,male,Weekend Socializer,74.8,1.1,1.132,GREEN,7.07,37.97,2.03,2024-12-31
+1fef9e05-9d43-45d1-9748-1ccc8f0a6903,Lucas Gupta,32,male,Under-Recovered Athlete,67.3,0.77,1.13,GREEN,5.21,42.06,12.37,2024-12-31
+3ff628f0-9546-4775-a9f5-a743ae16289d,Nathan Shah,31,male,Weekend Socializer,60.6,0.93,1.129,GREEN,7.88,57.64,2.54,2024-12-31
+c373df29-4fc7-4207-b86d-ee42a7d2b82c,Anil Clark,29,male,Weekend Socializer,72.8,0.94,1.129,GREEN,6.9,36.29,5.95,2024-12-31
+b4e1d5cc-dac3-4974-9ded-9e85e488e553,Eli Thomas,24,male,Sleep-Deprived Workaholic,72.8,0.77,1.128,GREEN,5.25,41.43,0.07,2024-12-31
+c585122e-a5f9-4ca0-bb2f-cd33d01d1328,Oliver Moore,28,male,Highly Disciplined Athlete,75.0,1.3,1.127,GREEN,8.63,15.39,7.37,2024-12-31
+c9c0a3a9-5891-42bb-b393-653ce43f3601,Connor King,28,male,Highly Disciplined Athlete,75.0,1.3,1.127,GREEN,7.9,16.56,0.35,2024-12-31
+1c7890c6-c2eb-445d-90fb-336ccc6a3854,Marcus Thompson,27,male,Sleep-Deprived Workaholic,75.0,0.9,1.126,GREEN,4.95,46.17,12.41,2024-12-31
+f0895bf1-c431-4c7f-97ee-2673611c4204,Lily Lee,33,female,Balanced Competitor,62.3,1.03,1.126,GREEN,6.69,28.96,-0.96,2024-12-31
+6bbdc8d2-5556-472c-bd77-da9d7d58a60b,Penelope Allen,35,female,Under-Recovered Athlete,60.6,0.62,1.125,GREEN,5.42,41.06,9.52,2024-12-31
+3e4286e3-533e-4ca7-abbd-2927b1d1a1bd,Zane Smith,23,male,Sleep-Deprived Workaholic,72.9,0.9,1.124,GREEN,6.23,34.27,-1.41,2024-12-31
+59c95f04-0b70-4a23-a8cd-cf5b3dff46ca,Mohammed Santos,25,male,Balanced Competitor,75.0,1.17,1.124,GREEN,8.04,23.67,5.0,2024-12-31
+35135af3-109f-45a1-b7a7-887544d860f7,Fatima Harris,29,female,Highly Disciplined Athlete,70.0,1.27,1.123,GREEN,8.72,16.11,-5.92,2024-12-31
+3dcb305e-3271-4d3c-b965-851951d9bfb4,Divya Garcia,26,female,Weekend Socializer,69.6,1.0,1.122,GREEN,7.26,34.04,1.33,2024-12-31
+ce91ca38-35c9-4957-a461-c1e45031b974,Lily Park,37,female,Balanced Competitor,61.6,1.05,1.122,GREEN,7.04,25.76,3.98,2024-12-31
+181d4d91-adc5-4260-a23a-9fe048a7fc5c,Aaliyah Davis,33,female,Sleep-Deprived Workaholic,62.0,0.68,1.121,GREEN,5.63,41.53,0.94,2024-12-31
+1cbc32d4-395c-4eb1-b665-2068ac9ae3d5,Mihail Thompson,31,male,Highly Disciplined Athlete,75.0,1.25,1.121,GREEN,7.71,20.4,14.02,2024-12-31
+20159a96-ac4a-4063-bcd0-7edb8b561bcd,Mihail Chen,18,male,Weekend Socializer,69.6,0.89,1.12,GREEN,6.85,32.31,-7.73,2024-12-31
+3bef30d4-dd41-4459-a8b5-ba63feddcc67,Zane Jones,38,male,Under-Recovered Athlete,73.8,0.85,1.12,GREEN,6.5,36.23,4.03,2024-12-31
+4fabf70a-59f1-4f72-bbc1-0648f5209ec3,Isaiah Menon,45,male,Balanced Competitor,71.3,1.06,1.12,GREEN,8.2,28.97,-1.06,2024-12-31
+f88955e2-96e7-4548-ace7-7d8073ba71d8,Fatima Kim,28,female,Highly Disciplined Athlete,70.0,1.07,1.12,GREEN,7.97,19.07,-7.2,2024-12-31
+f8f5cfa1-4922-449a-96ba-6794fe917e06,Sneha Allen,40,female,Highly Disciplined Athlete,70.0,1.03,1.12,GREEN,7.42,42.69,2.1,2024-12-31
+20fd20d2-a5a9-4f71-85bc-cd1c2d5c6955,Anil Jones,24,male,Under-Recovered Athlete,66.6,0.83,1.119,GREEN,6.15,33.37,2.87,2024-12-31
+3250af49-1a84-4529-b1b0-060d48182e54,Vikram Allen,32,male,Highly Disciplined Athlete,75.0,1.3,1.119,GREEN,8.04,31.7,-3.0,2024-12-31
+f6fa7a2f-5b39-4ee7-8c9b-c62f133224ac,Jaxon Lewis,31,male,Highly Disciplined Athlete,75.0,1.3,1.118,GREEN,8.76,14.0,9.6,2024-12-31
+5bee30c8-6cca-45d6-aaf0-2c6abcf965f6,Victoria Harris,34,female,Health-Conscious Athlete,69.6,1.2,1.117,GREEN,7.75,19.96,6.83,2024-12-31
+6cba6afa-9d3f-4d1a-b819-856bce95f62c,Scarlett Garcia,30,female,Under-Recovered Athlete,62.5,0.72,1.117,GREEN,5.24,42.64,1.08,2024-12-31
+efe89794-9a9e-43fb-a080-8909c936f5fa,Joshua Harris,33,male,Highly Disciplined Athlete,75.0,1.3,1.117,GREEN,9.01,18.37,4.89,2024-12-31
+906d12e6-e73c-4ae7-9c93-49fde52ca7f0,David Nair,36,male,Health-Conscious Athlete,72.5,1.26,1.116,GREEN,7.7,13.5,2.37,2024-12-31
+91511fbd-d3ba-4ead-ac96-219415255633,Chloe Rodriguez,41,female,Highly Disciplined Athlete,62.3,1.25,1.116,GREEN,9.26,18.5,0.28,2024-12-31
+95885118-cac4-484f-9a6f-fb1bcb43e3aa,Nina Lee,27,female,Health-Conscious Athlete,70.0,1.17,1.116,GREEN,7.47,20.5,-0.91,2024-12-31
+4e9e0ca9-8128-4330-96b7-67fd8f9b52b0,Hunter Miller,37,male,Weekend Socializer,75.0,1.05,1.115,GREEN,6.57,41.21,0.34,2024-12-31
+b1c9752f-0ad5-4fe9-b117-eb9e32a398eb,Nathan Patel,29,male,Highly Disciplined Athlete,75.0,1.09,1.114,GREEN,7.96,38.7,5.21,2024-12-31
+b272aa13-7a4d-4aac-8e7d-d177a8bae47b,Samuel Nguyen,26,male,Weekend Socializer,67.5,1.06,1.114,GREEN,7.47,27.64,-7.38,2024-12-31
+783b940f-633b-45a8-96d4-7ee4b274c8b5,Aiden Chen,27,male,Highly Disciplined Athlete,75.0,1.3,1.113,GREEN,7.92,19.79,8.67,2024-12-31
+d8b3ac9d-50ee-4f75-9de7-49ae425e6a6e,Lily Lee,34,female,Balanced Competitor,68.4,1.04,1.111,GREEN,7.02,24.21,2.76,2024-12-31
+fabce0e8-1ac0-47ad-9ea4-466485ccb442,Tariq Allen,28,male,Highly Disciplined Athlete,75.0,1.3,1.11,GREEN,8.83,18.81,4.15,2024-12-31
+426dcd1c-6a61-419c-b362-96e01252b0d9,Caleb Shah,41,male,Under-Recovered Athlete,53.7,0.73,1.109,GREEN,5.37,37.49,10.48,2024-12-31
+561bb679-aef0-4996-94d9-03219d9f1892,Nadia Allen,36,female,Weekend Socializer,70.0,0.94,1.108,GREEN,6.86,30.13,-7.23,2024-12-31
+89835162-6cfd-4204-9858-014a6ecd6bd5,Lukas Kumar,37,male,Health-Conscious Athlete,72.7,1.09,1.108,GREEN,6.84,21.6,-7.72,2024-12-31
+f4694400-d52f-4cfb-88ff-fe8957489cc1,Noah Jackson,37,male,Highly Disciplined Athlete,64.5,1.25,1.108,GREEN,8.63,16.9,9.14,2024-12-31
+25b958d7-5665-4710-8a71-e7192fdd4660,Sanjay Robinson,34,male,Balanced Competitor,75.0,1.22,1.107,GREEN,7.69,20.59,10.21,2024-12-31
+681858d4-257e-4344-bd0c-4e0ee98393b4,Sanjay Harris,36,male,Balanced Competitor,75.0,1.17,1.107,GREEN,7.93,23.34,12.13,2024-12-31
+6cbdf711-a912-4e52-b36f-900885f1a773,Hassan Nair,27,male,Highly Disciplined Athlete,67.8,1.22,1.107,GREEN,8.79,17.91,13.62,2024-12-31
+2af7b99b-5f6b-4b6a-a20c-04d84218491b,Fatima Shah,36,female,Weekend Socializer,70.0,1.01,1.106,GREEN,6.47,33.19,2.12,2024-12-31
+3fa1141b-bcd9-478c-8ebd-cc0c8e8ee2ec,Alex Walker,36,male,Highly Disciplined Athlete,63.6,1.24,1.105,GREEN,7.26,19.9,0.39,2024-12-31
+5122c6e0-78ac-4212-a5b8-bec77b819cde,Alex Patel,23,male,Balanced Competitor,75.0,1.15,1.105,GREEN,6.73,21.97,7.36,2024-12-31
+fa640ed0-0ec7-4cff-a3d9-056684fd6b99,Eleanor Rodriguez,30,female,Under-Recovered Athlete,70.0,0.81,1.105,GREEN,5.52,39.64,-2.99,2024-12-31
+671eb61d-ecf0-4fca-a9d4-6767488b8e72,Joshua Clark,30,male,Balanced Competitor,75.0,1.08,1.104,GREEN,7.25,22.96,7.69,2024-12-31
+9471f6b4-358b-4103-b991-31d5b2f24454,Kai Nguyen,36,male,Highly Disciplined Athlete,66.5,1.23,1.104,GREEN,9.01,21.39,-5.05,2024-12-31
+94ea2f08-d104-4cef-9c78-71e0128b9a6c,Grace Cruz,26,female,Highly Disciplined Athlete,70.0,1.3,1.104,GREEN,8.83,17.3,6.83,2024-12-31
+2214d3a5-950b-4649-9d60-b32c3cb5621b,Charlotte Reddy,27,female,Weekend Socializer,64.8,0.83,1.103,GREEN,6.57,38.8,13.67,2024-12-31
+232a92a3-b878-4984-9946-ce24af226a60,Alex Taylor,39,male,Under-Recovered Athlete,75.0,0.95,1.103,GREEN,6.87,36.26,0.72,2024-12-31
+309de277-269f-4d38-82f1-84213c91a6c0,Amira King,30,female,Highly Disciplined Athlete,64.7,1.22,1.103,GREEN,8.61,19.07,10.59,2024-12-31
+6ac7af64-0c0f-45c6-aa1d-162a14fcc4dc,Cameron Torres,37,male,Highly Disciplined Athlete,67.3,1.25,1.103,GREEN,8.34,18.57,7.87,2024-12-31
+a0de10e5-bdbb-496b-a32d-93f8d9ba9234,Maya Scott,35,female,Weekend Socializer,60.7,0.9,1.103,GREEN,6.9,30.51,3.68,2024-12-31
+6915290e-c364-4e4f-9f71-eb78b2fe4e2e,Adrian Lee,37,male,Under-Recovered Athlete,75.0,1.02,1.102,GREEN,6.03,35.96,-4.17,2024-12-31
+872144e2-b2ce-4d28-bf6a-8915469ef77d,Nadia Wilson,31,female,Highly Disciplined Athlete,70.0,1.23,1.102,GREEN,8.09,18.87,6.54,2024-12-31
+a9d6a37b-abcf-492f-acd2-d6861022e1df,Aaliyah Anderson,34,female,Under-Recovered Athlete,69.2,0.89,1.102,GREEN,6.19,40.73,-2.3,2024-12-31
+d132b04d-31f5-4401-bdd2-41ef9c8f886e,Elijah Sharma,28,male,Highly Disciplined Athlete,75.0,1.27,1.102,GREEN,7.67,19.16,-8.18,2024-12-31
+dbbb01fc-d84c-4261-80b6-2488bc1580c7,Joshua Patel,38,male,Highly Disciplined Athlete,63.4,1.25,1.102,GREEN,9.09,34.27,-0.44,2024-12-31
+305db489-a245-4974-9cd2-d2526b132bf1,Hunter Thompson,18,male,Balanced Competitor,68.2,1.02,1.101,GREEN,6.64,21.87,5.67,2024-12-31
+8e5431db-10b0-41d8-8889-19feeb7ad665,Anton Harris,45,male,Under-Recovered Athlete,75.0,1.04,1.101,GREEN,6.43,30.3,7.76,2024-12-31
+28121b49-fffb-448b-a0ab-28a506981736,Stefan Flores,32,male,Weekend Socializer,71.9,0.96,1.1,GREEN,7.07,29.87,-1.83,2024-12-31
+78d606f1-5f23-49bc-ab87-651a927d5ec6,Vikram Harris,30,male,Balanced Competitor,75.0,1.18,1.1,GREEN,7.88,23.59,-0.47,2024-12-31
+73297902-1b21-4735-8a01-55c5fda16ac2,Meera Lee,34,female,Highly Disciplined Athlete,70.0,1.2,1.099,GREEN,8.62,25.27,20.6,2024-12-31
+81f946aa-a722-4c15-abf3-eb7976b83ee5,Kavya Moore,34,female,Balanced Competitor,58.8,0.92,1.098,GREEN,8.04,26.97,0.85,2024-12-31
+db16f9d4-11e2-4b3f-a404-47df9f9c80da,Natalie King,33,female,Sleep-Deprived Workaholic,66.5,0.73,1.097,GREEN,5.3,43.16,3.95,2024-12-31
+e6182974-9cee-4a26-9b90-63bcbe567cdb,Charlotte Santos,33,female,Highly Disciplined Athlete,70.0,1.3,1.097,GREEN,8.73,14.59,9.86,2024-12-31
+4673e945-e6d4-47dc-9556-2b67a4f953d3,Elena Nguyen,27,female,Sleep-Deprived Workaholic,70.0,0.94,1.096,GREEN,6.35,34.4,3.36,2024-12-31
+736fc50c-379e-4811-ac31-9b7bc871b6a0,Lily Lee,37,female,Sleep-Deprived Workaholic,70.0,0.77,1.096,GREEN,6.24,43.44,-1.13,2024-12-31
+aae3cae6-075b-4917-9add-7d4613b96d47,Alex Taylor,31,male,Highly Disciplined Athlete,75.0,1.3,1.096,GREEN,8.51,19.84,5.46,2024-12-31
+792b5112-bebb-4d56-9952-03fd8aa73b15,Riya Jones,24,female,Under-Recovered Athlete,67.2,0.63,1.095,GREEN,5.47,45.23,-1.46,2024-12-31
+d718ac34-2591-4b66-b1ef-e187f941650a,Caleb Brown,38,male,Sleep-Deprived Workaholic,70.4,0.77,1.095,GREEN,5.24,42.37,-3.25,2024-12-31
+9a7c0a86-f363-4ec3-b290-0f6f01762be5,Nadia Park,28,female,Highly Disciplined Athlete,67.8,1.19,1.093,GREEN,9.19,17.2,16.14,2024-12-31
+a264a438-9d0d-4642-9f91-a427a63ff82a,Kiran Williams,37,male,Balanced Competitor,69.9,1.18,1.093,GREEN,7.94,20.94,7.61,2024-12-31
+b26baa61-ef8c-4140-953b-6b8b7a43f0e5,Omar Taylor,29,male,Weekend Socializer,68.8,0.95,1.093,GREEN,6.99,28.93,0.25,2024-12-31
+ee7c129e-a322-4880-8a80-f87c8e2a1a6b,Adrian Santos,26,male,Health-Conscious Athlete,75.0,1.3,1.093,GREEN,8.04,18.1,-0.27,2024-12-31
+2478a186-e39c-4825-8be7-37887eb5dbe8,Anil Thompson,29,male,Balanced Competitor,75.0,0.94,1.091,GREEN,7.2,25.2,2.53,2024-12-31
+a9bd1d2a-85af-4b96-b3e2-b8758fc31870,Leon Green,29,male,Weekend Socializer,75.0,1.15,1.091,GREEN,6.95,32.91,10.2,2024-12-31
+01fb0506-7f19-4ad3-a724-accc26dda62d,James Jones,38,male,Balanced Competitor,74.8,1.17,1.09,GREEN,7.47,22.4,2.5,2024-12-31
+17789c9b-62f5-4dac-8cda-e1497c4d45c8,Logan Jones,31,male,Highly Disciplined Athlete,63.5,1.3,1.09,GREEN,8.63,14.69,12.44,2024-12-31
+2abec1f8-0324-4c72-bc68-80320f77a715,David Cruz,45,male,Health-Conscious Athlete,75.0,1.18,1.09,GREEN,7.32,18.19,-2.93,2024-12-31
+b6660ef7-7c83-4484-8d0c-8d2ec046b7ae,Pooja Taylor,27,female,Balanced Competitor,70.0,0.94,1.09,GREEN,6.67,25.31,-2.48,2024-12-31
+bf9a0929-81ba-496e-a5cc-697b0f546905,Natalie Nguyen,45,female,Under-Recovered Athlete,53.2,0.81,1.09,GREEN,7.06,39.9,7.15,2024-12-31
+e1b3e805-c5f5-444d-b769-892b7cb557bd,Omar Allen,30,male,Highly Disciplined Athlete,75.0,1.2,1.09,GREEN,7.83,19.9,6.98,2024-12-31
+e7fd15af-b225-4c7a-9f4d-eb4259249109,Elijah Nair,34,male,Highly Disciplined Athlete,75.0,1.16,1.09,GREEN,8.75,22.36,6.36,2024-12-31
+28727e33-995c-4210-b1ea-4d49e6304b0f,Rahul Jackson,35,male,Balanced Competitor,66.8,1.0,1.089,GREEN,6.97,28.81,17.16,2024-12-31
+3a199432-e582-47fa-890d-98321a9c103c,Omar Harris,28,male,Weekend Socializer,68.5,0.84,1.089,GREEN,6.4,34.63,5.76,2024-12-31
+490018fa-a677-44ef-a8c2-0be3f967c747,Eli Anderson,23,male,Balanced Competitor,75.0,1.11,1.089,GREEN,7.08,16.86,4.12,2024-12-31
+9d630060-8a2a-4a59-a435-010cf435e85e,Finn Lee,50,male,Balanced Competitor,59.7,0.97,1.088,GREEN,7.66,26.61,2.8,2024-12-31
+d0175d48-8b17-4099-97ea-b61e536f015d,Yasmin Green,33,female,Highly Disciplined Athlete,70.0,1.17,1.088,GREEN,7.77,22.81,4.92,2024-12-31
+08bb83fe-271d-4e23-aa76-784b12ca6ddf,Sanjay Shah,33,male,Sleep-Deprived Workaholic,65.5,0.6,1.087,GREEN,4.96,46.64,11.05,2024-12-31
+135c5677-bc9a-4886-90f2-44c5edae66f6,Owen Thompson,33,male,Highly Disciplined Athlete,72.9,1.09,1.087,GREEN,7.65,43.82,15.47,2024-12-31
+1a2e22c1-48f0-44cb-97a7-ec67d2435180,Aisha Kim,27,female,Under-Recovered Athlete,70.0,0.84,1.087,GREEN,5.92,40.23,9.24,2024-12-31
+29d804c3-198e-4065-930a-00a8680d4c5b,Marco Thompson,25,male,Health-Conscious Athlete,75.0,1.3,1.087,GREEN,8.01,17.31,-2.08,2024-12-31
+f3d8f388-a1eb-465d-a972-ab7c5f02a6d2,Diego Martinez,36,male,Weekend Socializer,74.7,1.06,1.087,GREEN,7.4,30.77,9.33,2024-12-31
+4b4d448f-8f51-43a6-8184-af9e45b208f2,Sanjay Sharma,43,male,Balanced Competitor,70.0,1.18,1.086,GREEN,7.91,20.5,3.87,2024-12-31
+58577b94-5399-4325-b82a-f394ab41ba49,Charlotte Menon,41,female,Sleep-Deprived Workaholic,61.1,0.7,1.086,GREEN,5.87,34.1,-3.98,2024-12-31
+1bf587b6-6d2f-4fa6-b831-6dea93de9e5c,Rahul Iyer,35,male,Highly Disciplined Athlete,75.0,1.09,1.085,GREEN,8.42,16.73,10.45,2024-12-31
+4404912e-4b02-4bfa-b933-d6449ead6ccd,Stefan Robinson,44,male,Under-Recovered Athlete,50.2,0.75,1.085,GREEN,6.68,32.5,6.79,2024-12-31
+84502f6d-b39c-4e6a-9720-793f7b4d6bf2,Mason Walker,38,male,Weekend Socializer,75.0,0.99,1.085,GREEN,5.93,30.2,-1.07,2024-12-31
+e072b5b3-467f-4ea6-a5f3-9c38dc2440c9,Andre Taylor,42,male,Balanced Competitor,64.6,0.95,1.085,GREEN,6.47,29.76,7.73,2024-12-31
+529825e7-054f-4140-8926-8b90f3b88c8c,Mihail Cruz,36,male,Balanced Competitor,68.7,1.12,1.083,GREEN,8.27,18.17,4.75,2024-12-31
+e8f3dcfe-145d-4df1-af1f-48c08d85a97b,Stefan Reyes,32,male,Sleep-Deprived Workaholic,56.3,0.5,1.082,GREEN,5.19,41.44,1.49,2024-12-31
+402d403d-48ca-4d21-837f-5fb1f28faa93,Violet Kim,28,female,Balanced Competitor,68.6,0.86,1.081,GREEN,6.87,24.09,7.05,2024-12-31
+5764193d-425c-4cab-952e-79e8f070acae,Sophia Thomas,36,female,Under-Recovered Athlete,70.0,0.89,1.081,GREEN,5.99,33.63,4.95,2024-12-31
+20f64a6d-fb8d-43e1-aa43-76e88cb021b1,Dev Park,33,male,Health-Conscious Athlete,75.0,1.1,1.08,GREEN,7.91,23.64,5.15,2024-12-31
+4cd3e289-7c2c-42b6-a744-b94b7ad4f900,Cole Martin,37,male,Highly Disciplined Athlete,75.0,1.27,1.079,GREEN,7.83,15.57,8.42,2024-12-31
+feab5cbd-dbdc-4d48-a975-5b7801a87e48,Isabelle Miller,31,female,Highly Disciplined Athlete,66.8,1.3,1.079,GREEN,9.18,15.01,11.42,2024-12-31
+88c22057-c4d6-412d-9321-7acccb5fc9b6,Mohammed Brown,36,male,Highly Disciplined Athlete,75.0,1.3,1.078,GREEN,8.78,14.59,6.28,2024-12-31
+53ce4eab-623b-444e-87ea-0a51be8f3c9a,Omar Taylor,40,male,Sleep-Deprived Workaholic,73.0,0.85,1.077,GREEN,5.19,41.04,0.86,2024-12-31
+bb2beb62-4712-4899-997d-632f690dc20a,Nathan Flores,27,male,Balanced Competitor,68.8,1.02,1.077,GREEN,6.76,19.8,4.24,2024-12-31
+206f8ec8-cab1-47ad-ba40-e99b82f2a8db,Meera Nair,32,female,Highly Disciplined Athlete,69.7,1.16,1.076,GREEN,8.91,17.43,9.2,2024-12-31
+26ec0c6e-1a59-4a4d-8fa8-4ee9dfb6135c,Natalie White,40,female,Highly Disciplined Athlete,68.9,1.28,1.076,GREEN,8.48,15.76,2.52,2024-12-31
+fd09c584-fc56-40a6-a6b1-ca5fd4e1e1a6,Noah Brown,36,male,Weekend Socializer,75.0,0.86,1.075,GREEN,6.42,34.41,9.92,2024-12-31
+34435978-a692-48ac-a4ac-6fe2b5224b88,Mihail Lewis,29,male,Health-Conscious Athlete,75.0,1.24,1.074,GREEN,8.11,19.1,-3.09,2024-12-31
+539fc827-e333-42b0-ab6c-5d3c495129e2,Daniel Young,34,male,Highly Disciplined Athlete,75.0,1.3,1.074,GREEN,8.36,19.03,8.68,2024-12-31
+263dd00d-9d2a-4be2-a9b5-f0b286551186,Owen Chen,31,male,Highly Disciplined Athlete,75.0,1.3,1.073,GREEN,7.92,13.43,2.93,2024-12-31
+39903c84-5aca-4b0d-b16c-296399df96d7,Rahul Young,20,male,Health-Conscious Athlete,75.0,1.2,1.073,GREEN,7.4,16.46,16.42,2024-12-31
+ddd54236-24e5-4922-8750-131d79a39f9f,Carlos Rodriguez,42,male,Health-Conscious Athlete,72.2,1.27,1.072,GREEN,8.11,19.31,2.45,2024-12-31
+e66064e3-0796-449b-b176-bf9baea51c3b,Jaxon Scott,45,male,Weekend Socializer,56.6,0.93,1.072,GREEN,6.72,31.59,2.95,2024-12-31
+33ae91c4-9d6e-4463-bef1-39c4c1df93f8,Cole Park,36,male,Under-Recovered Athlete,58.8,0.64,1.071,GREEN,5.86,38.53,2.05,2024-12-31
+93be0697-ea3d-404b-b88b-17f1ce4da798,Chloe Cruz,29,female,Weekend Socializer,67.8,0.95,1.071,GREEN,7.29,33.99,1.37,2024-12-31
+caa195ab-a267-46a0-90ce-adb6c4aaae03,Hannah Flores,29,female,Balanced Competitor,69.5,1.04,1.071,GREEN,7.15,22.34,-1.06,2024-12-31
+39e6b5df-95c5-450a-a708-8c4fd64ae8b9,Sofia Green,42,female,Under-Recovered Athlete,53.6,0.72,1.068,GREEN,5.77,39.73,-2.8,2024-12-31
+3d026280-3f31-4f5c-b33b-74a15a094fb9,Marco Thompson,40,male,Weekend Socializer,56.7,0.74,1.068,GREEN,7.42,40.26,6.07,2024-12-31
+823b8f80-f179-4018-a6b0-6eebc8de719d,Nathan Smith,30,male,Balanced Competitor,74.3,1.13,1.067,GREEN,7.57,22.89,18.47,2024-12-31
+9d8afd64-d67d-4e0d-9568-4f5081917099,Chloe Allen,36,female,Sleep-Deprived Workaholic,70.0,0.7,1.067,GREEN,5.03,47.2,4.72,2024-12-31
+34983a8c-e49b-4236-a68a-6f3f045fb08c,Omar Anderson,27,male,Sleep-Deprived Workaholic,75.0,0.88,1.066,GREEN,6.11,40.94,5.86,2024-12-31
+8ae5efb1-f76e-46ac-af04-0d32066ccd4e,Natalie Nair,38,female,Highly Disciplined Athlete,70.0,1.25,1.066,GREEN,7.84,16.3,-2.21,2024-12-31
+8d76a638-8ae0-4ab1-8621-b0a343503eff,Zoe Brown,32,female,Weekend Socializer,55.3,0.72,1.066,GREEN,6.01,36.14,-2.57,2024-12-31
+1326ec70-6930-4da4-a372-d4771fd72dcb,Olivia Anderson,37,female,Balanced Competitor,57.2,0.9,1.065,GREEN,6.75,22.77,-1.72,2024-12-31
+62ba220d-f594-4b1f-8582-43fa8ab3fbd2,Matthew Scott,26,male,Sleep-Deprived Workaholic,75.0,0.76,1.065,GREEN,5.91,34.87,4.98,2024-12-31
+6d0dc4f2-c043-41d3-8628-f8cc2995c796,Leon Torres,32,male,Under-Recovered Athlete,56.9,0.82,1.064,GREEN,6.77,33.29,6.99,2024-12-31
+8228ee8c-f050-47c0-8fd4-98de11835883,Stella Kumar,29,female,Weekend Socializer,65.9,1.0,1.063,GREEN,6.42,32.76,17.79,2024-12-31
+86556b67-4674-4c44-973d-0222d5709535,Pooja Park,30,female,Balanced Competitor,70.0,0.96,1.063,GREEN,6.99,25.93,2.4,2024-12-31
+f1343dcf-f93b-45ef-964a-da5615255511,Carlos Iyer,42,male,Health-Conscious Athlete,62.2,1.08,1.063,GREEN,8.3,23.87,16.75,2024-12-31
+ef545dcb-6150-43c4-b9f7-28180268cc49,Emily Williams,37,female,Under-Recovered Athlete,70.0,0.62,1.061,GREEN,5.24,42.52,2.11,2024-12-31
+176a8bd1-6f8a-4c8b-97a4-404fa93284af,Omar Thompson,49,male,Balanced Competitor,64.9,0.85,1.06,GREEN,7.08,31.33,7.68,2024-12-31
+21ee8d7a-d919-40df-ada3-1d47e0805097,Divya Reddy,27,female,Highly Disciplined Athlete,63.4,1.13,1.06,GREEN,7.91,21.14,9.26,2024-12-31
+6574d000-21c4-4fd2-9c4a-cc702dd8d956,Violet Nguyen,27,female,Weekend Socializer,69.9,1.04,1.06,GREEN,7.41,32.46,11.13,2024-12-31
+7857a1de-0f03-4339-bcc0-c75b747389b1,Eli Chen,36,male,Highly Disciplined Athlete,75.0,1.3,1.06,GREEN,8.66,20.37,10.92,2024-12-31
+ba4fb376-e570-4cf1-9517-cd77c56edc78,Evelyn Jones,26,female,Balanced Competitor,68.6,0.89,1.058,GREEN,6.41,23.4,1.33,2024-12-31
+e2ba2e6c-edba-4231-a1ae-377b009e06c3,Sanjay White,27,male,Under-Recovered Athlete,71.7,0.88,1.058,GREEN,6.08,37.14,12.25,2024-12-31
+0736de85-d1e9-4ff4-9870-8a6a4e4a2959,Hunter Robinson,42,male,Health-Conscious Athlete,75.0,1.23,1.057,GREEN,6.88,11.57,5.95,2024-12-31
+a61552c0-00a9-4e89-accd-c84f7a7fc26e,Arjun Shah,34,male,Health-Conscious Athlete,75.0,1.22,1.057,GREEN,8.07,22.07,10.36,2024-12-31
+bad9dd64-d324-4865-8d57-6a1a6b3739eb,Natalie Rodriguez,34,female,Balanced Competitor,70.0,0.99,1.057,GREEN,7.68,29.74,4.18,2024-12-31
+ca735ad9-831d-47e5-9def-ab76a9edab98,Violet Martin,29,female,Sleep-Deprived Workaholic,70.0,0.84,1.057,GREEN,5.92,37.11,-0.52,2024-12-31
+d06fd19a-28fb-4723-826c-c7c3b6e00199,Kiran Walker,35,male,Highly Disciplined Athlete,73.0,1.3,1.057,GREEN,8.84,18.06,11.29,2024-12-31
+d83c8919-c2fa-4dc4-903d-3183918d9221,Aaliyah Nair,34,female,Balanced Competitor,67.4,1.04,1.057,GREEN,7.22,23.9,-3.01,2024-12-31
+e6920a29-6067-4cb9-a97b-ab0193f8891b,Andre Gupta,27,male,Health-Conscious Athlete,75.0,1.29,1.057,GREEN,7.69,17.24,0.95,2024-12-31
+4a9650cb-f5a5-4ab6-8f06-7ae3ec3e6a80,Nora Torres,26,female,Balanced Competitor,70.0,1.23,1.056,GREEN,7.41,40.47,3.65,2024-12-31
+97eed9d8-f9be-482e-965c-ae7f3e55fd0e,Eleanor Garcia,29,female,Balanced Competitor,70.0,1.05,1.056,GREEN,7.41,22.0,-2.68,2024-12-31
+afa87b5e-ca51-4098-b289-5089ddcb579c,Noah Iyer,23,male,Sleep-Deprived Workaholic,72.7,0.82,1.056,GREEN,5.54,42.69,1.51,2024-12-31
+56422c5b-71ce-4254-b135-08a73c57d937,Jasmine Clark,40,female,Highly Disciplined Athlete,60.4,1.19,1.053,GREEN,8.92,19.47,-2.94,2024-12-31
+7c0c9688-00dc-4c07-847b-a335bc3f2997,Evelyn Reddy,29,female,Health-Conscious Athlete,70.0,1.18,1.052,GREEN,7.14,25.03,-6.17,2024-12-31
+5a50b0fb-5bc0-4c4a-8daf-b8190c2808c4,Leon Johnson,32,male,Balanced Competitor,75.0,1.16,1.051,GREEN,7.25,25.87,-1.68,2024-12-31
+b13758ce-efac-44e9-aa2c-381d8a50386e,Jordan Johnson,38,male,Balanced Competitor,66.6,0.98,1.051,GREEN,7.54,25.97,-5.5,2024-12-31
+67d8d0ce-d00c-42e1-b8c5-952640c83b87,Eleanor Walker,45,female,Highly Disciplined Athlete,54.8,1.17,1.05,GREEN,8.3,17.57,9.32,2024-12-31
+918baa25-8029-4fb5-9786-6e00f7e452cf,Lucas Lee,29,male,Balanced Competitor,75.0,1.21,1.05,GREEN,7.68,31.44,-16.43,2024-12-31
+a20e9b75-efa2-4c71-8ffc-9336795f6e02,Jaxon Allen,24,male,Highly Disciplined Athlete,75.0,1.3,1.05,GREEN,7.55,18.24,14.45,2024-12-31
+f4a724d1-2941-48cc-b8ac-09d0be8fe933,Daniel Thompson,36,male,Under-Recovered Athlete,75.0,1.06,1.05,GREEN,6.75,36.04,-5.33,2024-12-31
+6a2990d4-4cb3-4258-b225-f5d8748e5422,Luna Scott,39,female,Balanced Competitor,51.5,0.91,1.049,GREEN,6.98,21.77,3.32,2024-12-31
+62815e69-a2e0-4d61-851b-daa186b26a71,Rahul Johnson,28,male,Health-Conscious Athlete,70.3,1.3,1.048,GREEN,8.03,16.86,-3.1,2024-12-31
+31cd3dc4-05b1-46ae-96bd-babdd07adfa5,Elijah Garcia,35,male,Highly Disciplined Athlete,69.3,1.22,1.047,GREEN,7.58,18.31,0.07,2024-12-31
+35741260-1a3e-4d86-a707-ae169c75db9f,Tariq Robinson,23,male,Balanced Competitor,67.7,1.13,1.047,GREEN,7.82,34.99,0.13,2024-12-31
+5cec4cf5-9d32-4da8-a6a2-d9d8049369ed,Grace Lee,42,female,Highly Disciplined Athlete,70.0,1.05,1.047,GREEN,8.15,17.19,7.18,2024-12-31
+b1348b3f-c15f-4f99-ba4d-49c04ee8ea80,Arjun Martinez,34,male,Under-Recovered Athlete,75.0,0.96,1.047,GREEN,5.49,39.29,0.46,2024-12-31
+b4510818-c8a8-494a-ac06-66cf86e768ef,Amira Santos,32,female,Weekend Socializer,65.5,0.87,1.047,GREEN,6.34,38.85,1.46,2024-12-31
+4064ccde-cab7-43fd-bb56-ba305644f5cf,Pooja Reddy,45,female,Sleep-Deprived Workaholic,56.4,0.76,1.045,GREEN,5.07,45.43,-4.68,2024-12-31
+48efafaa-018d-4081-8edc-541cef73afbc,Chloe Patel,27,female,Highly Disciplined Athlete,70.0,1.3,1.045,GREEN,9.2,13.1,-9.84,2024-12-31
+790b504d-ce55-45ae-b9db-516e47469072,Sophia Iyer,33,female,Balanced Competitor,70.0,1.13,1.044,GREEN,8.0,21.06,0.57,2024-12-31
+c90f94fd-4fbb-4669-8ee6-8d5cd13c3989,Chloe Shah,27,female,Under-Recovered Athlete,64.3,0.82,1.044,GREEN,5.73,49.55,11.54,2024-12-31
+e2ea128d-ebcb-44ea-babd-70162716478c,Cameron Lee,40,male,Under-Recovered Athlete,58.3,0.6,1.044,GREEN,5.62,36.2,0.76,2024-12-31
+aab33b28-d5a3-46e3-998b-9901bf283ada,Kiran Thompson,34,male,Sleep-Deprived Workaholic,71.2,0.92,1.043,GREEN,5.99,38.21,4.18,2024-12-31
+e384267f-725d-449a-8d42-757c02dfb0bf,Lucas Iyer,36,male,Balanced Competitor,70.8,1.01,1.043,GREEN,7.58,18.53,15.02,2024-12-31
+ef69f2c7-4e6c-4c3a-9b87-b377a49b4902,Blake Johnson,37,male,Highly Disciplined Athlete,61.2,1.03,1.042,GREEN,7.65,18.7,8.4,2024-12-31
+4936b669-07d1-4a35-95a7-7836108a7721,Connor Reyes,36,male,Highly Disciplined Athlete,70.0,1.09,1.041,GREEN,8.16,18.54,6.61,2024-12-31
+3f27c0e7-9ec1-4bd7-bc00-14900a272648,Eli Lewis,47,male,Weekend Socializer,65.5,0.8,1.039,GREEN,6.53,41.69,10.25,2024-12-31
+53bd11e8-4ea8-48fd-8d6f-1c9ef1073cfd,Caleb Lewis,36,male,Highly Disciplined Athlete,75.0,1.29,1.037,GREEN,8.86,13.64,3.08,2024-12-31
+5ad515e6-0c78-4561-8e47-000f02dd6cbc,Jasmine Cruz,37,female,Health-Conscious Athlete,70.0,1.02,1.037,GREEN,7.6,13.34,9.57,2024-12-31
+b333f79e-10f5-45bc-ab5b-ad4760845c95,Yusuf Green,35,male,Highly Disciplined Athlete,75.0,1.3,1.037,GREEN,8.82,17.8,8.42,2024-12-31
+dcae4ba1-b829-4c5c-a6c4-4464a9977394,Eleanor Nair,25,female,Balanced Competitor,70.0,0.92,1.037,GREEN,7.64,23.27,10.79,2024-12-31
+017bbce1-360b-4c94-b300-b73a30eab657,Pooja Lewis,34,female,Highly Disciplined Athlete,64.0,1.11,1.036,GREEN,8.11,45.65,14.8,2024-12-31
+1cc9d89b-6c17-4ce1-91f5-e7041193619e,Mason Jackson,33,male,Balanced Competitor,75.0,1.08,1.036,GREEN,7.21,24.21,5.41,2024-12-31
+3e79609a-b453-4002-85b4-20dbc41e267c,Lukas Gupta,32,male,Balanced Competitor,69.4,1.01,1.036,GREEN,7.14,27.23,13.0,2024-12-31
+b520d9aa-4a30-4c96-aa1d-6732882dfffa,Lily Flores,37,female,Balanced Competitor,65.5,1.0,1.036,GREEN,6.83,24.8,4.84,2024-12-31
+630813a9-390c-496c-9a9c-e918bc06dcf2,Jordan Thomas,23,male,Under-Recovered Athlete,67.3,0.68,1.035,GREEN,4.92,43.06,3.76,2024-12-31
+0fdb1aef-fdab-4729-9d10-d81a32675f45,David Park,29,male,Balanced Competitor,75.0,1.16,1.033,GREEN,6.81,25.07,14.36,2024-12-31
+bb0ecf5b-bc34-462a-a104-2a618cc24539,Emma Reyes,37,female,Balanced Competitor,70.0,1.12,1.033,GREEN,7.07,27.79,10.96,2024-12-31
+9e05e348-72be-41c9-916a-6d71bd6cc0cc,Grace Johnson,35,female,Health-Conscious Athlete,70.0,1.3,1.032,GREEN,8.14,19.13,4.86,2024-12-31
+dbfe6596-3f4f-4e4b-8471-f7578b59cce2,Elena Clark,25,female,Sleep-Deprived Workaholic,67.1,0.94,1.031,GREEN,5.78,37.44,-0.46,2024-12-31
+ed1624a5-d2fc-42fe-bd39-08e59e87fbef,Connor White,31,male,Under-Recovered Athlete,75.0,0.91,1.031,GREEN,6.01,33.79,7.11,2024-12-31
+d2d9ea38-dbef-4cf1-8c3e-717d81840cf7,Elijah Kumar,27,male,Under-Recovered Athlete,66.9,0.88,1.03,GREEN,6.89,35.69,-0.77,2024-12-31
+d4a7da92-81da-4d38-94e4-da85fd593636,Penelope Miller,39,female,Weekend Socializer,69.1,0.88,1.029,GREEN,7.38,35.61,1.8,2024-12-31
+eeec0729-115f-4444-a9a5-cbe09af00806,Owen Flores,38,male,Balanced Competitor,73.9,0.91,1.029,GREEN,6.9,29.36,9.06,2024-12-31
+f8d45381-a8f2-4f5b-b992-015440b657da,Mohammed Park,31,male,Under-Recovered Athlete,61.6,0.87,1.029,GREEN,7.09,34.99,3.68,2024-12-31
+458aa983-aeb6-4373-8fcd-23da0c81a546,Aiden Kim,24,male,Balanced Competitor,75.0,1.16,1.028,GREEN,7.34,22.81,1.09,2024-12-31
+d0c7c11b-47b3-4420-8872-e8a18db3ff0a,Omar Martin,27,male,Balanced Competitor,75.0,1.04,1.028,GREEN,6.81,25.01,1.45,2024-12-31
+f55e36b4-d8ef-4e1a-8419-5bba7aa78393,Lukas Martinez,29,male,Highly Disciplined Athlete,71.4,1.3,1.028,GREEN,8.77,15.36,11.29,2024-12-31
+6a821405-32d2-4f4e-a3e3-dd0ea2d65000,Alex Singh,26,male,Balanced Competitor,75.0,1.24,1.027,GREEN,7.71,15.79,4.83,2024-12-31
+1f37edc5-0940-4e44-98c3-346ca2250390,Ruby Reyes,23,female,Highly Disciplined Athlete,70.0,1.1,1.026,GREEN,8.11,13.76,8.37,2024-12-31
+2661f8ad-36a2-450e-9158-42ce085e042f,Evelyn Allen,30,female,Health-Conscious Athlete,70.0,1.24,1.026,GREEN,7.88,25.9,8.06,2024-12-31
+614517b3-cd9d-4b54-8585-04c887ede710,Andrew Singh,25,male,Balanced Competitor,75.0,1.08,1.026,GREEN,7.3,22.09,11.55,2024-12-31
+78e23bbb-03b2-439d-9d32-7d7e430b2a50,Ruby Jackson,23,female,Under-Recovered Athlete,67.1,0.85,1.026,GREEN,5.84,34.76,24.76,2024-12-31
+287e50db-c2b8-4257-95cc-a6dc1b818156,Marco Gupta,29,male,Under-Recovered Athlete,58.0,0.76,1.025,GREEN,6.28,32.09,6.17,2024-12-31
+f51d6f0c-25ed-4763-859f-44b00d82551e,Nathan Kumar,33,male,Highly Disciplined Athlete,75.0,1.27,1.025,GREEN,8.14,14.27,13.27,2024-12-31
+58f57b83-6783-4a5d-9f49-9a0ac8e79cbe,Nathan Lee,26,male,Balanced Competitor,71.3,1.21,1.022,GREEN,7.45,18.6,9.04,2024-12-31
+dab8bcf0-3f2d-4332-8811-da322d3de5bc,Connor Robinson,40,male,Sleep-Deprived Workaholic,60.7,0.82,1.021,GREEN,6.38,35.46,4.49,2024-12-31
+fe7601d4-5ff0-415f-b464-6b4bc6341c9b,Stella Reyes,42,female,Highly Disciplined Athlete,50.2,1.12,1.021,GREEN,8.8,17.29,2.71,2024-12-31
+f7e22aa3-9113-4cda-8ca2-93b8e51ebc91,Matthew Thompson,36,male,Sleep-Deprived Workaholic,75.0,0.82,1.02,GREEN,5.49,40.89,5.22,2024-12-31
+103e5867-851e-464e-ad4c-db553c24031a,Cole Flores,34,male,Balanced Competitor,75.0,1.07,1.019,GREEN,7.74,18.77,6.31,2024-12-31
+263e399c-f74c-4c19-ad76-9b48101557c3,Ryan Nguyen,19,male,Under-Recovered Athlete,59.8,0.93,1.019,GREEN,7.03,30.46,2.16,2024-12-31
+22b73e89-9f68-4312-b5a4-3927719cdee6,Connor Allen,38,male,Under-Recovered Athlete,60.8,0.85,1.017,GREEN,6.55,36.06,2.31,2024-12-31
+af392565-4442-4309-86ce-feaf32522a76,Diego Rivera,28,male,Balanced Competitor,75.0,1.14,1.016,GREEN,7.61,23.39,6.99,2024-12-31
+fa8d5e54-8441-468d-93cf-69add94a9569,Mia Shah,38,female,Balanced Competitor,63.7,1.1,1.015,GREEN,7.2,17.8,5.48,2024-12-31
+3584b74b-875c-4ec8-877c-ca81f8e7cf6c,Penelope Green,36,female,Balanced Competitor,70.0,1.05,1.013,GREEN,6.95,27.1,9.0,2024-12-31
+813d1788-5464-4590-a659-33e609ec79a8,Finn Shah,41,male,Health-Conscious Athlete,75.0,0.97,1.012,GREEN,7.12,24.84,4.58,2024-12-31
+f66b8ded-2439-4544-b8f9-5c6517cb1f9f,Kiran Nguyen,30,male,Highly Disciplined Athlete,73.8,1.29,1.012,GREEN,8.64,15.89,12.38,2024-12-31
+2a0d2303-2395-4147-b2bb-a3417d948e6b,Samuel Flores,40,male,Weekend Socializer,60.4,0.92,1.011,GREEN,6.92,63.38,0.97,2024-12-31
+30d7c2aa-8ebf-41f8-93da-4d4a435978db,Divya Gupta,33,female,Balanced Competitor,70.0,0.97,1.011,GREEN,6.88,24.06,4.97,2024-12-31
+5b4f7b7c-468d-45ba-aaef-746528298195,Anna Reddy,27,female,Highly Disciplined Athlete,69.9,1.3,1.011,GREEN,8.34,14.0,-13.51,2024-12-31
+5c087ab5-ef9e-4d6e-b6c4-bb53fd6faa2b,Nathan Johnson,35,male,Balanced Competitor,60.2,0.84,1.011,GREEN,6.66,31.2,-0.81,2024-12-31
+5f54f988-ae6c-40bb-bdae-713326d6ea61,Finn Davis,30,male,Weekend Socializer,56.7,0.83,1.01,GREEN,7.68,36.2,-4.12,2024-12-31
+88860e7f-465d-4fe0-b0ef-3484d45e7a5e,Aiden Allen,43,male,Highly Disciplined Athlete,75.0,1.3,1.01,GREEN,8.31,14.37,8.46,2024-12-31
+8e5c0da8-c1e5-471d-bfe2-767e2aba7eed,Amelia Park,40,female,Sleep-Deprived Workaholic,60.8,0.74,1.01,GREEN,5.95,41.2,10.13,2024-12-31
+9056c9c3-b2c8-4799-9f3f-aa655340ce24,Logan Kim,31,male,Weekend Socializer,67.0,1.01,1.009,GREEN,7.39,34.84,0.92,2024-12-31
+6665fc1a-93c2-4e04-b94f-2320704b9f9c,Mia King,27,female,Highly Disciplined Athlete,70.0,1.28,1.007,GREEN,8.16,19.24,5.62,2024-12-31
+f1c23205-7923-4eda-931a-1083a5ca11dd,Clara Patel,30,female,Weekend Socializer,70.0,0.89,1.007,GREEN,6.86,38.19,-2.98,2024-12-31
+615290dd-4093-4296-a269-95f8636860c3,Daniel Martin,25,male,Highly Disciplined Athlete,73.6,1.3,1.006,GREEN,8.82,24.71,6.91,2024-12-31
+361aa8e8-ff00-449f-a146-944df83eb9ac,Nisha King,41,female,Balanced Competitor,53.0,0.87,1.005,GREEN,7.42,25.21,1.22,2024-12-31
+e4cc4d5e-dbb6-46ef-a3f2-3fef927882fa,Sara Robinson,31,female,Highly Disciplined Athlete,70.0,1.08,1.005,GREEN,8.15,18.9,4.92,2024-12-31
+0507fa28-42e8-42ee-b9a0-12f4f5cd49aa,Daniel Jackson,30,male,Highly Disciplined Athlete,75.0,1.3,1.003,GREEN,8.25,17.59,-3.35,2024-12-31
+42a48d1c-9bb5-440e-80ea-8a8e09e97b29,Anil Rodriguez,24,male,Highly Disciplined Athlete,75.0,1.3,1.003,GREEN,8.79,15.23,1.65,2024-12-31
+e9e1733a-ab7e-4111-a38d-fd082d2a6955,Zoe Lee,40,female,Sleep-Deprived Workaholic,51.9,0.62,1.003,GREEN,5.32,44.21,0.64,2024-12-31
+35969cbf-87da-48a0-a3fa-9bcd1e716845,Ava Smith,39,female,Highly Disciplined Athlete,70.0,1.2,1.002,GREEN,8.98,19.27,-0.14,2024-12-31
+3d7a4ede-4386-4c25-8086-c59e8c75760c,Kai Shah,37,male,Highly Disciplined Athlete,75.0,1.25,1.001,GREEN,8.53,17.1,7.8,2024-12-31
+4a95facc-257f-47f4-8913-511d368f9542,Luna Anderson,26,female,Health-Conscious Athlete,70.0,1.15,1.001,GREEN,8.03,24.53,4.87,2024-12-31
+9061a06c-3a60-4a68-b45d-09ae93394585,Aaliyah Lee,34,female,Under-Recovered Athlete,65.8,0.67,1.001,GREEN,5.12,41.96,3.6,2024-12-31
+ff0213c8-d8e3-4ce4-8e2b-f3da2d95c06a,Anil Brown,41,male,Balanced Competitor,61.2,0.8,1.001,GREEN,6.61,23.07,0.44,2024-12-31
+80c4909c-dba3-4cbe-affe-c11d70c4392f,Vikram Kim,21,male,Highly Disciplined Athlete,73.9,1.28,1.0,GREEN,8.48,17.51,-0.22,2024-12-31
+a3e14e8a-e157-4f0b-8bb4-1e3710e5f918,Mason Brown,49,male,Highly Disciplined Athlete,74.1,1.3,1.0,GREEN,9.19,14.21,1.52,2024-12-31
+f5aa7857-22e6-44db-866c-a2e3255b7158,Nadia Thompson,21,female,Sleep-Deprived Workaholic,66.0,0.75,1.0,GREEN,5.31,38.81,-4.31,2024-12-31
+439ebccf-838a-4660-8917-aefb7c0c7f47,Daniel Menon,31,male,Sleep-Deprived Workaholic,73.0,0.68,0.997,GREEN,4.7,38.59,-3.33,2024-12-31
+a821333c-25d9-4771-a54e-db64bc8897ca,Matthew Martinez,31,male,Balanced Competitor,64.9,1.1,0.997,GREEN,8.32,20.96,-7.23,2024-12-31
+e5b8930c-8dea-461d-8895-bff9f2a826e1,Cameron Martinez,32,male,Sleep-Deprived Workaholic,67.1,0.79,0.996,GREEN,5.87,41.77,11.54,2024-12-31
+99b7167c-4072-4add-a71f-e4c9b0a4ab39,Leon Kim,32,male,Balanced Competitor,72.1,1.03,0.995,GREEN,6.57,22.26,0.29,2024-12-31
+c2dc95ba-9453-45e0-8e18-07e922923722,David Young,35,male,Weekend Socializer,71.8,0.93,0.99,GREEN,6.51,37.6,7.87,2024-12-31
+f6333287-4a23-40a3-ba35-b2b1cb6799ae,Elena Green,32,female,Sleep-Deprived Workaholic,64.9,0.7,0.987,GREEN,5.13,35.7,3.21,2024-12-31
+fce0d622-04b7-4bf1-8194-abb7b16c9c59,Elena Smith,32,female,Highly Disciplined Athlete,70.0,1.3,0.987,GREEN,9.25,20.54,7.29,2024-12-31
+514fb728-af86-43db-8cb6-0b987e1a7bfc,Daniel Martin,28,male,Balanced Competitor,75.0,1.23,0.985,GREEN,7.27,23.3,2.18,2024-12-31
+54c427e8-d32d-4e31-83d5-f186b5432b85,Sanjay Sharma,30,male,Sleep-Deprived Workaholic,75.0,0.83,0.985,GREEN,5.31,39.91,0.36,2024-12-31
+bc30dbdd-034e-4747-bfb5-f84201438b94,Hunter Clark,35,male,Highly Disciplined Athlete,75.0,1.05,0.985,GREEN,7.58,15.8,3.85,2024-12-31
+edb21298-fc28-4c87-8867-e367867fd6a3,Andre Nair,22,male,Under-Recovered Athlete,67.0,0.76,0.984,GREEN,5.99,32.47,1.41,2024-12-31
+fbc8c2e7-9cb4-4056-9578-b3ea32abc64f,Hunter Park,37,male,Balanced Competitor,70.0,1.05,0.982,GREEN,6.61,48.02,11.88,2024-12-31
+c3d9d43f-456b-405a-a2e2-a3ee54f29bc3,Rohan Cruz,35,male,Balanced Competitor,70.8,1.16,0.981,GREEN,7.99,40.51,1.93,2024-12-31
+ed8b118f-0e05-469f-aef1-a8aa97c6da46,Cameron Garcia,37,male,Highly Disciplined Athlete,69.1,1.08,0.981,GREEN,8.19,14.79,12.14,2024-12-31
+198584ff-c8bd-4310-a6f1-e74209416121,Maya Davis,35,female,Weekend Socializer,53.8,0.82,0.98,GREEN,7.17,31.31,0.08,2024-12-31
+5c4c268b-9d6f-44d3-9158-ef2a9aab94ab,Stella Lewis,39,female,Balanced Competitor,70.0,1.08,0.98,GREEN,7.87,23.6,-3.26,2024-12-31
+34cb8e65-9ba0-4e4f-a680-cb65cc311b0e,Lucas Flores,27,male,Highly Disciplined Athlete,75.0,1.27,0.979,GREEN,7.76,20.83,-1.27,2024-12-31
+e6aed7b8-0066-49e0-a1aa-917fcc96ac2e,Maria Thompson,30,female,Under-Recovered Athlete,60.6,0.72,0.979,GREEN,4.79,38.04,-1.41,2024-12-31
+37bfbf8c-35f5-4d3f-bfa2-3a864cde4666,Yusuf Flores,40,male,Highly Disciplined Athlete,75.0,1.1,0.976,GREEN,7.48,19.39,-2.88,2024-12-31
+5a66fe42-e629-4c39-aa15-b260395bd3ae,Tariq Robinson,32,male,Balanced Competitor,75.0,1.15,0.976,GREEN,7.86,24.49,15.67,2024-12-31
+fb9a9bfa-e0c0-44de-823a-500c66ab4817,Jaxon Clark,42,male,Weekend Socializer,74.9,1.0,0.976,GREEN,6.56,34.81,-0.96,2024-12-31
+1c7be4bc-b02d-4331-ac50-3aaf291f26e5,Hannah Williams,30,female,Balanced Competitor,65.9,0.92,0.975,GREEN,7.17,23.54,-5.37,2024-12-31
+51fbee31-a844-49a5-a7cb-204174b72468,Hassan Jackson,28,male,Weekend Socializer,74.7,0.84,0.975,GREEN,7.04,35.2,14.19,2024-12-31
+e0c2e133-bfa9-4b7a-b689-c7cb38699d0e,Emily Miller,35,female,Highly Disciplined Athlete,70.0,1.21,0.975,GREEN,7.54,33.55,-0.84,2024-12-31
+89423f22-751d-421d-9fda-e175fa0a6d69,Maya Cruz,36,female,Balanced Competitor,61.5,1.0,0.974,GREEN,6.56,29.76,0.61,2024-12-31
+93b6fe37-f4ff-447b-8d72-f2f33ec2a06a,Natalie Torres,27,female,Weekend Socializer,65.8,0.93,0.973,GREEN,7.0,31.41,11.45,2024-12-31
+80289b8e-0cb4-4a2e-a21f-7937c2ab5a02,Elijah Chen,31,male,Health-Conscious Athlete,70.2,1.06,0.972,GREEN,7.55,26.99,-2.29,2024-12-31
+2dfbb116-9ca6-4acd-8ca6-1d34f9d0764c,Dev Menon,32,male,Weekend Socializer,60.7,0.95,0.971,GREEN,7.39,26.93,11.87,2024-12-31
+491af80d-a37d-4dab-85a1-412b9231f5ba,Isaiah Park,37,male,Weekend Socializer,57.2,0.8,0.97,GREEN,6.22,37.21,1.0,2024-12-31
+813217eb-dbda-4789-ba3a-8bf5af90908f,Anna Reyes,33,female,Balanced Competitor,70.0,1.06,0.97,GREEN,6.95,26.69,9.05,2024-12-31
+f1471e52-8757-498f-b128-c67f9f2b4f4b,Lucas Garcia,29,male,Weekend Socializer,75.0,1.01,0.97,GREEN,6.73,33.51,-1.63,2024-12-31
+3c814dfc-fa06-4c52-be6c-d3f9a7fff7af,Victoria White,34,female,Balanced Competitor,70.0,0.95,0.969,GREEN,7.65,22.56,0.07,2024-12-31
+5778e1d5-ea2a-4fb1-8c79-6fa2fd5f0015,David Iyer,24,male,Highly Disciplined Athlete,74.4,1.18,0.969,GREEN,8.71,23.66,1.32,2024-12-31
+b1aa6fff-3022-4581-8f8c-9e593400d738,Eleanor Green,30,female,Balanced Competitor,70.0,1.22,0.968,GREEN,7.48,21.34,4.42,2024-12-31
+9e7183d0-d65a-4b7d-8d84-2728b33db807,Ruby Singh,38,female,Highly Disciplined Athlete,70.0,1.28,0.964,GREEN,8.6,12.4,3.16,2024-12-31
+226c69ab-9af4-4cfb-a93a-2ec2c8177612,Hassan Harris,40,male,Health-Conscious Athlete,74.4,1.1,0.963,GREEN,8.49,22.79,9.23,2024-12-31
+35f5633c-fd88-434b-a7bf-ffd04f31f249,Yasmin Reyes,30,female,Highly Disciplined Athlete,70.0,1.29,0.961,GREEN,8.36,24.24,10.81,2024-12-31
+be965c4f-b465-403c-8a13-14c8d4248c8b,Marco Walker,22,male,Weekend Socializer,75.0,1.08,0.961,GREEN,7.55,31.8,-1.48,2024-12-31
+f2bb9405-a8f8-4b46-a682-f14cc91b8948,Felix Miller,23,male,Health-Conscious Athlete,75.0,1.25,0.961,GREEN,7.93,17.86,5.01,2024-12-31
+8aefdf0a-f069-44ac-9575-aafe4a02fc0b,Mason Garcia,42,male,Balanced Competitor,65.0,0.93,0.955,GREEN,7.59,27.44,7.03,2024-12-31
+b60f053c-b97e-4965-ac12-f7ce13f7ce47,Nora Torres,25,female,Sleep-Deprived Workaholic,58.0,0.63,0.955,GREEN,5.67,41.33,-8.25,2024-12-31
+d933a88d-6a70-4b58-a308-10142a7b94f4,Rahul Johnson,38,male,Health-Conscious Athlete,57.7,1.02,0.955,GREEN,7.8,17.1,3.57,2024-12-31
+cbce6cae-761b-4027-a1e4-bba32101af88,Arjun Miller,29,male,Balanced Competitor,75.0,1.15,0.954,GREEN,6.91,25.71,-3.22,2024-12-31
+f5ab1222-b87c-490f-8e32-27fec53c2be6,Tyler Gupta,33,male,Sleep-Deprived Workaholic,65.5,0.8,0.953,GREEN,4.83,44.64,-4.94,2024-12-31
+d32b19e3-f2ee-4ad5-9243-b6520b8ecb75,Leon Scott,32,male,Weekend Socializer,74.0,1.01,0.949,GREEN,6.8,29.41,0.39,2024-12-31
+01c408c9-6121-4345-8583-5ad204e6233a,Felix Sharma,26,male,Weekend Socializer,75.0,0.86,0.948,GREEN,6.6,28.16,7.4,2024-12-31
+344cbb2c-cb69-487e-9073-01ae3da0ce45,Jasmine Scott,26,female,Highly Disciplined Athlete,70.0,1.3,0.947,GREEN,8.04,12.96,-2.75,2024-12-31
+559a7085-f4d8-48ec-aa78-f2a89bb2cbb8,Tyler Taylor,27,male,Highly Disciplined Athlete,75.0,1.3,0.947,GREEN,8.89,14.06,2.69,2024-12-31
+b1d493bf-a7fe-45f2-9d2d-5ecd34f76f81,Riley Flores,38,female,Balanced Competitor,56.8,1.0,0.947,GREEN,7.82,40.38,0.58,2024-12-31
+bd2b6634-83eb-47e1-a511-daa2938a6591,Violet Moore,29,female,Balanced Competitor,62.7,1.09,0.947,GREEN,7.75,19.47,-16.24,2024-12-31
+e1e7c3a4-94c6-4def-b01b-54939e7e2718,Harper Chen,32,female,Highly Disciplined Athlete,69.0,1.14,0.947,GREEN,8.48,38.97,21.42,2024-12-31
+1280695d-be4e-43ca-9e18-f63ae8210f79,Logan Nguyen,32,male,Weekend Socializer,75.0,1.04,0.946,GREEN,7.06,30.31,2.45,2024-12-31
+4d340fff-def7-481b-9412-ca0eb509dee1,Nisha Santos,39,female,Health-Conscious Athlete,58.5,1.13,0.946,GREEN,7.77,17.66,3.57,2024-12-31
+6ff74f61-6adf-498c-befc-175bc4b6e248,Sneha Davis,24,female,Highly Disciplined Athlete,70.0,1.25,0.945,GREEN,7.88,15.31,-1.28,2024-12-31
+da80e6e5-40ba-4cf9-9976-f68fcc60143e,Divya Patel,32,female,Weekend Socializer,62.7,1.02,0.945,GREEN,7.46,33.3,-3.1,2024-12-31
+62821237-e027-417e-aba9-1e366805b793,Alice Moore,21,female,Sleep-Deprived Workaholic,62.1,0.72,0.944,GREEN,5.61,44.1,2.65,2024-12-31
+7016c8eb-5791-44c3-8959-b773a24f8422,Nathan Torres,34,male,Balanced Competitor,75.0,1.09,0.944,GREEN,6.56,22.21,-2.31,2024-12-31
+4e9349e3-946c-44f7-9039-85a9921d3ba0,Connor Singh,32,male,Weekend Socializer,66.1,0.83,0.942,GREEN,6.09,39.2,1.06,2024-12-31
+52881663-ebe5-4789-9d30-368dc7db4732,Finn Lewis,37,male,Highly Disciplined Athlete,72.2,1.29,0.94,GREEN,9.01,11.01,-3.89,2024-12-31
+13df9904-1e38-4115-88a7-6dfc410c8109,Jasmine Patel,21,female,Highly Disciplined Athlete,70.0,1.16,0.935,GREEN,8.03,15.23,3.12,2024-12-31
+21eb7638-2110-48b6-866f-dad473780351,Ethan Smith,30,male,Balanced Competitor,70.6,1.11,0.934,GREEN,7.12,26.23,-1.18,2024-12-31
+42d59804-1d51-4506-a8ab-c26ea84b90c8,Victoria Harris,39,female,Weekend Socializer,70.0,0.96,0.934,GREEN,6.16,35.97,8.92,2024-12-31
+79a2d96e-3571-40d0-9d11-cab254c87c94,Marcus Allen,32,male,Under-Recovered Athlete,62.4,0.79,0.931,GREEN,5.27,33.66,-1.03,2024-12-31
+c3ed6527-36e3-48fc-afad-016e4ec48439,Carlos Torres,32,male,Weekend Socializer,64.9,0.91,0.931,GREEN,7.07,31.34,0.79,2024-12-31
+d472dbee-e4f7-479a-9b3c-2b287902519b,Clara Walker,33,female,Highly Disciplined Athlete,70.0,1.07,0.929,GREEN,7.9,15.64,1.24,2024-12-31
+2ce12f58-7c81-4ded-95f7-d30178457c78,Aiden Rivera,40,male,Under-Recovered Athlete,72.0,0.83,0.928,GREEN,6.95,32.67,1.33,2024-12-31
+59444a0a-3824-4082-902b-78c091a4acda,Cole Young,36,male,Balanced Competitor,70.3,1.07,0.927,GREEN,7.34,26.29,10.66,2024-12-31
+344a42cd-acfe-4d31-9159-9537f30ba2ba,Scarlett Patel,35,female,Weekend Socializer,70.0,0.86,0.924,GREEN,6.78,38.13,1.79,2024-12-31
+87113b74-df11-46ce-b2a2-beaab1363813,Lucas Thompson,37,male,Highly Disciplined Athlete,74.3,1.3,0.923,GREEN,9.17,13.23,6.12,2024-12-31
+a7f9a03f-b70c-46d6-a505-dd7b93b2f041,Sara Nguyen,29,female,Balanced Competitor,70.0,0.89,0.922,GREEN,7.41,27.03,-3.1,2024-12-31
+c7b2cc7c-22df-4bd5-9be4-55a1fe1087d1,Elijah Garcia,21,male,Highly Disciplined Athlete,75.0,1.3,0.922,GREEN,8.22,17.94,14.39,2024-12-31
+4cfa810e-db05-49e4-998c-8bca0a901c55,Daniel Smith,35,male,Under-Recovered Athlete,71.4,0.89,0.92,GREEN,5.92,38.59,1.79,2024-12-31
+11a89e19-5b84-4ac7-8f2e-f7ed860ace54,Nora Johnson,40,female,Sleep-Deprived Workaholic,50.0,0.69,0.916,GREEN,5.83,39.26,2.81,2024-12-31
+98643b42-91c7-4072-91cc-5d14b93f9e07,Mohammed Johnson,28,male,Weekend Socializer,64.9,0.9,0.915,GREEN,6.39,36.03,-3.9,2024-12-31
+d78d7a0a-b60a-4a89-863f-394576c73c31,Alex Kim,33,male,Health-Conscious Athlete,75.0,1.2,0.914,GREEN,7.61,16.43,-6.88,2024-12-31
+1f5e719b-ca55-4733-aff4-c15b6a6f37a0,Scarlett King,42,female,Highly Disciplined Athlete,59.5,1.18,0.913,GREEN,8.17,18.66,11.56,2024-12-31
+7b3a68db-2a21-4b56-ab02-96991af7d0e1,Nisha Park,32,female,Balanced Competitor,59.0,0.84,0.912,GREEN,7.17,23.17,-0.31,2024-12-31
+9c0ad184-ecb3-4a49-8319-bd19d825d913,Priya Wilson,34,female,Sleep-Deprived Workaholic,70.0,0.86,0.912,GREEN,6.4,40.61,0.23,2024-12-31
+0a57453d-26bf-4db8-a0c5-17e2667f9c74,Jordan Rivera,35,male,Sleep-Deprived Workaholic,73.9,0.83,0.911,GREEN,5.62,37.8,2.73,2024-12-31
+a1599641-d645-4a33-95e0-ca45ff01ae93,Caleb Jackson,33,male,Under-Recovered Athlete,62.2,0.81,0.909,GREEN,6.31,36.44,5.82,2024-12-31
+bfdf7444-f085-44a7-82c4-1cf8870d9d1f,Tariq Johnson,32,male,Highly Disciplined Athlete,75.0,1.25,0.908,GREEN,8.4,15.29,10.95,2024-12-31
+f148932f-f5e0-4ef9-805a-acbcdf48e4fa,Pooja Robinson,24,female,Balanced Competitor,70.0,1.19,0.908,GREEN,8.05,40.47,1.24,2024-12-31
+f1b04f6d-ff97-4361-b64c-ff9814294558,Matthew Jones,31,male,Highly Disciplined Athlete,75.0,1.3,0.908,GREEN,8.07,18.81,6.13,2024-12-31
+9b4e1628-78b1-433b-95df-1c9cc3f144bd,Anton Jones,33,male,Health-Conscious Athlete,75.0,1.22,0.906,GREEN,8.5,17.46,9.09,2024-12-31
+ca9c6f00-7b31-46ef-b45e-a9040497b51e,Victoria Lee,41,female,Highly Disciplined Athlete,70.0,1.23,0.906,GREEN,8.01,18.89,10.57,2024-12-31
+253095d2-e98b-4ebf-800a-26920c6bd86d,Finn Patel,36,male,Highly Disciplined Athlete,75.0,1.3,0.904,GREEN,8.44,28.46,-2.74,2024-12-31
+3e328cdd-2068-4917-8ce4-1ee82f9bf1c2,Isabella Green,29,female,Balanced Competitor,70.0,1.06,0.902,GREEN,6.69,29.31,7.35,2024-12-31
+9586bd5f-1e52-4070-a0b4-1d173ed6f963,Carlos Chen,34,male,Health-Conscious Athlete,75.0,0.96,0.902,GREEN,6.97,28.91,11.9,2024-12-31
+28ac2430-3b45-40ad-8ae6-58e7a8c5264d,Mia Brown,33,female,Balanced Competitor,70.0,0.92,0.9,GREEN,6.95,28.86,2.19,2024-12-31
+50a46f82-23cb-4c34-b0c6-76636fe372ea,Cole Davis,36,male,Highly Disciplined Athlete,75.0,1.27,0.899,GREEN,8.31,20.07,-1.94,2024-12-31
+5b9a24eb-7e02-4350-9254-eb7fc42e0a34,Cole King,38,male,Under-Recovered Athlete,75.0,0.95,0.899,GREEN,6.28,33.13,1.66,2024-12-31
+db8fe3be-d559-43a7-8bbe-537689b16430,Leon Smith,27,male,Health-Conscious Athlete,75.0,1.27,0.899,GREEN,7.75,20.3,6.89,2024-12-31
+1e0fab7a-5c45-4901-90f7-99eff28c70e5,Aiden Moore,30,male,Balanced Competitor,75.0,1.21,0.898,GREEN,7.34,25.4,2.37,2024-12-31
+1facb82c-d622-4f87-afdb-5ebddf473048,Jordan Miller,36,male,Highly Disciplined Athlete,64.5,1.04,0.898,GREEN,7.92,29.89,-3.85,2024-12-31
+d3b6a941-f8ec-4f16-b2ed-b54c8cd89f31,Penelope Menon,31,female,Sleep-Deprived Workaholic,68.2,0.89,0.898,GREEN,6.3,37.73,-1.58,2024-12-31
+cd50c0ac-3f95-458d-8d82-17d6dde218e6,Caleb Santos,33,male,Health-Conscious Athlete,68.5,1.19,0.894,GREEN,7.65,20.59,-1.76,2024-12-31
+429226e9-e47c-402f-85af-c9092f367850,Mihail Davis,41,male,Highly Disciplined Athlete,75.0,1.21,0.893,GREEN,8.98,16.04,7.56,2024-12-31
+d06d4c83-df0b-4926-8e32-c62ced11f78f,Violet Garcia,29,female,Under-Recovered Athlete,65.5,0.76,0.892,GREEN,5.32,38.13,-2.59,2024-12-31
+d8525a40-7676-421f-8739-bd74704f3070,Ryan Robinson,30,male,Sleep-Deprived Workaholic,75.0,0.88,0.892,GREEN,5.61,37.1,1.64,2024-12-31
+103681b5-072f-4d0a-96ce-bb7693ac32c6,Zoe Menon,29,female,Highly Disciplined Athlete,70.0,1.26,0.887,GREEN,7.88,18.47,4.95,2024-12-31
+f5ea28a0-c6a0-4a51-955c-595299824433,Chris Reyes,34,male,Sleep-Deprived Workaholic,74.5,0.78,0.887,GREEN,5.66,38.41,0.0,2024-12-31
+f7637803-e8ee-4e14-93c1-b076995d4b2e,Pooja Green,39,female,Balanced Competitor,70.0,1.06,0.885,GREEN,6.95,23.04,6.78,2024-12-31
+02f5f8ab-4f19-4029-9208-13a6d1e3c299,Tariq Chen,23,male,Weekend Socializer,75.0,0.98,0.882,GREEN,7.03,34.17,-1.54,2024-12-31
+2bb48729-d1d2-41c4-a9a8-7840f634e84f,Mohammed Anderson,26,male,Highly Disciplined Athlete,75.0,1.17,0.882,GREEN,7.74,10.67,1.65,2024-12-31
+60f7789d-e3a8-4af7-b8bd-162a0376c149,Aiden Jones,38,male,Balanced Competitor,71.6,1.19,0.881,GREEN,7.5,23.83,4.06,2024-12-31
+f77c6512-8260-4db1-ac37-38e786a15e28,Marcus Martinez,34,male,Highly Disciplined Athlete,75.0,1.29,0.881,GREEN,8.54,14.81,6.59,2024-12-31
+526559a7-f41e-47e8-be83-32df8b6e7592,Rahul Lewis,34,male,Sleep-Deprived Workaholic,67.9,0.9,0.878,GREEN,5.46,40.24,9.8,2024-12-31
+7331199c-c7c0-49d5-898b-2d77d6033e0e,Emma Lee,31,female,Highly Disciplined Athlete,69.9,1.3,0.878,GREEN,8.67,16.73,2.85,2024-12-31
+89bdb5a8-5496-4503-ade3-b44f993a8a6e,Vikram Kumar,24,male,Sleep-Deprived Workaholic,71.4,0.8,0.878,GREEN,5.12,41.23,-0.15,2024-12-31
+dd8bd4a7-a855-4a3f-a0f8-c2579b73876e,Camila Torres,19,female,Weekend Socializer,62.3,0.78,0.878,GREEN,6.66,40.86,-3.11,2024-12-31
+59ed8b73-1b99-4a45-94b7-7cf75cd8f327,Isabelle Nguyen,26,female,Balanced Competitor,62.4,1.21,0.877,GREEN,7.78,22.0,5.13,2024-12-31
+88ddb081-d350-44b1-a758-abe544693858,Samuel Anderson,29,male,Under-Recovered Athlete,75.0,0.9,0.876,GREEN,6.14,50.81,-1.94,2024-12-31
+6867b9bd-15e5-42ef-85dd-fb0a04fda6f2,Lily Brown,39,female,Weekend Socializer,64.4,0.88,0.875,GREEN,6.49,36.21,2.27,2024-12-31
+c8cf2caa-3b59-4da7-9341-5a16c020df5e,Riya Chen,31,female,Highly Disciplined Athlete,70.0,1.22,0.874,GREEN,8.04,34.86,9.42,2024-12-31
+231b96f7-1291-4494-a969-935b7d785b98,Maria Patel,36,female,Balanced Competitor,60.5,0.88,0.873,GREEN,6.22,27.66,2.03,2024-12-31
+efa89d72-2a74-4b10-8694-144a7ee8d06b,Sophia Thomas,19,female,Weekend Socializer,65.0,0.89,0.87,GREEN,6.29,34.09,2.5,2024-12-31
+4a2ffb69-554d-43a4-849c-3c310df7af4a,Liam Reddy,24,male,Balanced Competitor,75.0,1.03,0.867,GREEN,6.39,25.59,1.09,2024-12-31
+c974b74b-698b-456a-85b1-5bc34514ebcd,Natalie Patel,34,female,Highly Disciplined Athlete,70.0,1.3,0.867,GREEN,8.34,16.26,-0.67,2024-12-31
+beb0050a-7be5-4d9a-834b-f66ce80cc35f,Isabella Clark,32,female,Balanced Competitor,70.0,1.05,0.865,GREEN,7.6,23.49,-6.68,2024-12-31
+645d6623-b24b-44d1-95fc-7aa7092899ea,Grace Menon,29,female,Sleep-Deprived Workaholic,65.7,0.74,0.864,GREEN,6.09,40.21,-0.89,2024-12-31
+45638f7e-3383-4e00-8c92-53c3e905fb32,Priya Torres,28,female,Balanced Competitor,65.7,1.04,0.863,GREEN,7.1,26.04,-1.31,2024-12-31
+d626beb5-96a2-4b72-b3ca-5e4ad87d5566,Riya Robinson,21,female,Balanced Competitor,68.7,1.08,0.857,GREEN,6.99,20.79,1.01,2024-12-31
+3c9da28e-df6c-40b7-a581-15ee573a9ef8,Kai Anderson,44,male,Highly Disciplined Athlete,70.7,1.1,0.849,GREEN,8.13,19.56,10.45,2024-12-31
+ec410a41-6113-4bf6-bcde-07626207c1c6,Matthew Wilson,29,male,Highly Disciplined Athlete,75.0,1.23,0.843,GREEN,8.27,18.43,4.54,2024-12-31
+45918bce-f6a0-4075-b665-4dc734cae716,Isabelle Gupta,35,female,Highly Disciplined Athlete,62.8,1.14,0.842,GREEN,8.67,14.41,0.97,2024-12-31
+ebdb9940-a0ec-4f39-ba86-37339cd6a07f,Finn Park,36,male,Balanced Competitor,71.9,1.1,0.839,GREEN,7.23,23.73,-1.5,2024-12-31
+01448726-2f17-41f7-8405-6825ec99a832,Hannah Johnson,39,female,Highly Disciplined Athlete,61.0,1.21,0.836,GREEN,7.66,20.14,1.18,2024-12-31
+0f8d4232-db9c-4647-bff0-8a5596157318,Pooja Thomas,30,female,Under-Recovered Athlete,70.0,0.85,0.836,GREEN,4.86,39.51,2.97,2024-12-31
+e93bbb4e-eba3-4ecd-b8e8-2b7e21bbcfe1,Maria Chen,25,female,Highly Disciplined Athlete,70.0,1.09,0.836,GREEN,7.94,20.69,9.53,2024-12-31
+3ee80a08-39ff-4944-aa18-2ecebb52e73b,Carlos Nguyen,35,male,Weekend Socializer,72.8,0.96,0.834,GREEN,6.53,44.53,3.94,2024-12-31
+4030f6a9-4991-4a68-8aaf-ceb3a27f1124,Chloe Moore,36,female,Balanced Competitor,70.0,0.99,0.833,GREEN,6.75,23.81,2.86,2024-12-31
+97eb7cbd-3561-455b-8c25-bd0de2d6d784,Eleanor Robinson,38,female,Under-Recovered Athlete,64.4,0.91,0.832,GREEN,6.75,37.2,-1.77,2024-12-31
+0fed615d-6058-48e5-8ecd-f42e02c72107,Anna Moore,36,female,Highly Disciplined Athlete,58.6,1.07,0.83,GREEN,8.74,19.27,-1.27,2024-12-31
+ec260ce1-ed15-494d-b596-06a0c1879eb1,Elijah Brown,31,male,Highly Disciplined Athlete,73.8,1.3,0.826,GREEN,8.74,15.74,-2.64,2024-12-31
+9443a8fa-2682-4f5a-ba08-0c160f8be0d7,Nisha Shah,35,female,Sleep-Deprived Workaholic,67.3,0.8,0.819,GREEN,5.29,38.6,-3.35,2024-12-31
+e6d3e915-6dc8-4071-ac7f-be3963f151aa,Diego Kim,18,male,Health-Conscious Athlete,68.5,1.08,0.817,GREEN,7.33,19.46,-1.08,2024-12-31
+43fe3433-1cdd-46cc-89ec-07cd998f2b4c,Hunter Shah,41,male,Sleep-Deprived Workaholic,70.1,0.68,0.814,GREEN,4.93,44.61,-2.82,2024-12-31
+30b976c3-afe2-475a-8651-59ebed750a88,Aaliyah Chen,27,female,Under-Recovered Athlete,70.0,0.76,0.813,GREEN,6.26,36.01,5.68,2024-12-31
+5b32d4a2-373a-44c5-b63d-8a246a61789f,Liam Anderson,34,male,Highly Disciplined Athlete,72.0,1.16,0.813,GREEN,7.86,13.83,6.55,2024-12-31
+cce49296-27c6-4f58-9bbe-4b7c026dc129,Carlos Williams,44,male,Under-Recovered Athlete,71.3,0.78,0.811,GREEN,5.98,31.97,7.85,2024-12-31
+aab43865-a362-45eb-80d7-ea1707bc36ca,Noah White,37,male,Highly Disciplined Athlete,75.0,1.16,0.805,GREEN,7.71,18.87,0.18,2024-12-31
+d8836992-dece-4780-812f-24e172d130ac,Sara Nair,37,female,Under-Recovered Athlete,61.7,0.84,0.804,GREEN,6.05,30.9,-7.08,2024-12-31
+5b8666be-852f-4e11-b8c1-e171b5dfbc3c,Stella King,29,female,Balanced Competitor,70.0,1.05,0.803,GREEN,7.05,22.97,10.19,2024-12-31
+9599eddd-22b3-4c69-9053-9eaf49c349cd,Meera Thompson,31,female,Weekend Socializer,70.0,0.86,0.802,GREEN,6.23,33.04,-7.31,2024-12-31
+a22464ec-ec7b-475f-b427-8e284452db94,Amelia Thompson,40,female,Sleep-Deprived Workaholic,70.0,0.81,0.787,LOW,5.41,34.61,13.53,2024-12-31
+1cd9a63e-497c-45ea-ae14-37266c6eff13,Sophia Nguyen,32,female,Under-Recovered Athlete,70.0,0.92,0.783,LOW,6.71,32.04,-0.73,2024-12-31
+54d3f445-9bb0-4c02-835a-f50a1b479123,Ethan Garcia,32,male,Highly Disciplined Athlete,75.0,1.3,0.775,LOW,8.35,16.8,4.44,2024-12-31
+c42be567-6901-428d-908c-ca1d79ee9d13,Oliver Brown,35,male,Highly Disciplined Athlete,65.5,1.17,0.775,LOW,8.4,16.67,-5.14,2024-12-31
+faac61ca-cd3d-429d-be83-8086f44e989b,Samuel Clark,22,male,Balanced Competitor,74.4,1.16,0.775,LOW,7.3,26.13,-5.14,2024-12-31
+abd7d31b-df3f-43b0-9f88-f498a15bbd37,Matthew White,29,male,Highly Disciplined Athlete,75.0,1.18,0.773,LOW,7.8,21.0,-5.26,2024-12-31
+ad0462ef-4350-4685-8ed0-4f6ccef21470,Andrew Menon,34,male,Highly Disciplined Athlete,67.7,1.1,0.773,LOW,7.76,21.23,1.2,2024-12-31
+9188c011-421b-43a4-9b87-597f454643c9,Isabella Nguyen,30,female,Highly Disciplined Athlete,70.0,1.3,0.766,LOW,8.49,16.1,12.17,2024-12-31
+92268ef2-76fd-4afd-b153-44b8d172c25e,Felix Rodriguez,32,male,Under-Recovered Athlete,69.4,0.77,0.762,LOW,5.6,34.94,-4.04,2024-12-31
+e46de1e6-4bc9-466b-86c5-19f2adf80e1a,Zane Green,32,male,Highly Disciplined Athlete,75.0,1.25,0.755,LOW,8.35,29.06,1.96,2024-12-31
+f0a1fbff-61b7-4786-8157-674f73eebbfc,Marcus Patel,25,male,Highly Disciplined Athlete,69.4,1.13,0.755,LOW,7.92,18.21,9.85,2024-12-31
+ab8d491e-d899-4195-ba62-6e4eb83a40c5,Lucas Chen,37,male,Sleep-Deprived Workaholic,67.3,0.82,0.751,LOW,5.08,38.41,-1.56,2024-12-31
+4a86049a-fa52-4c67-8f20-7d2d9f1341b1,Tariq Green,41,male,Balanced Competitor,75.0,1.12,0.75,LOW,7.99,27.96,4.33,2024-12-31
+124883cd-7998-49ee-b9b1-b8fc270e3760,Kavya Nair,27,female,Balanced Competitor,67.5,1.06,0.738,LOW,7.92,22.84,9.39,2024-12-31
+abf01074-9c7c-4ba7-a988-eb4fa1c561b8,Nisha Miller,28,female,Highly Disciplined Athlete,70.0,1.2,0.732,LOW,7.73,11.5,-6.59,2024-12-31
+4ae24a15-da67-45af-ab33-cb1e058c3dd9,Ananya Scott,31,female,Balanced Competitor,70.0,1.15,0.727,LOW,7.79,14.3,-7.44,2024-12-31
+d790fb30-5aee-4ffd-8f98-7aa427f4bedf,Charlotte Flores,30,female,Health-Conscious Athlete,62.3,1.01,0.716,LOW,7.82,23.06,0.4,2024-12-31
+c5042bfc-6862-46ac-bd09-f5eaa7338263,Connor Chen,32,male,Highly Disciplined Athlete,75.0,1.27,0.715,LOW,7.92,17.66,2.05,2024-12-31
+bf758c08-b616-4e0f-8819-e96df44ee925,Ananya Chen,37,female,Sleep-Deprived Workaholic,70.0,0.82,0.713,LOW,6.08,37.36,-5.32,2024-12-31
+4fe03219-8eae-4c57-8ff5-42ba8e4ffb0e,Nisha Lee,38,female,Highly Disciplined Athlete,70.0,1.14,0.712,LOW,7.41,14.31,-0.46,2024-12-31
+6755985f-1102-4988-bc87-fc5f472cf756,Lily Nguyen,25,female,Balanced Competitor,70.0,1.04,0.711,LOW,6.58,27.43,-5.71,2024-12-31
+e08a84c5-3792-47ab-b26b-f584b26303b5,Ananya Martinez,26,female,Health-Conscious Athlete,70.0,1.17,0.706,LOW,7.31,17.73,-11.62,2024-12-31
+eb428531-d5ee-4c69-b28a-6cd5ceba8757,Sofia Cruz,24,female,Balanced Competitor,70.0,1.11,0.705,LOW,7.43,24.73,-3.81,2024-12-31
+ce39f9f8-6e69-4bab-bdd2-5798b1d3ff1e,Ryan Robinson,39,male,Balanced Competitor,71.8,1.11,0.704,LOW,7.7,21.46,-5.59,2024-12-31
+aa94f5b8-ea15-49e3-a0fe-cebcd4ab870e,Anton Sharma,31,male,Health-Conscious Athlete,75.0,1.19,0.679,LOW,7.69,12.91,8.35,2024-12-31
+97e95493-b7e4-4558-8264-fa956972047f,Chloe Martin,22,female,Balanced Competitor,70.0,1.01,0.676,LOW,7.63,23.64,1.04,2024-12-31
+849d85fe-140b-4eac-a5f0-2cd9ed4dbe3b,Aria White,18,female,Highly Disciplined Athlete,70.0,1.27,0.646,LOW,7.91,16.96,-0.99,2024-12-31
+c6f45308-7e69-4357-95d6-d2b5308cadd3,Dev Davis,37,male,Balanced Competitor,69.0,0.84,0.638,LOW,6.65,26.39,7.0,2024-12-31
+bf63c45d-6f48-417c-9724-c4ac2ed3aafb,Carlos Scott,29,male,Sleep-Deprived Workaholic,58.4,0.64,0.624,LOW,5.03,38.0,0.33,2024-12-31
+b6c2e7ce-c7c7-4f6f-951a-b5fddb95a811,Nathan Harris,30,male,Sleep-Deprived Workaholic,69.3,0.81,0.594,LOW,6.43,36.07,4.37,2024-12-31
+63e1d267-ff73-4f75-986c-bf5b63ce7009,Lucas Kim,30,male,Highly Disciplined Athlete,75.0,1.24,0.568,LOW,7.83,11.63,5.41,2024-12-31
+9109c0f9-2b18-4cd4-a229-5ca3ab981247,Rohan Davis,25,male,Under-Recovered Athlete,73.1,0.9,0.508,LOW,5.79,36.87,-1.33,2024-12-31
