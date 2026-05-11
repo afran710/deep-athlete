@@ -1,4 +1,7 @@
 athletes_v2.db
+activity_data.csv
+daily_data.csv
+athletes.csv
 __pycache__/
 *.pyc
 *.pkl
