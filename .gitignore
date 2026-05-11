@@ -1,0 +1,4 @@
+athletes_v2.db
+__pycache__/
+*.pyc
+*.pkl
