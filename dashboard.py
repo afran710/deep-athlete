@@ -266,24 +266,44 @@ with tab2:
     with c1:
         name         = st.text_input("Player Name", placeholder="e.g. Rahul Sharma")
         age          = st.slider("Age", 16, 40, 22)
-        acwr_i       = st.slider("ACWR", 0.0, 2.5, 1.0, step=0.01, help="Sweet spot: 0.8–1.3")
-        acute_load   = st.slider("Acute Load (7-day TSS)", 0, 1000, 300)
-        chronic_load = st.slider("Chronic Load (28-day avg×7)", 0, 1000, 300)
-        hrv_drop     = st.slider("HRV Drop", -20.0, 20.0, 0.0, step=0.5)
+        acute_load   = st.slider("Acute Load (7-day TSS)", 0, 1000, 300,
+                                  help="Total training stress last 7 days")
+        chronic_load = st.slider("Chronic Load (28-day avg×7)", 50, 1000, 300,
+                                  help="Baseline fitness load")
+        acwr_i = round(acute_load / chronic_load, 3) if chronic_load > 0 else 0.0
+        st.markdown(f"""
+        <div style="background:rgba(0,255,80,0.05);border:1px solid rgba(0,255,80,0.2);
+                    border-radius:6px;padding:0.5rem 0.8rem;margin-bottom:0.5rem;font-size:0.82rem">
+            📊 <b>ACWR:</b> {acute_load} ÷ {chronic_load} =
+            <b style="color:{'#ef4444' if acwr_i>1.5 else '#f59e0b' if acwr_i>1.3 else '#22c55e'}">{acwr_i}</b>
+            {'🔴 Danger!' if acwr_i>1.5 else '🟡 Monitor' if acwr_i>1.3 else '🟢 Sweet spot' if acwr_i>=0.8 else '⚪ Undertrained'}
+        </div>
+        """, unsafe_allow_html=True)
         sleep_avg    = st.slider("Avg Sleep (7 days)", 4.0, 12.0, 7.5, step=0.1)
         stress_avg   = st.slider("Avg Stress (7 days)", 0.0, 100.0, 25.0, step=0.5)
     with c2:
         resting_hr   = st.slider("Resting Heart Rate", 35, 90, 55)
-        hrv          = st.slider("Today's HRV", 20, 120, 65)
+        hrv_baseline = st.slider("HRV Baseline (your normal)", 20, 120, 65,
+                                  help="Your HRV when fully rested")
+        hrv          = st.slider("Today's HRV", 20, 120, 65,
+                                  help="Lower than baseline = fatigued")
+        hrv_drop = round(float(hrv_baseline) - float(hrv), 1)
+        st.markdown(f"""
+        <div style="background:rgba(0,255,80,0.05);border:1px solid rgba(0,255,80,0.2);
+                    border-radius:6px;padding:0.5rem 0.8rem;margin-bottom:0.5rem;font-size:0.82rem">
+            💓 <b>HRV Drop:</b> {hrv_baseline} - {hrv} =
+            <b style="color:{'#ef4444' if hrv_drop>8 else '#f59e0b' if hrv_drop>4 else '#22c55e'}">{hrv_drop}</b>
+            {'🔴 Sharp drop!' if hrv_drop>8 else '🟡 Slight drop' if hrv_drop>4 else '🟢 Normal'}
+        </div>
+        """, unsafe_allow_html=True)
         body_bat_am  = st.slider("Body Battery Morning", 0, 100, 70,
                                   help="⭐ Most important for female athletes" if not is_male else "Body battery on waking")
-        body_bat_pm  = st.slider("Body Battery Evening", 0, 100, 40)
+        body_bat_pm  = st.slider("Body Battery Evening", 0, body_bat_am, min(40, body_bat_am),
+                                  help="Always ≤ morning battery")
         vo2max       = st.slider("VO2 Max", 25.0, 80.0, 50.0, step=0.5)
         recovery     = st.slider("Recovery Rate", 0.0, 1.0, 0.6, step=0.01,
-                                  help="⚠️ Higher recovery rate may increase predicted risk — fast-recovering athletes tend to train more aggressively in the data.")
-        hrv_baseline = st.slider("HRV Baseline", 20, 120, 65)
+                                  help="⚠️ Higher recovery rate may increase predicted risk — reflects training behaviour correlation.")
         weekly_hrs   = st.slider("Weekly Training Hours", 1.0, 30.0, 10.0, step=0.5)
-
     if not is_male:
         st.info("💡 **Female model insight:** Body Battery Morning is the strongest predictor for female athletes.")
     st.caption("⚠️ **Model note:** Higher Recovery Rate may slightly increase predicted risk — this reflects training behaviour correlation, not recovery quality alone.")
