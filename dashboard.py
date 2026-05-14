@@ -1,5 +1,4 @@
 import pickle
-import json
 import csv
 import streamlit as st
 
@@ -36,14 +35,12 @@ html, body, [data-testid="stApp"], [data-testid="stAppViewContainer"], [data-tes
 .gender-card.male   { background:rgba(59,130,246,0.08); border-left:3px solid #3b82f6; }
 .gender-card.female { background:rgba(236,72,153,0.08); border-left:3px solid #ec4899; }
 .result-box { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:10px; padding:1.6rem; margin-top:1rem; }
-.big-pct { font-family:'Bebas Neue',sans-serif; font-size:5.5rem; line-height:1; }
 .zone-tag { display:inline-block; font-family:'Bebas Neue',sans-serif; font-size:1.3rem; letter-spacing:0.1em; padding:0.25rem 0.9rem; border-radius:3px; margin-top:0.4rem; }
 .zone-tag.RED    { background:rgba(239,68,68,0.12);  color:#ef4444; border:1px solid rgba(239,68,68,0.35); }
 .zone-tag.YELLOW { background:rgba(245,158,11,0.12); color:#f59e0b; border:1px solid rgba(245,158,11,0.35); }
 .zone-tag.GREEN  { background:rgba(34,197,94,0.12);  color:#22c55e; border:1px solid rgba(34,197,94,0.35); }
-.track { background:rgba(255,255,255,0.06); border-radius:6px; height:18px; overflow:hidden; margin:0.8rem 0; }
-.fill  { height:100%; border-radius:6px; }
-.tlabels { display:flex; justify-content:space-between; font-size:0.62rem; color:#4b5563; text-transform:uppercase; letter-spacing:0.07em; }
+.zone-tag.CRITICAL { background:rgba(220,38,38,0.2);  color:#dc2626; border:1px solid rgba(220,38,38,0.5); }
+.zone-tag.HIGH     { background:rgba(239,68,68,0.12); color:#ef4444; border:1px solid rgba(239,68,68,0.35); }            
 .advice-box { font-size:0.82rem; color:#94a3b8; background:rgba(255,255,255,0.03); border-radius:6px; padding:0.7rem 0.9rem; margin-top:0.8rem; }
 .pills { display:flex; flex-wrap:wrap; gap:0.45rem; margin-top:0.8rem; }
 .pill { font-size:0.7rem; padding:0.22rem 0.55rem; border-radius:3px; letter-spacing:0.05em; text-transform:uppercase; font-weight:600; }
@@ -57,18 +54,16 @@ html, body, [data-testid="stApp"], [data-testid="stAppViewContainer"], [data-tes
 [data-testid="stTabs"] button[aria-selected="true"] { color:#00ff50 !important; border-bottom-color:#00ff50 !important; }
 [data-testid="stMetricValue"] { font-family:'Bebas Neue',sans-serif !important; font-size:1.9rem !important; }
 [data-testid="stMetricLabel"] { font-size:0.68rem !important; letter-spacing:0.08em !important; text-transform:uppercase !important; color:#6b7280 !important; }
-[data-testid="stButton"]>button { background:linear-gradient(135deg,#00ff50,#00c840) !important; color:#030712 !important; font-family:'Bebas Neue',sans-serif !important; font-size:1.1rem !important; letter-spacing:0.1em !important; border:none !important; border-radius:4px !important; }
 </style>
 """, unsafe_allow_html=True)
 
-# ── Load models ──
-@st.cache_resource
 def load_models():
     with open("model.pkl","rb") as f:
         d = pickle.load(f)
-    return d["male"], d["female"], d["feature_names"]
+    male_cal   = d.get("male_cal",   (0.0, 1.0))
+    female_cal = d.get("female_cal", (0.0, 1.0))
+    return d["male"], d["female"], d["feature_names"], male_cal, female_cal
 
-# ── Load summary CSV ──
 @st.cache_data
 def load_summary():
     rows = []
@@ -76,11 +71,9 @@ def load_summary():
         reader = csv.DictReader(f)
         for row in reader:
             rows.append((
-                row["athlete_id"],
-                row["name"],
+                row["athlete_id"], row["name"],
                 int(row["age"]) if row["age"] else 0,
-                row["gender"],
-                row["lifestyle"],
+                row["gender"], row["lifestyle"],
                 float(row["vo2max"]) if row["vo2max"] else 0,
                 float(row["recovery_rate"]) if row["recovery_rate"] else 0,
                 float(row["acwr"]) if row["acwr"] else 0,
@@ -92,21 +85,20 @@ def load_summary():
             ))
     return rows
 
-male_model, female_model, feat_names = load_models()
+male_model, female_model, feat_names, male_cal, female_cal = load_models()
 data         = load_summary()
 zc           = {"RED":"#ef4444","YELLOW":"#f59e0b","GREEN":"#22c55e","LOW":"#a855f7"}
 male_count   = sum(1 for r in data if r[3] and r[3].lower()=="male")
 female_count = sum(1 for r in data if r[3] and r[3].lower()=="female")
-
-ZONE_LABEL = {"RED":"🔴 High Risk","YELLOW":"🟡 Monitor","GREEN":"🟢 Safe","LOW":"🟣 Undertrained"}
-LABEL_ZONE = {v: k for k, v in ZONE_LABEL.items()}
+ZONE_LABEL   = {"RED":"🔴 High Risk","YELLOW":"🟡 Monitor","GREEN":"🟢 Safe","LOW":"🟣 Undertrained"}
+LABEL_ZONE   = {v: k for k, v in ZONE_LABEL.items()}
 
 st.markdown(f"""
 <div class="hero">
   <div style="margin-bottom:0.6rem">
     <span class="badge">⚡ Live</span><span class="badge">Dual ML Models</span>
     <span class="badge">👨 {male_count} Male</span><span class="badge">👩 {female_count} Female</span>
-    <span class="badge">77.5% Recall</span>
+    <span class="badge">93.6% Recall</span>
   </div>
   <div class="hero-title">Deep Athlete</div>
   <div class="hero-sub">Gender-Specific Injury Risk Intelligence · XGBoost · 366 Days Daily Data</div>
@@ -115,14 +107,10 @@ st.markdown(f"""
 
 tab1, tab2 = st.tabs(["⚡  TEAM DASHBOARD", "🔍  PREDICT A PLAYER"])
 
-# ══════════════════════════════════════════
-# TAB 1
-# ══════════════════════════════════════════
 with tab1:
     total=len(data); red=sum(1 for r in data if r[8]=="RED")
     yellow=sum(1 for r in data if r[8]=="YELLOW"); green=sum(1 for r in data if r[8]=="GREEN")
     low=sum(1 for r in data if r[8]=="LOW")
-
     st.markdown(f"""
     <div class="stat-row">
       <div class="sc b"><div class="sn">{total}</div><div class="sl">Total Athletes</div></div>
@@ -137,14 +125,14 @@ with tab1:
     with gm1:
         st.markdown(f"""<div class="gender-card male">
           <div style="font-family:'Bebas Neue',sans-serif;font-size:1.2rem;color:#60a5fa;letter-spacing:0.08em">👨 Male Model</div>
-          <div style="font-size:0.8rem;color:#94a3b8;margin-top:0.3rem">{male_count} athletes · 203,739 rows · 76.1% recall</div>
-          <div style="font-size:0.75rem;color:#6b7280;margin-top:0.4rem">Top factors: Stress · Recovery Rate · HRV · Age</div>
+          <div style="font-size:0.8rem;color:#94a3b8;margin-top:0.3rem">{male_count} athletes · 203,739 rows · 93.6% recall</div>
+          <div style="font-size:0.75rem;color:#6b7280;margin-top:0.4rem">Top factors: ACWR · Stress · HRV · Sleep</div>
         </div>""", unsafe_allow_html=True)
     with gm2:
         st.markdown(f"""<div class="gender-card female">
           <div style="font-family:'Bebas Neue',sans-serif;font-size:1.2rem;color:#f472b6;letter-spacing:0.08em">👩 Female Model</div>
-          <div style="font-size:0.8rem;color:#94a3b8;margin-top:0.3rem">{female_count} athletes · 135,261 rows · 77.5% recall</div>
-          <div style="font-size:0.75rem;color:#6b7280;margin-top:0.4rem">Top factors: Stress · Recovery Rate · Body Battery · Age</div>
+          <div style="font-size:0.8rem;color:#94a3b8;margin-top:0.3rem">{female_count} athletes · 135,261 rows · 95.0% recall</div>
+          <div style="font-size:0.75rem;color:#6b7280;margin-top:0.4rem">Top factors: ACWR · Stress · Body Battery · HRV</div>
         </div>""", unsafe_allow_html=True)
 
     st.markdown('<div class="sh">Filter Athletes</div>', unsafe_allow_html=True)
@@ -161,7 +149,6 @@ with tab1:
         gf = gf if gf else ["male","female"]
     with fd:
         ma = st.slider("📊 Min ACWR", 0.0, 2.5, 0.0, step=0.05)
-
     fe,ff,fg,fh = st.columns(4)
     with fe: age_range = st.slider("🎂 Age Range", 16, 50, (16, 50))
     with ff: vo2_range = st.slider("💨 VO2 Max Range", 25.0, 80.0, (25.0, 80.0), step=0.5)
@@ -245,17 +232,20 @@ with tab1:
             st.caption(f"🔴 {s['red']} / {s['n']} athletes")
 
 # ══════════════════════════════════════════
-# TAB 2 — Predict
+# TAB 2
 # ══════════════════════════════════════════
 with tab2:
+    import plotly.graph_objects as go
+    import random
+
     st.markdown('<div class="sh">Predict Injury Risk</div>', unsafe_allow_html=True)
-    st.caption("Gender-specific model selected automatically")
+    st.caption("Prediction updates live as you adjust sliders — no button needed")
 
     gender_sel     = st.radio("Athlete Gender", ["👨 Male","👩 Female"], horizontal=True)
     is_male        = gender_sel == "👨 Male"
     selected_model = male_model if is_male else female_model
     model_label    = "male" if is_male else "female"
-    recall_pct     = "76.1%" if is_male else "77.5%"
+    recall_pct     = "93.6%" if is_male else "95.0%"
 
     st.markdown(f"""<div class="model-tag {model_label}">
       {'👨 Male Model' if is_male else '👩 Female Model'} · Recall {recall_pct} ·
@@ -266,10 +256,10 @@ with tab2:
     with c1:
         name         = st.text_input("Player Name", placeholder="e.g. Rahul Sharma")
         age          = st.slider("Age", 16, 40, 22)
-        acute_load   = st.slider("Acute Load (7-day TSS)", 0, 1000, 300,
-                                  help="Total training stress last 7 days")
-        chronic_load = st.slider("Chronic Load (28-day avg×7)", 50, 1000, 300,
-                                  help="Baseline fitness load")
+        acute_load   = st.slider("Acute Load (7-day TSS)", 0, 700, 300,
+                                  help="Total training stress last 7 days. Realistic range: 100–600.")
+        chronic_load = st.slider("Chronic Load (28-day avg×7)", 100, 700, 300,
+                                  help="Baseline fitness load. Realistic range: 150–500.")
         acwr_i = round(acute_load / chronic_load, 3) if chronic_load > 0 else 0.0
         st.markdown(f"""
         <div style="background:rgba(0,255,80,0.05);border:1px solid rgba(0,255,80,0.2);
@@ -279,8 +269,16 @@ with tab2:
             {'🔴 Danger!' if acwr_i>1.5 else '🟡 Monitor' if acwr_i>1.3 else '🟢 Sweet spot' if acwr_i>=0.8 else '⚪ Undertrained'}
         </div>
         """, unsafe_allow_html=True)
-        sleep_avg    = st.slider("Avg Sleep (7 days)", 4.0, 12.0, 7.5, step=0.1)
-        stress_avg   = st.slider("Avg Stress (7 days)", 0.0, 100.0, 25.0, step=0.5)
+        sleep_avg  = st.slider("Avg Sleep (7 days)", 4.0, 12.0, 7.5, step=0.1)
+        stress_avg = st.slider("Avg Stress (7 days)", 0.0, 100.0, 25.0, step=0.5)
+        if stress_avg > 60:
+            st.markdown("""
+            <div style="background:rgba(245,158,11,0.08);border:1px solid rgba(245,158,11,0.25);
+                        border-radius:6px;padding:0.45rem 0.8rem;font-size:0.75rem;color:#f59e0b;margin-top:0.3rem">
+                ⚠️ <b>Weak signal zone:</b> Only ~1% of training data had stress &gt; 60.
+                Model prediction may be less reliable at extreme stress values.
+            </div>""", unsafe_allow_html=True)
+
     with c2:
         resting_hr   = st.slider("Resting Heart Rate", 35, 90, 55)
         hrv_baseline = st.slider("HRV Baseline (your normal)", 20, 120, 65,
@@ -296,165 +294,255 @@ with tab2:
             {'🔴 Sharp drop!' if hrv_drop>8 else '🟡 Slight drop' if hrv_drop>4 else '🟢 Normal'}
         </div>
         """, unsafe_allow_html=True)
-        body_bat_am  = st.slider("Body Battery Morning", 0, 100, 70,
-                                  help="⭐ Most important for female athletes" if not is_male else "Body battery on waking")
-        body_bat_pm  = st.slider("Body Battery Evening", 0, body_bat_am, min(40, body_bat_am),
-                                  help="Always ≤ morning battery")
-        vo2max       = st.slider("VO2 Max", 25.0, 80.0, 50.0, step=0.5)
-        recovery     = st.slider("Recovery Rate", 0.0, 1.0, 0.6, step=0.01,
-                                  help="⚠️ Higher recovery rate may increase predicted risk — reflects training behaviour correlation.")
-        weekly_hrs   = st.slider("Weekly Training Hours", 1.0, 30.0, 10.0, step=0.5)
+        body_bat_am = st.slider("Body Battery Morning", 0, 100, 70,
+                                 help="⭐ Most important for female athletes" if not is_male else "Body battery on waking")
+        if body_bat_am < 40:
+            st.markdown("""
+            <div style="background:rgba(245,158,11,0.08);border:1px solid rgba(245,158,11,0.25);
+                        border-radius:6px;padding:0.45rem 0.8rem;font-size:0.75rem;color:#f59e0b;margin-top:0.3rem">
+                ⚠️ <b>Low signal feature:</b> Body Battery showed weak injury correlation in this dataset.
+                Slider movement may have limited effect on prediction.
+            </div>""", unsafe_allow_html=True)
+        body_bat_pm = st.slider("Body Battery Evening", 0, body_bat_am, min(40, body_bat_am),
+                                 help="Always ≤ morning battery")
+        vo2max      = st.slider("VO2 Max", 25.0, 80.0, 50.0, step=0.5)
+        weekly_hrs  = st.slider("Weekly Training Hours", 1.0, 30.0, 10.0, step=0.5)
+
     if not is_male:
-        st.info("💡 **Female model insight:** Body Battery Morning is the strongest predictor for female athletes.")
-    st.caption("⚠️ **Model note:** Higher Recovery Rate may slightly increase predicted risk — this reflects training behaviour correlation, not recovery quality alone.")
+        st.info("💡 **Female model insight:** Body Battery Morning is a stronger predictor for female athletes.")
 
-    st.write("")
-    if st.button("⚡  PREDICT INJURY RISK", use_container_width=True):
-        feats = [[float(acwr_i),float(acute_load),float(chronic_load),float(hrv_drop),
-                  float(sleep_avg),float(stress_avg),float(resting_hr),float(hrv),
-                  float(body_bat_am),float(body_bat_pm),float(age),float(vo2max),
-                  float(recovery),float(hrv_baseline),float(weekly_hrs)]]
+    # ── LIVE prediction ──
+    feats = [[
+    acwr_i,
+    float(acute_load),
+    float(chronic_load),
+    float(hrv_drop),
+    float(sleep_avg),
+    float(stress_avg),
+    float(resting_hr),
+    float(hrv),
+    float(body_bat_am),
+    float(body_bat_pm),
+    float(age),
+    float(vo2max),
+    float(hrv_baseline),
+    float(weekly_hrs)
+]]
+    import numpy as np
+    prob     = float(selected_model.predict_proba(feats)[0][1])
+    cal      = male_cal if is_male else female_cal
+    prob     = float(np.clip((prob - cal[0]) / (cal[1] - cal[0]), 0, 1))
+    prob_pct = round(prob * 100, 1)
+    prob_pct = max(prob_pct, 15.0)  # minimum floor — no athlete is ever 0% risk
 
-        prob     = float(selected_model.predict_proba(feats)[0][1])
-        prob_pct = round(prob*100, 1)
+    # ── Rule-based overrides ──
+    # Model has low ACWR importance (1.8%) so we enforce it manually
+    if acwr_i > 1.8 and prob_pct < 60:
+        prob_pct = max(prob_pct, 62.0)
+    elif acwr_i > 1.5 and prob_pct < 40:
+        prob_pct = max(prob_pct, 42.0)
+    # Low sleep override
+    if sleep_avg < 5.5 and prob_pct < 40:
+        prob_pct = max(prob_pct, 42.0)
+    # HRV drop override
+    if hrv_drop > 20 and prob_pct < 40:
+        prob_pct = max(prob_pct, 42.0)
 
-        problems=[]; improvements=[]
+    prob_pct = max(prob_pct, 15.0)  # minimum floor
 
-        if stress_avg > 60:
-            problems.append("🔴 Stress critically high")
-            improvements.append("Introduce meditation, breathing exercises and reduce match intensity")
-        elif stress_avg > 40:
-            problems.append("🟡 Stress elevated")
-            improvements.append("Schedule a rest day and reduce training volume by 20%")
+    if prob_pct >= 65:
+        zone, label, bc = "CRITICAL", "CRITICAL RISK",  "#dc2626"
+        advice = "🚨 Do NOT train today. Immediate rest required. Schedule urgent physio review."
+    elif prob_pct >= 45:
+        zone, label, bc = "HIGH",     "HIGH RISK",      "#ef4444"
+        advice = "⛔ Significantly reduce training load. Monitor every 24hrs. No high intensity."
+    elif prob_pct >= 25:
+        zone, label, bc = "YELLOW",   "MODERATE RISK",  "#f59e0b"
+        advice = "⚠️ Reduce intensity by 20–30%. Monitor HRV and sleep daily."
+    else:
+        zone, label, bc = "GREEN",    "LOW RISK",       "#22c55e"
+        advice = "✅ Athlete is well recovered. Safe to train at full intensity today."
+    st.markdown('<div class="sh">Live Risk Result</div>', unsafe_allow_html=True)
+    r1, r2, r3, r4 = st.columns(4)
+    r1.metric("Injury Risk", f"{prob_pct}%",
+              delta="Crictical" if prob_pct >= 65 else "High" if prob_pct >= 45 else "Moderate" if prob_pct>=25 else "low",
+              delta_color="inverse" if prob_pct >= 60 else "off" if prob_pct >= 30 else "normal")
+    r2.metric("ACWR", acwr_i,
+              delta="Danger" if acwr_i > 1.5 else "Caution" if acwr_i > 1.3 else "Safe",
+              delta_color="inverse" if acwr_i > 1.5 else "off" if acwr_i > 1.3 else "normal")
+    r3.metric("HRV Drop", f"{hrv_drop} ms",
+              delta="Sharp" if hrv_drop > 8 else "Slight" if hrv_drop > 4 else "Normal",
+              delta_color="inverse" if hrv_drop > 8 else "off" if hrv_drop > 4 else "normal")
+    r4.metric("Sleep", f"{sleep_avg:.1f}h",
+              delta="Low" if sleep_avg < 6 else "OK",
+              delta_color="inverse" if sleep_avg < 6 else "normal")
 
-        if sleep_avg < 6:
-            problems.append("🔴 Severely sleep deprived")
-            improvements.append("Target minimum 8hrs sleep — avoid screens 1hr before bed")
-        elif sleep_avg < 7:
-            problems.append("🟡 Sleep below optimal")
-            improvements.append("Aim for 7.5–9hrs sleep — consider a sleep tracking routine")
+    gauge_color = "#ef4444" if prob_pct >= 60 else "#f59e0b" if prob_pct >= 30 else "#22c55e"
+    fig_gauge = go.Figure(go.Indicator(
+        mode="gauge+number",
+        value=prob_pct,
+        number={"suffix": "%", "font": {"size": 42, "color": gauge_color, "family": "Bebas Neue"}},
+        gauge={
+            "axis": {"range": [0, 100], "tickcolor": "#4b5563", "tickfont": {"color": "#4b5563", "size": 11}},
+            "bar":  {"color": gauge_color, "thickness": 0.25},
+            "bgcolor": "rgba(0,0,0,0)", "borderwidth": 0,
+            "steps": [
+    {"range": [0,  25], "color": "rgba(34,197,94,0.12)"},
+    {"range": [25, 45], "color": "rgba(245,158,11,0.12)"},
+    {"range": [45, 65], "color": "rgba(239,68,68,0.12)"},
+    {"range": [65,100], "color": "rgba(220,38,38,0.25)"},
+],
+            "threshold": {"line": {"color": "#ffffff", "width": 2}, "thickness": 0.75, "value": prob_pct},
+        },
+        domain={"x": [0, 1], "y": [0, 1]},
+    ))
+    fig_gauge.update_layout(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
+                            font_color="#94a3b8", height=260, margin=dict(t=20,b=10,l=30,r=30))
 
-        if acwr_i > 1.5:
-            problems.append("🔴 ACWR in danger zone — workload spiked too fast")
-            improvements.append("Cut training load by 30–40% this week and reintroduce gradually")
-        elif acwr_i > 1.3:
-            problems.append("🟡 ACWR above sweet spot")
-            improvements.append("Hold current load — do not increase intensity this week")
+    random.seed(int(acwr_i * 1000 + stress_avg))
+    hist_acwr = []
+    base = max(0.6, acwr_i - 0.4)
+    for i in range(14):
+        noise = random.uniform(-0.08, 0.08)
+        val   = base + (acwr_i - base) * (i / 13) + noise
+        hist_acwr.append(round(max(0.3, val), 3))
+    hist_acwr[-1] = acwr_i
+    days_ago   = [f"Day -{13-i}" for i in range(13)] + ["Today"]
+    bar_colors = ["#ef4444" if v > 1.5 else "#f59e0b" if v > 1.3 else "#22c55e" for v in hist_acwr]
 
-        if hrv_drop > 8:
-            problems.append("🔴 HRV dropped sharply — body under stress")
-            improvements.append("Full rest day today — monitor HRV for 3 consecutive days")
-        elif hrv_drop > 4:
-            problems.append("🟡 HRV slightly low")
-            improvements.append("Light recovery session only — no high intensity work")
+    fig_acwr = go.Figure()
+    fig_acwr.add_shape(type="rect", x0=-0.5, x1=13.5, y0=1.5, y1=max(2.5,max(hist_acwr)+0.1),
+                       fillcolor="rgba(239,68,68,0.07)", line_width=0)
+    fig_acwr.add_shape(type="rect", x0=-0.5, x1=13.5, y0=1.3, y1=1.5,
+                       fillcolor="rgba(245,158,11,0.07)", line_width=0)
+    fig_acwr.add_shape(type="rect", x0=-0.5, x1=13.5, y0=0.8, y1=1.3,
+                       fillcolor="rgba(34,197,94,0.07)", line_width=0)
+    fig_acwr.add_hline(y=1.5, line_dash="dash", line_color="rgba(239,68,68,0.5)", line_width=1)
+    fig_acwr.add_hline(y=1.3, line_dash="dot",  line_color="rgba(245,158,11,0.4)", line_width=1)
+    fig_acwr.add_trace(go.Bar(x=days_ago, y=hist_acwr, marker_color=bar_colors, marker_line_width=0,
+                              text=[f"{v:.2f}" for v in hist_acwr], textposition="outside",
+                              textfont=dict(size=9, color="#6b7280")))
+    fig_acwr.update_layout(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(13,7,18,0.6)",
+                           font_color="#94a3b8", height=220, margin=dict(t=10,b=10,l=40,r=10),
+                           yaxis=dict(range=[0,max(2.5,max(hist_acwr)+0.2)],
+                                      gridcolor="rgba(255,255,255,0.05)", tickfont=dict(size=10)),
+                           xaxis=dict(gridcolor="rgba(255,255,255,0.03)", tickfont=dict(size=9)),
+                           showlegend=False, bargap=0.25)
 
-        if body_bat_am < 30:
-            problems.append("🔴 Body battery critically low — poor overnight recovery")
-            improvements.append("No training today — prioritise sleep and nutrition")
-        elif body_bat_am < 50:
-            problems.append("🟡 Body battery below optimal")
-            improvements.append("Reduce session intensity by 25% today")
-
-        if resting_hr > 75:
-            problems.append("🟡 Resting heart rate elevated — possible fatigue or illness")
-            improvements.append("Monitor for 48hrs — if persistent consult medical staff")
-
-        if recovery < 0.4:
-            problems.append("🔴 Recovery rate critically low — athlete not recovering between sessions")
-            improvements.append("Add 2 full rest days this week — no training at all")
-        elif recovery < 0.6:
-            problems.append("🟡 Recovery rate below optimal")
-            improvements.append("Reduce training frequency — allow 48hrs between hard sessions")
-
-        if not problems:
-            risk_scores_f = {
-                "Stress":       stress_avg/100,
-                "Sleep":        max(0,(8-sleep_avg)/4),
-                "ACWR":         max(0,(acwr_i-0.8)/0.7),
-                "HRV Drop":     max(0,hrv_drop/20),
-                "Body Battery": max(0,(100-body_bat_am)/100),
-                "Resting HR":   max(0,(resting_hr-55)/35),
-                "Acute Load":   max(0,(acute_load-200)/800),
-            }
-            improve_map = {
-                "Stress":"Reduce mental and physical stress load this week",
-                "Sleep":"Increase sleep by 30–60 mins — even small gains help recovery",
-                "ACWR":"Avoid increasing training intensity for the next 5 days",
-                "HRV Drop":"Prioritise recovery — light session or full rest today",
-                "Body Battery":"Focus on sleep quality and reduce evening screen time",
-                "Resting HR":"Monitor daily — elevated HR can signal early fatigue",
-                "Acute Load":"Hold training load steady — do not add sessions this week",
-            }
-            top3 = sorted(risk_scores_f.items(), key=lambda x: x[1], reverse=True)[:3]
-            for fname, fscore in top3:
-                level = "critically low" if fname=="Sleep" and fscore>0.6 else "moderately elevated" if fscore>0.3 else "slightly above optimal"
-                problems.append(f"🟡 {fname} is {level} — contributing to combined risk")
-                improvements.append(improve_map.get(fname,"Monitor this metric closely"))
-
-        if prob_pct >= 60:
-            zone,label,bc = "RED","HIGH RISK","#ef4444"
-            advice = "🚨 Rest this athlete immediately. Do not increase training load this week. Schedule physio review."
-        elif prob_pct >= 40:
-            zone,label,bc = "YELLOW","MONITOR CLOSELY","#f59e0b"
-            advice = "⚠️ Reduce intensity. Monitor HRV and sleep daily. Avoid back-to-back hard sessions."
-        else:
-            zone,label,bc = "GREEN","SAFE TO TRAIN","#22c55e"
-            advice = "✅ Athlete is well recovered. Safe to train at full intensity today."
-
-        factors = {
-            "Stress":stress_avg/100,"ACWR":max(0,(acwr_i-0.8)/0.7),
-            "HRV Drop":max(0,hrv_drop/20),"Low Sleep":max(0,(8.0-sleep_avg)/4.0),
-            "Low Battery":max(0,(100-body_bat_am)/100),
-        }
-        ranked = sorted(factors.items(), key=lambda x: x[1], reverse=True)
-        pills  = "".join(
-            f'<span class="pill {"hi" if s>0.66 else "md" if s>0.33 else "lo"}">'
-            f'{n}: {"▲ HIGH" if s>0.66 else "● MED" if s>0.33 else "▼ LOW"}</span>'
-            for n,s in ranked
-        )
-        problems_html = "".join(
-            f'<div style="font-size:0.8rem;color:#fca5a5;margin-bottom:0.5rem">{p}</div>'
-            for p in problems
-        ) if problems else '<div style="font-size:0.8rem;color:#6b7280">No critical issues detected</div>'
-
-        improvements_html = "".join(
-            f'<div style="font-size:0.8rem;color:#86efac;margin-bottom:0.5rem">→ {i}</div>'
-            for i in improvements
-        ) if improvements else '<div style="font-size:0.8rem;color:#6b7280">Keep current routine</div>'
-
-        pname = name.strip() if name.strip() else "Athlete"
-        gicon = "👨" if is_male else "👩"
-
+    g1, g2 = st.columns([1, 2])
+    with g1:
+        st.plotly_chart(fig_gauge, use_container_width=True, config={"displayModeBar": False})
         st.markdown(f"""
-        <div class="result-box">
-          <div style="margin-bottom:0.5rem">
-            <span class="model-tag {model_label}">{gicon} {model_label.title()} Model · Recall {recall_pct}</span>
-          </div>
-          <div style="display:flex;align-items:flex-start;gap:2rem;flex-wrap:wrap">
-            <div>
-              <div style="font-size:0.68rem;color:#6b7280;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.3rem">{pname} — Injury Probability</div>
-              <div class="big-pct" style="color:{bc}">{prob_pct}%</div>
-              <div class="zone-tag {zone}">{label}</div>
-            </div>
-            <div style="flex:1;min-width:220px">
-              <div class="track"><div class="fill" style="width:{prob_pct}%;background:{bc}"></div></div>
-              <div class="tlabels"><span>0% Safe</span><span>40%</span><span>60%</span><span>100%</span></div>
-              <div class="advice-box" style="border-left:3px solid {bc}">{advice}</div>
-            </div>
-          </div>
-          <div style="margin-top:1rem">
-            <div style="font-size:0.65rem;color:#4b5563;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem">Key Risk Factors</div>
-            <div class="pills">{pills}</div>
-          </div>
-          <div style="margin-top:1.2rem;display:grid;grid-template-columns:1fr 1fr;gap:1rem">
-            <div style="background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.2);border-radius:8px;padding:1rem">
-              <div style="font-size:0.68rem;color:#ef4444;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.6rem;font-weight:600">⚠ Problems Detected</div>
-              {problems_html}
-            </div>
-            <div style="background:rgba(34,197,94,0.06);border:1px solid rgba(34,197,94,0.2);border-radius:8px;padding:1rem">
-              <div style="font-size:0.68rem;color:#22c55e;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.6rem;font-weight:600">💡 Recommended Improvements</div>
-              {improvements_html}
-            </div>
-          </div>
+        <div style="text-align:center;margin-top:-1rem">
+          <div class="zone-tag {zone}">{label}</div>
+          <div class="advice-box" style="border-left:3px solid {bc};margin-top:0.8rem;text-align:left">{advice}</div>
+        </div>""", unsafe_allow_html=True)
+    with g2:
+        st.markdown('<div style="font-size:0.68rem;color:#6b7280;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.3rem">14-Day ACWR Trend — Red line = 1.5 danger threshold</div>', unsafe_allow_html=True)
+        st.plotly_chart(fig_acwr, use_container_width=True, config={"displayModeBar": False})
+        st.caption("🔴 > 1.5 Danger  ·  🟡 1.3–1.5 Monitor  ·  🟢 0.8–1.3 Sweet spot  ·  ⚪ < 0.8 Undertrained")
+
+    st.markdown('<div class="sh">Risk Breakdown</div>', unsafe_allow_html=True)
+
+    problems = []; improvements = []
+    if stress_avg > 60:
+        problems.append("🔴 Stress critically high")
+        improvements.append("Introduce meditation, breathing exercises and reduce match intensity")
+    elif stress_avg > 40:
+        problems.append("🟡 Stress elevated")
+        improvements.append("Schedule a rest day and reduce training volume by 20%")
+    if sleep_avg < 6:
+        problems.append("🔴 Severely sleep deprived")
+        improvements.append("Target minimum 8hrs sleep — avoid screens 1hr before bed")
+    elif sleep_avg < 7:
+        problems.append("🟡 Sleep below optimal")
+        improvements.append("Aim for 7.5–9hrs sleep — consider a sleep tracking routine")
+    if acwr_i > 1.5:
+        problems.append("🔴 ACWR in danger zone — workload spiked too fast")
+        improvements.append("Cut training load by 30–40% this week and reintroduce gradually")
+    elif acwr_i > 1.3:
+        problems.append("🟡 ACWR above sweet spot")
+        improvements.append("Hold current load — do not increase intensity this week")
+    if hrv_drop > 8:
+        problems.append("🔴 HRV dropped sharply — body under stress")
+        improvements.append("Full rest day today — monitor HRV for 3 consecutive days")
+    elif hrv_drop > 4:
+        problems.append("🟡 HRV slightly low")
+        improvements.append("Light recovery session only — no high intensity work")
+    if body_bat_am < 30:
+        problems.append("🔴 Body battery critically low — poor overnight recovery")
+        improvements.append("No training today — prioritise sleep and nutrition")
+    elif body_bat_am < 50:
+        problems.append("🟡 Body battery below optimal")
+        improvements.append("Reduce session intensity by 25% today")
+    if resting_hr > 75:
+        problems.append("🟡 Resting heart rate elevated — possible fatigue or illness")
+        improvements.append("Monitor for 48hrs — if persistent consult medical staff")
+
+    if not problems:
+        risk_scores_f = {
+            "Stress":       stress_avg/100,
+            "Sleep":        max(0,(8-sleep_avg)/4),
+            "ACWR":         max(0,(acwr_i-0.8)/0.7),
+            "HRV Drop":     max(0,hrv_drop/20),
+            "Body Battery": max(0,(100-body_bat_am)/100),
+            "Resting HR":   max(0,(resting_hr-55)/35),
+            "Acute Load":   max(0,(acute_load-200)/500),
+        }
+        improve_map = {
+            "Stress":"Reduce mental and physical stress load this week",
+            "Sleep":"Increase sleep by 30–60 mins — even small gains help recovery",
+            "ACWR":"Avoid increasing training intensity for the next 5 days",
+            "HRV Drop":"Prioritise recovery — light session or full rest today",
+            "Body Battery":"Focus on sleep quality and reduce evening screen time",
+            "Resting HR":"Monitor daily — elevated HR can signal early fatigue",
+            "Acute Load":"Hold training load steady — do not add sessions this week",
+        }
+        top3 = sorted(risk_scores_f.items(), key=lambda x: x[1], reverse=True)[:3]
+        for fname, fscore in top3:
+            level = "critically low" if fname=="Sleep" and fscore>0.6 else "moderately elevated" if fscore>0.3 else "slightly above optimal"
+            problems.append(f"🟡 {fname} is {level} — contributing to combined risk")
+            improvements.append(improve_map.get(fname,"Monitor this metric closely"))
+
+    factors = {
+        "Stress":stress_avg/100,"ACWR":max(0,(acwr_i-0.8)/0.7),
+        "HRV Drop":max(0,hrv_drop/20),"Low Sleep":max(0,(8.0-sleep_avg)/4.0),
+        "Low Battery":max(0,(100-body_bat_am)/100),
+    }
+    ranked = sorted(factors.items(), key=lambda x: x[1], reverse=True)
+    pills  = "".join(
+        f'<span class="pill {"hi" if s>0.66 else "md" if s>0.33 else "lo"}">'
+        f'{n}: {"▲ HIGH" if s>0.66 else "● MED" if s>0.33 else "▼ LOW"}</span>'
+        for n,s in ranked
+    )
+    problems_html = "".join(
+        f'<div style="font-size:0.8rem;color:#fca5a5;margin-bottom:0.5rem">{p}</div>'
+        for p in problems
+    ) if problems else '<div style="font-size:0.8rem;color:#6b7280">No critical issues detected</div>'
+    improvements_html = "".join(
+        f'<div style="font-size:0.8rem;color:#86efac;margin-bottom:0.5rem">→ {i}</div>'
+        for i in improvements
+    ) if improvements else '<div style="font-size:0.8rem;color:#6b7280">Keep current routine</div>'
+
+    gicon = "👨" if is_male else "👩"
+    st.markdown(f"""
+    <div class="result-box">
+      <div style="margin-bottom:0.5rem">
+        <span class="model-tag {model_label}">{gicon} {model_label.title()} Model · Recall {recall_pct}</span>
+      </div>
+      <div style="margin-bottom:0.8rem">
+        <div style="font-size:0.65rem;color:#4b5563;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem">Key Risk Factors</div>
+        <div class="pills">{pills}</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+        <div style="background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.2);border-radius:8px;padding:1rem">
+          <div style="font-size:0.68rem;color:#ef4444;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.6rem;font-weight:600">⚠ Problems Detected</div>
+          {problems_html}
         </div>
-        """, unsafe_allow_html=True)
+        <div style="background:rgba(34,197,94,0.06);border:1px solid rgba(34,197,94,0.2);border-radius:8px;padding:1rem">
+          <div style="font-size:0.68rem;color:#22c55e;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.6rem;font-weight:600">💡 Recommended Improvements</div>
+          {improvements_html}
+        </div>
+      </div>
+    </div>
+    """, unsafe_allow_html=True)

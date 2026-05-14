@@ -4,4 +4,3 @@ daily_data.csv
 athletes.csv
 __pycache__/
 *.pyc
-*.pkl
