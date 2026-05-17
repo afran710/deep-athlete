@@ -332,8 +332,40 @@ with tab2:
     prob     = float(selected_model.predict_proba(feats)[0][1])
     cal      = male_cal if is_male else female_cal
     prob     = float(np.clip((prob - cal[0]) / (cal[1] - cal[0]), 0, 1))
-    prob_pct = round(prob * 100, 1)
-    prob_pct = max(prob_pct, 15.0)  # minimum floor — no athlete is ever 0% risk
+    model_pct = round(prob * 100, 1)
+
+    # Rule-based risk score (0–100) to fill the middle ground
+    rule_score = 0.0
+    # ACWR contribution (max 35 pts)
+    # ACWR contribution (max 25 pts)
+    # ACWR contribution (max 30 pts)
+    if acwr_i > 1.5:   rule_score += 30
+    elif acwr_i > 1.3: rule_score += 20
+    elif acwr_i > 1.1: rule_score += 12
+    elif acwr_i < 0.8: rule_score += 5
+    # Stress contribution (max 30 pts)
+    if stress_avg > 60:   rule_score += 30
+    elif stress_avg > 40: rule_score += 22
+    elif stress_avg > 30: rule_score += 15
+    elif stress_avg > 20: rule_score += 8
+    # Sleep contribution (max 20 pts)
+    if sleep_avg < 5.5:   rule_score += 20
+    elif sleep_avg < 6.5: rule_score += 14
+    elif sleep_avg < 7.0: rule_score += 8
+    elif sleep_avg < 7.5: rule_score += 3
+    # HRV drop contribution (max 12 pts)
+    if hrv_drop > 15:  rule_score += 12
+    elif hrv_drop > 8: rule_score += 8
+    elif hrv_drop > 4: rule_score += 4
+    # Body battery contribution (max 8 pts)
+    if body_bat_am < 30:  rule_score += 8
+    elif body_bat_am < 50: rule_score += 4
+    elif body_bat_am < 65: rule_score += 2
+
+   # Blend model + rules — model capped to prevent binary cliff
+    model_pct_capped = min(model_pct, 50.0)
+    prob_pct = model_pct_capped * 0.25 + rule_score * 0.75
+    prob_pct = round(min(prob_pct, 99.0), 1)
 
     # ── Rule-based overrides ──
     # Model has low ACWR importance (1.8%) so we enforce it manually

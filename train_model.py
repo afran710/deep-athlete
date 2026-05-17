@@ -22,7 +22,7 @@ HEALTHY_RATIO = 5
 # Fixed calibration range — do not change
 # Keeps scores consistent across retrains
 P_MIN = 0.0001
-P_MAX = 0.9701
+P_MAX = 0.9500
 
 # Dashboard thresholds — must match dashboard.py exactly
 GREEN_MAX  =  8   # 0–8%   = GREEN  safe to train
@@ -38,8 +38,11 @@ SELECT
     a.gender,
     CASE
         WHEN d.injury = 1
-         AND (r.stress_avg > 30 OR d.hrv < 70 OR r.sleep_avg < 6.5)
-         AND r.acwr > 1.0
+         AND r.acwr > 1.2
+         AND (
+             r.stress_avg > 40
+             OR (d.hrv < 65 AND r.sleep_avg < 6.5)
+         )
         THEN 1 ELSE 0
     END AS injury_strict
 FROM daily_data d
